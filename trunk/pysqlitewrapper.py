@@ -1,6 +1,7 @@
 #!/usr/bin/env python2.4
 # -*- coding: utf8 -*-
 
+import re
 from pysqlite2 import dbapi2 as sqlite
 
 class PySQLiteWrapper:
@@ -40,7 +41,7 @@ class PySQLiteWrapper:
 	def findField(self, value):
 		if (value[:7] == "http://"):
 			return "uri"
-		elif ((len(value) == 40) and (not " " in value)):
+		elif (re.match("^[a-f0-9]{40}$", value)):
 			return "sha"
 		else:
 			return None
