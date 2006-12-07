@@ -22,7 +22,7 @@ class PySQLiteWrapper:
 
 	def insert(self, uri, sha, me=False):
 		if not self.exists(uri):
-			date = "20061207"
+			date = self.todayDate()
 			me = self.bool2str(me)
 			cur = self.connect()
 			cur.execute("insert into foafs(uri, date, self) values ("+uri+","+date+","+me+")")
@@ -43,5 +43,9 @@ class PySQLiteWrapper:
 			return True
 		else:
 			return False
+
+	def todayDate(self):
+		date = datetime.date.today()
+		return str(date).replace("-", "")
 
 	
