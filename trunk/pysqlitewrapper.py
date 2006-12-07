@@ -3,6 +3,7 @@
 
 import re
 from pysqlite2 import dbapi2 as sqlite
+import datetime
 
 class PySQLiteWrapper:
 
@@ -32,13 +33,13 @@ class PySQLiteWrapper:
 	def exist(self, uri):
 		return (len(self.query(uri)) > 0)
 
-	def bool2str(value):
+	def bool2str(self, value):
 		if (value):
 			return "True"
 		else:
 			return "False"
 
-	def str2bool(value):
+	def str2bool(self, value):
 		if (value == "True"):
 			return True
 		else:
