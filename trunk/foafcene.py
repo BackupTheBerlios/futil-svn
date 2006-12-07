@@ -12,7 +12,8 @@ from foaf import Foaf
 fields = {
     "name" : ( Field.Store.YES, Field.Index.TOKENIZED),
     "nick" : ( Field.Store.YES, Field.Index.TOKENIZED),
-    "sha"  : ( Field.Store.YES, Field.Index.UN_TOKENIZED)
+    "sha"  : ( Field.Store.YES, Field.Index.UN_TOKENIZED),
+    "uri"  : ( Field.Store.YES, Field.Index.UN_TOKENIZED)
 }
 
 class LuceneWrapper:
@@ -37,9 +38,26 @@ class LuceneWrapper:
         return self._searcher
 
     
+    def searchBySha(self, query):
+        parser = QueryParser("sha", StandardAnalyzer())
+        return self._performSearch(parser)
+    
     def search(self, query):
-        parser = QueryParser("name", StandardAnalyzer())
-        q = parser.parse(query)
+        import re
+        if  re.match("^[a-f0-9]{40}$", query):
+            print "Preguntando por SHA"
+            parser = QueryParser("sha", StandardAnalyzer())
+        elif query.startswith("http://"):
+            print "Preguntando por URL"
+            query = query.replace(":","_").replace("/","_")
+            parser = QueryParser("uri", StandardAnalyzer())
+        else:
+            print "Preguntando por nombre"
+            parser = QueryParser("name", StandardAnalyzer())
+        return self._performSearch(parser, query)
+
+    def _performSearch(self, queryParser,query):
+        q = queryParser.parse(query)
         
         self._prepareSearcher()
         hits = self._searcher.search(q)
@@ -83,7 +101,6 @@ class LuceneWrapper:
         writer.close()
         print "Anyadido documento"
         self._indexModified = True
-        
 
     def close(self):
         if self._searcher:
@@ -92,16 +109,17 @@ class LuceneWrapper:
 if __name__ == "__main__":
     d = FSDirectory.getDirectory('/tmp/test-index',True)
     lw = LuceneWrapper(d)
-
     foaf = Foaf('http://frade.no-ip.info:2080/~ivan/foaf.rdf')
     lw.indexFOAF(foaf)
-
     foaf = Foaf('http://www.wikier.org/foaf.rdf')
     lw.indexFOAF(foaf)
 
     r = lw.search("sergio")
     print r[0]
-    
+    r = lw.search("d0fd987214f56f70b4c47fb96795f348691f93ab")
+    print r[0]
+    r = lw.search("http://www.wikier.org/foaf.rdf")
+    print r[0]
     lw.close()
 
     
