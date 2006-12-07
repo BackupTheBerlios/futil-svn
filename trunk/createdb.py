@@ -1,13 +1,16 @@
 #!/usr/bin/env python2.4
 # -*- coding: utf8 -*-
 
+import sys
+
 if __name__ == '__main__':
-	from pysqlite2 import dbapi2 as sqlite
-	con = sqlite.connect("foaf.db")
-	cur = con.cursor()
-	cur.execute("create table foafs(uri, date, self)")
-	cur.execute("""	
-					insert into foafs(uri, date, self) 
-					values ('http://www.wikier.org/foaf.rdf#wikier','20061207','True')
-				""")
-	con.commit()
+    if ( not len(sys.argv) == 2 ):
+        print "Usage: ./createdb filename"
+        sys.exit(-1)
+        
+    from pysqlite2 import dbapi2 as sqlite
+    print "Creating database in ", sys.argv[1]
+    con = sqlite.connect(sys.argv[1])
+    cur = con.cursor()
+    cur.execute("create table foafs(uri, date, self)")
+    con.commit()
