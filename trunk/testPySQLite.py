@@ -15,8 +15,8 @@ class TestPySQLite(unittest.TestCase):
         self.assertEqual(self.pysqlite.exist('http://www.wikier.org/foaf.rdf'), True)
 
     def testInsertion(self):
-        self.pysqlite.insert('http://www.wikier.org/foaf.rdf', True)
-        self.assertEqual(self.pysqlite.exist("http://www.wikier.org/foaf.rdf"), True)
+        self.pysqlite.insert("http://www.wikier.org/foaf.rdf", True)
+        self.assertEqual(self.pysqlite.exist('http://www.wikier.org/foaf.rdf'), True)
 
     def createEmptyDB(self):
         print "Creando DDBB vacia"
