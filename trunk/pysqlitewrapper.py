@@ -21,7 +21,7 @@ class PySQLiteWrapper:
 		return cur.fetchmany()
 
 	def insert(self, uri, sha, me=False):
-		if not self.exists(uri):
+		if not self.exist(uri):
 			date = self.todayDate()
 			me = self.bool2str(me)
 			cur = self.connect()

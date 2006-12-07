@@ -43,6 +43,8 @@ class Foaf:
     if ( foaf.startswith('/')):	
       foaf = 'file://' + foaf
     
+    self.uri = foaf
+    
     sparqlGr = sparqlGraph.SPARQLGraph()
     sparqlGr.parse(foaf)
     for attr, select, where in queries:
