@@ -25,7 +25,7 @@ class PySQLiteWrapper:
 			date = "20061207"
 			me = self.bool2str(me)
 			cur = self.connect()
-			cur.execute("insert into foafs(uri, sha, date, self) values ("+uri+","+sha+","+date+","+me+")")
+			cur.execute("insert into foafs(uri, date, self) values ("+uri+","+date+","+me+")")
 		else:
 			print "Error: " + uri + " already exist on db"
 
