@@ -12,9 +12,10 @@ class IndexAppService:
         self.bbdd = PySQLiteWrapper()
 
     def _prepareWriter(self):
+        print "First prepare writer"
         if not self._writer:
             create = not IndexReader.indexExists(self._directory)
-            self._writer = IndexWriter(self._directory, StandardAnalyzer(), create)
+            self._writer = IndexWriter(self._directory, StandardAnalyzer(), True)
         return self._writer
 
     def _closeWriter(self):
@@ -35,6 +36,7 @@ class IndexAppService:
         print "Atacking ", foafUri
         f = Foaf(foafUri)
         if not self.bbdd.exist(f.uri):
+            print "Adding it to database"
             self._indexFOAF(f)
             self.bbdd.insert(f.uri, True)
             for friendSha, friendUri in f.friends:
