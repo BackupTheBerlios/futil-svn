@@ -12,14 +12,13 @@ class TestPySQLite(unittest.TestCase):
 
     def testExist(self):
         self.insertElement()
-        self.assertEqual(self.pysqlite.exist('http://www.wikier.org/foaf.rdf'), True)
+        self.assertTrue(self.pysqlite.exist('http://www.wikier.org/foaf.rdf'))
 
     def testInsertion(self):
-        self.pysqlite.insert("http://www.wikier.org/foaf.rdf", True)
-        self.assertEqual(self.pysqlite.exist('http://www.wikier.org/foaf.rdf'), True)
+        self.pysqlite.insert('http://www.wikier.org/foaf.rdf', True)
+        self.assertTrue(self.pysqlite.exist('http://www.wikier.org/foaf.rdf'))
 
     def createEmptyDB(self):
-        print "Creando DDBB vacia"
         con = sqlite.connect(TESTDB)
         cur = con.cursor()
         cur.execute("create table foafs(uri, date, self)")
@@ -30,12 +29,11 @@ class TestPySQLite(unittest.TestCase):
         os.remove(TESTDB)
 
     def insertElement(self):
-        print "Insertando elemento"
         con = sqlite.connect(TESTDB)
         cur = con.cursor()
-        cur.execute("""	
-                        insert into foafs(uri, date, self) 
-                        values ('http://www.wikier.org/foaf.rdf','20061207','True')
+        cur.execute("""
+                        insert into foafs(uri, date, self)
+                        values ('http://www.wikier.org/foaf.rdf','20061209','True')
                     """)
         con.commit()
         con.close()
@@ -47,7 +45,7 @@ class TestPySQLite(unittest.TestCase):
     def tearDown(self):
         self.deleteDB()
 
-
 if __name__ == '__main__':
-	unittest.main()
-	
+    unittest.main()
+
+
