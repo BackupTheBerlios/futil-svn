@@ -1,0 +1,10 @@
+
+PingTheSemanticWeb.com util URI's
+---------------------------------
+
+All FOAFs:
+	http://pingthesemanticweb.com/export/?type=foaf&serialization=xml&timeframe=any_time&nbresults=0
+
+Updated FOAFs:
+	http://pingthesemanticweb.com/export/?type=foaf&serialization=all&ns=&domain=&timeframe=last_day&nbresults=0
+
