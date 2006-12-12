@@ -9,8 +9,8 @@ if __name__ == '__main__':
         sys.exit(-1)
         
     from pysqlite2 import dbapi2 as sqlite
-    print "Creating database in ", sys.argv[1]
+    print "Creating database in", sys.argv[1]
     con = sqlite.connect(sys.argv[1])
     cur = con.cursor()
-    cur.execute("create table foafs(uri, date, self)")
+    cur.execute("CREATE TABLE foafs (uri TEXT, date TEXT, self BOOL)")
     con.commit()
