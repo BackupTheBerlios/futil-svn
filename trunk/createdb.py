@@ -12,5 +12,5 @@ if __name__ == '__main__':
     print "Creating database in", sys.argv[1]
     con = sqlite.connect(sys.argv[1])
     cur = con.cursor()
-    cur.execute("CREATE TABLE foafs (uri TEXT, date TEXT, self BOOL)")
+    cur.execute("CREATE TABLE foafs (uri TEXT PRIMARY KEY, date TEXT, self BOOL)")
     con.commit()
