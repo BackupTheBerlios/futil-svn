@@ -35,7 +35,7 @@ class IndexAppService:
     def indexFOAFUri(self, foafUri):
         print "Atacking ", foafUri
         f = Foaf(foafUri)
-        if not self.bbdd.exist(f.uri):
+        if not self.bbdd.exists(f.uri):
             print "Adding it to database"
             self._indexFOAF(f)
             self.bbdd.insert(f.uri, True)

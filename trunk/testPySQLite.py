@@ -12,11 +12,11 @@ class TestPySQLite(unittest.TestCase):
 
     def testExist(self):
         self.insertElement()
-        self.assertTrue(self.pysqlite.exist('http://www.wikier.org/foaf.rdf'))
+        self.assertTrue(self.pysqlite.exists('http://www.wikier.org/foaf.rdf'))
 
     def testInsertion(self):
         self.pysqlite.insert('http://www.wikier.org/foaf.rdf', True)
-        self.assertTrue(self.pysqlite.exist('http://www.wikier.org/foaf.rdf'))
+        self.assertTrue(self.pysqlite.exists('http://www.wikier.org/foaf.rdf'))
 
     def deleteDB(self):
         os.remove(TESTDB)

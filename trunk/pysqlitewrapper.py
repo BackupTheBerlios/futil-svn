@@ -31,7 +31,7 @@ class PySQLiteWrapper:
 
 
     def insert(self, uri, me=False):
-        if not self.exist(uri):
+        if not self.exists(uri):
             date = self.todayDate()
             (con, cur) = self.connect()
             query = """
@@ -43,7 +43,7 @@ class PySQLiteWrapper:
         else:
             print "Error: " + uri + " already exist on db"
 
-    def exist(self, uri):
+    def exists(self, uri):
         return (len(self.query(uri)) > 0)
 
     def todayDate(self):
