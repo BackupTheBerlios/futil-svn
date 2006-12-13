@@ -1,7 +1,7 @@
 #!/usr/bin/env python2.4
 # -*- coding: utf8 -*-
 
-import re
+import re, os
 from pysqlite2 import dbapi2 as sqlite
 import datetime
 
@@ -9,11 +9,19 @@ class PySQLiteWrapper:
 
     def __init__(self, path="foaf.db"):
         self.path = path
+        if (not os.path.exists(self.path)):
+            self.createEmptyDB()
+            
+    def createEmptyDB(self):
+        (con, cur) = self.connect()
+        cur.execute("CREATE TABLE foafs (uri TEXT PRIMARY KEY, date TEXT, self BOOL)")
+        con.commit()
+        con.close()
 
     def connect(self):
         connection = sqlite.connect(self.path)
         cursor = connection.cursor()
-        return (connection,cursor)
+        return (connection, cursor)
 
     def query(self, uri):
         con, cur = self.connect()
