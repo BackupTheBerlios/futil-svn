@@ -1,7 +1,7 @@
 #!/usr/bin/env python2.4
 # -*- coding: utf8 -*-
 
-import re, os
+import os
 from pysqlite2 import dbapi2 as sqlite
 import datetime
 

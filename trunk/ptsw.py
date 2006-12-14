@@ -14,9 +14,11 @@
 #
 
 import urllib2
+import os
 from xml.dom import minidom
 
 PINGED = "ptsw-foafs.xml"
+TIMEOUT = 10
 
 class PTSW:
     
@@ -24,20 +26,32 @@ class PTSW:
         self.rest = "http://pingthesemanticweb.com/rest/?url="
 
     def ping(self, uri):
+        uri = uri.replace(":", "%3A")
         import socket
-        socket.setdefaulttimeout(10)
+        socket.setdefaulttimeout(TIMEOUT)
         response = urllib2.urlopen(self.rest+uri).read()
-        responseParsed = self.__parseResponse(response)
+        responseParsed = self.parseResponse(response)
         return (responseParsed['flerror'] == 0)
 
-    def __alreadyPinged(self, uri):
-        pass
+    def alreadyPinged(self, uri):
+        #stats:
+        # - minidom.parse(PINGED): 0m21.666s
+        # - actual: 0m0.412s (bad case) 
+        
+        if (os.path.exists(PINGED)):
+            uri = 'url="'+uri+'"'
+            for line in open(PINGED):
+                if uri in line:
+                    return True
+            return False
+        else:
+            print 'ERROR: ' + PINGED + ' file not founded'
+            return False
 
-    def __parseResponse(self, response):
-        dict = {}
+    def parseResponse(self, response):
         dom = minidom.parseString(response)
         responses = dom.getElementsByTagName('response')
-        #print response[0].getElementsByTagName('flerror')[0].firstChild.data, ' errors'
+        dict = {}
         for node in responses[0].childNodes:
             if (not node.nodeType == node.TEXT_NODE):
                 key = node.nodeName
