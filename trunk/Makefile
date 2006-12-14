@@ -1,8 +1,11 @@
 
+DESTDIR =
+PYTHON = python2.4
+
 clean:
 	rm -f *.pyc *~ *.bak
 
 tests:
-	python testClientView.py
-	python testfoaf.py
-	python testPySQLite.py
+	$(PYTHON) testfoaf.py
+	$(PYTHON) testPySQLite.py
+	$(PYTHON) testClientView.py
