@@ -30,13 +30,14 @@ class PTSW:
         import socket
         socket.setdefaulttimeout(TIMEOUT)
         response = urllib2.urlopen(self.rest+uri).read()
+        #print response
         responseParsed = self.parseResponse(response)
         return (responseParsed['flerror'] == 0)
 
     def alreadyPinged(self, uri):
         #stats:
         # - minidom.parse(PINGED): 0m21.666s
-        # - actual: 0m0.412s (bad case) 
+        # - actual: 0m0.412s (bad case, not pinged) 
         
         if (os.path.exists(PINGED)):
             uri = 'url="'+uri+'"'
