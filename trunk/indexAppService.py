@@ -1,7 +1,7 @@
 from PyLucene import IndexWriter, IndexReader, StandardAnalyzer
 from foafDocumentFactory import FoafDocumentFactory
 
-from pysqlitewrapper import PySQLiteWrapper
+from pySQLiteWrapper import PySQLiteWrapper
 from foaf import Foaf
 
 class IndexAppService:

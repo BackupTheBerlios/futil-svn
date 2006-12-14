@@ -1,7 +1,7 @@
 #!/usr/bin/env python2.4
 # -*- coding: utf8 -*-
 
-from pysqlitewrapper import PySQLiteWrapper
+from pySQLiteWrapper import PySQLiteWrapper
 import unittest
 
 import os
