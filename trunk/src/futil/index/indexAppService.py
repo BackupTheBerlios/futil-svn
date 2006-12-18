@@ -1,10 +1,11 @@
 from PyLucene import IndexWriter, IndexReader, StandardAnalyzer
 from foafDocumentFactory import FoafDocumentFactory
 
-from pySQLiteWrapper import PySQLiteWrapper
-from foaf import Foaf
+from futil.storage.pySQLiteWrapper import PySQLiteWrapper
+from futil.foaf.foaf import Foaf
+from futil.index.indexer import Indexer
 
-class IndexAppService:
+class IndexAppService(Indexer):
     
     def __init__(self, directory):
         self._directory = directory
@@ -23,7 +24,7 @@ class IndexAppService:
             self._writer.close()
         self._writer = None
     
-    def _indexFOAF(self, foaf):
+    def indexFOAF(self, foaf):
         document = FoafDocumentFactory.getDocumentFromFOAF(foaf)
         self._prepareWriter().addDocument(document)
 
@@ -37,8 +38,11 @@ class IndexAppService:
         f = Foaf(foafUri)
         if not self.bbdd.exists(f.uri):
             print "Adding it to database"
-            self._indexFOAF(f)
+            self.indexFOAF(f)
             self.bbdd.insert(f.uri, True)
             for friendSha, friendUri in f.friends:
                 self.bbdd.insert(friendUri, False)
         return [u for (v,u) in f.friends]
+    
+    def close(self):
+        self._closeWriter()

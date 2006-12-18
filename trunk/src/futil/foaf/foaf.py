@@ -35,18 +35,18 @@ queries = [ ("name", ("?value"), GraphPattern([("?node", FOAF['maker'], "?manflo
 class Foaf:
   
 
-  def __init__(self, foaf=None):
+  def __init__(self, foafUri=None):
 
-    if foaf == None:
+    if foafUri == None:
       return None
     
-    if ( foaf.startswith('/')):	
-      foaf = 'file://' + foaf
+    if ( foafUri.startswith('/')):	
+      foafUri = 'file://' + foafUri
     
-    self.uri = foaf
+    self.uri = foafUri
     
     sparqlGr = sparqlGraph.SPARQLGraph()
-    sparqlGr.parse(foaf)
+    sparqlGr.parse(foafUri)
     for attr, select, where in queries:
       result = sparqlGr.query(select, where)
       if result == None:

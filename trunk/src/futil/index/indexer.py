@@ -10,6 +10,12 @@ class Indexer:
         """
         pass
 
+    def indexFOAF(self, foaf):
+        """
+         Index Object of foaf class
+        """
+        pass
+
     def close(self):
         """
          Close indices or save data or do what you need, because crawler wants

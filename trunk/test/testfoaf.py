@@ -1,8 +1,10 @@
-from foaf import Foaf
+import sys
+sys.path.append('./src')
+
+from futil.foaf.foaf import Foaf
 import unittest
 
 class TestFoaf(unittest.TestCase):
-
 
     def setUp(self):
         self._foaf = Foaf('http://frade.no-ip.info:2080/~ivan/foaf.rdf')

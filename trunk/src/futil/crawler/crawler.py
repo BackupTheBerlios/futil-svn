@@ -1,6 +1,7 @@
-import signal, sys
+from futil.index.impl.testIndexer import TestIndexer
+from futil.tracker.impl.testTracker import TestTracker
 
-import time # debug
+import signal, sys
 
 class Crawler:
     
@@ -10,9 +11,9 @@ class Crawler:
 
     def start(self):
         print "Start"
-        while ( self.tracker.moreUrisToExplore ) :
+        while ( self.tracker.moreUrisToExplore() ) :
             uri = self.tracker.getNextUri()
-            friends = self.indexer.indexURI(uri)
+            friends = self.indexer.indexFOAFUri(uri)
             self.tracker.putFriendsUris(friends)
         
     def finish(self):
@@ -22,7 +23,10 @@ class Crawler:
 
 
 if __name__ == "__main__":
-    crawler = Crawler(None, None)  #FIXME
+    
+    tracker = TestTracker()
+    indexer = TestIndexer()
+    crawler = Crawler(tracker, indexer)  #FIXME
 
     def finale(a, b):
         crawler.finish()

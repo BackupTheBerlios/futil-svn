@@ -3,7 +3,7 @@
  Foaf instance in Lucene Document and inverse process
 """
 from PyLucene import Document, Field
-from foaf import Foaf
+from futil.foaf.foaf import Foaf
 
 fields = {
     "name" : ( Field.Store.YES, Field.Index.TOKENIZED),

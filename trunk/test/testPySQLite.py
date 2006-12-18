@@ -1,7 +1,10 @@
 #!/usr/bin/env python2.4
 # -*- coding: utf8 -*-
 
-from pySQLiteWrapper import PySQLiteWrapper
+import sys
+sys.path.append('./src')
+
+from futil.storage.pySQLiteWrapper import PySQLiteWrapper
 import unittest
 
 import os

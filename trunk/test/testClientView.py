@@ -1,8 +1,14 @@
+#!/usr/bin/env python2.4
+# -*- coding: utf8 -*-
+
+import sys
+sys.path.append('./src')
+
 from PyLucene import RAMDirectory, FSDirectory
 import unittest
-from foaf import Foaf
-from searchAppService import SearchAppService
-from indexAppService import IndexAppService
+from futil.foaf.foaf import Foaf
+from futil.index.searchAppService import SearchAppService
+from futil.index.indexAppService import IndexAppService
 
 ivan = {"name":"ivan", 
         "uri":"http://frade.no-ip.info:2080/~ivan/foaf.rdf", 
@@ -23,6 +29,7 @@ class TestClientView(unittest.TestCase):
         s.__dict__ = sergio
         
         self._directory = FSDirectory.getDirectory("/tmp/borrame", True) #RAMDirectory()
+        #self._directory = RAMDirectory()
         indexer = IndexAppService(self._directory)
         indexer.indexFOAF(i)
         indexer.indexFOAF(s)
