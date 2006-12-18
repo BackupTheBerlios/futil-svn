@@ -1,4 +1,3 @@
-import crawler
 import signal, sys
 
 import time # debug
