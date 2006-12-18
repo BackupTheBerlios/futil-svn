@@ -1,7 +1,9 @@
 #!/usr/bin/env python2.4
 # -*- coding: utf8 -*-
+import sys
+sys.path.append('./src')
 
-from ptsw import PTSW
+from futil.utils.ptsw import PTSW
 import unittest
 
 class TestPTSW(unittest.TestCase):
@@ -20,3 +22,4 @@ class TestPTSW(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
