@@ -1,31 +1,17 @@
+from futil.utils.abstract import AbstractMethod, Metaclass
+
 """
     Interface to handle URIs in crawler process.
     Implementation has complete control in which
     URIs visit, follow, ban...
 """
 
-class Tracker:
+class Tracker(object):
     
-    def moreUrisToExplore(self):
-        """
-         Return a boolean indicating if there are pending URIs to explore
-        """
-        pass
+    __metaclass__ = Metaclass
     
-    def getNextUri(self):
-        """
-         Following URI
-        """
-        pass
-    
-    def putFriendsUris(self, friends):
-        """
-         Friends of the last visited URI
-        """
-        pass
-    
-    def close(self):
-        """
-         Save data to resumen process, because crawler wants to finish
-        """
-        pass
+    moreUrisToExplore = AbstractMethod('moreUrisToExplore')
+    getNextUri = AbstractMethod('getNextUri')
+    putFriendsUris = AbstractMethod('putFriendsUris')
+    close = AbstractMethod('close')
+
