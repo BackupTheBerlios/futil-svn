@@ -3,7 +3,9 @@ DESTDIR =
 PYTHON = python2.4
 
 clean:
-	rm -f *.pyc *~ *.bak
+	rm -f `find . -name "*~"`
+	rm -f `find . -name "*pyc"`
+	rm -f `find . -name "*.bak"`
 
 tests:
 	$(PYTHON) test/testfoaf.py
