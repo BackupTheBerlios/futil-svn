@@ -14,14 +14,17 @@ TESTDB = "testfoaf.db"
 class TestPySQLite(unittest.TestCase):
 
     def testInsertion(self):
-        self.insertElement()
+        self.assertTrue(self.pysqlite.insert('http://www.wikier.org/foaf.rdf', True))
         self.assertTrue(self.pysqlite.exists('http://www.wikier.org/foaf.rdf'))
+        
+    def testVisit(self):
+        self.pysqlite.insert('http://frade.no-ip.info:2080/~ivan/foaf.rdf', False)
+        self.assertTrue(self.pysqlite.visit('http://frade.no-ip.info:2080/~ivan/foaf.rdf'))
+        self.assertTrue(self.pysqlite.visited('http://frade.no-ip.info:2080/~ivan/foaf.rdf'))
 
     def deleteDB(self):
         os.remove(TESTDB)
-
-    def insertElement(self):
-        self.pysqlite.insert("http://www.wikier.org/foaf.rdf", True)
+        
 
     def setUp(self):
         self.pysqlite = PySQLiteWrapper(TESTDB)
