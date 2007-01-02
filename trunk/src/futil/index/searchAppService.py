@@ -3,12 +3,15 @@ from PyLucene import IndexSearcher
 from PyLucene import QueryParser
 
 from foafDocumentFactory import FoafDocumentFactory
+from futil.storage.shaManager import ShaManager
+
 
 class SearchAppService:
     
-    def __init__(self, directory):
+    def __init__(self, directory, shaManager):
         self._directory = directory
         self._searcher = IndexSearcher(self._directory)
+        self._shaManager = shaManager
     
     def _prepareSearcher(self):
         # TODO: test index.currentVersion to update searcher,
@@ -39,8 +42,9 @@ class SearchAppService:
 
     def searchBySHA(self, query):
         print "Preguntando por SHA"
-        parser = QueryParser("sha", StandardAnalyzer())
-        return self._performSearch(parser, query)
+        return self._shaManager.searchSha(query)
+        #parser = QueryParser("sha", StandardAnalyzer())
+        #return self._performSearch(parser, query)
 
     def _performSearch(self, queryParser,query):
         q = queryParser.parse(query)

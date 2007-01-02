@@ -9,6 +9,7 @@ import unittest
 from futil.foaf.foaf import Foaf
 from futil.index.searchAppService import SearchAppService
 from futil.index.indexAppService import IndexAppService
+from futil.storage.shaManager import ShaManager
 
 ivan = {"name":"ivan", 
         "uri":"http://frade.no-ip.info:2080/~ivan/foaf.rdf", 
@@ -28,12 +29,13 @@ class TestClientView(unittest.TestCase):
         s.__dict__ = sergio
         
         self._directory = RAMDirectory()
-        indexer = IndexAppService(self._directory)
+        shaManager = ShaManager()
+        indexer = IndexAppService(self._directory, shaManager)
         indexer.indexFOAF(i)
         indexer.indexFOAF(s)
         indexer.close()
 
-        self._searcher = SearchAppService(self._directory)
+        self._searcher = SearchAppService(self._directory, shaManager)
 
     def testSearchByName(self):
         r = self._searcher.search("Sergio")

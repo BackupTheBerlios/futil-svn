@@ -8,7 +8,7 @@ from futil.foaf.foaf import Foaf
 fields = {
     "name" : ( Field.Store.YES, Field.Index.TOKENIZED),
     "nick" : ( Field.Store.YES, Field.Index.TOKENIZED),
-    "sha"  : ( Field.Store.YES, Field.Index.UN_TOKENIZED),
+#    "sha"  : ( Field.Store.YES, Field.Index.UN_TOKENIZED),
     "uri"  : ( Field.Store.YES, Field.Index.UN_TOKENIZED)
 }
 
