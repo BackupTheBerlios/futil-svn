@@ -22,18 +22,17 @@ class TestClientView(unittest.TestCase):
 
 
     def setUp(self):
-        print "setUp"
         i = Foaf()
         i.__dict__ = ivan
         s = Foaf()
         s.__dict__ = sergio
         
-        self._directory = FSDirectory.getDirectory("/tmp/borrame", True) #RAMDirectory()
-        #self._directory = RAMDirectory()
+        self._directory = RAMDirectory()
         indexer = IndexAppService(self._directory)
         indexer.indexFOAF(i)
         indexer.indexFOAF(s)
-        
+        indexer.close()
+
         self._searcher = SearchAppService(self._directory)
 
     def testSearchByName(self):
