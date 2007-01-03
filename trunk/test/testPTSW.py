@@ -19,6 +19,9 @@ class TestPTSW(unittest.TestCase):
         
     def testPingedFalse(self):
         self.assertFalse(self.ptsw.alreadyPinged("http://www.wikier.org/bad.rdf"))
+        
+    def testParse(self):
+        self.ptsw.parsePinged('ptsw.xml')
 
 if __name__ == "__main__":
     unittest.main()

@@ -66,3 +66,15 @@ class PTSW:
                 dict[key] = value
                     
         return dict
+
+    def parsePinged(self, pinged):
+        uris = []
+        dom = minidom.parse(pinged)
+        docs = dom.getElementsByTagName('rdfdocument')
+        for doc in docs:
+            uris.append(doc.getAttribute('url'))
+            
+        return uris
+        
+            
+        
