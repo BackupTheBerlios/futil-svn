@@ -32,16 +32,12 @@ class TestPySQLite(unittest.TestCase):
     def testPending(self):
         self.pysqlite.insert(FOAFS[2])
         self.assertTrue(self.pysqlite.pending())
-
-    def deleteDB(self):
-        os.remove(TESTDB)
         
-
     def setUp(self):
         self.pysqlite = PySQLiteWrapper(TESTDB)
 
     def tearDown(self):
-        self.deleteDB()
+        os.remove(TESTDB)
 
 if __name__ == '__main__':
     unittest.main()

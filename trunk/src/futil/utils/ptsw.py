@@ -26,13 +26,16 @@ class PTSW:
         self.rest = "http://pingthesemanticweb.com/rest/?url="
 
     def ping(self, uri):
-        uri = uri.replace(":", "%3A")
-        import socket
-        socket.setdefaulttimeout(TIMEOUT)
-        response = urllib2.urlopen(self.rest+uri).read()
-        #print response
-        responseParsed = self.parseResponse(response)
-        return (responseParsed['flerror'] == 0)
+        try:
+            uri = uri.replace(":", "%3A")
+            import socket
+            socket.setdefaulttimeout(TIMEOUT)
+            response = urllib2.urlopen(self.rest+uri).read()
+            #print response
+            responseParsed = self.parseResponse(response)
+            return (responseParsed['flerror'] == 0)
+        except:
+            return False
 
     def alreadyPinged(self, uri):
         #stats:

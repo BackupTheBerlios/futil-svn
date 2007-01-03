@@ -27,8 +27,7 @@ class PySQLiteWrapper:
         con, cur = self.connect()
         query = "SELECT uri FROM foafs WHERE uri =?"
         cur.execute(query, (uri,))
-        return cur.fetchmany()
-
+        return cur.fetchall()
 
     def insert(self, uri, visited=False):
         if not self.exists(uri):
@@ -65,7 +64,7 @@ class PySQLiteWrapper:
         con, cur = self.connect()
         query = "SELECT visited FROM foafs WHERE uri =?"
         cur.execute(query, (uri,))
-        result = cur.fetchmany()
+        result = cur.fetchall()
         if (len(result)>0):
             return self.str2bool(result[0])
         else:
@@ -75,7 +74,10 @@ class PySQLiteWrapper:
         con, cur = self.connect()
         query = "SELECT uri FROM foafs WHERE visited='False'"
         cur.execute(query)
-        return cur.fetchmany()
+        return cur.fetchall()
+    
+    def getNextPending(self):
+        return self.getPending()[0][0]
     
     def pending(self):
         return (len(self.getPending())>0)
