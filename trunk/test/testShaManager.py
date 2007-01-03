@@ -12,6 +12,7 @@ from pysqlite2 import dbapi2 as sqlite
 TESTDB = "testfoaf.db"
 
 SHA = "012345678901234567890123456789"
+URI = "http://www.wikier.org:2080/foaf.rdf"
 
 class TestShaManager(unittest.TestCase):
 
@@ -20,7 +21,7 @@ class TestShaManager(unittest.TestCase):
 
     # Helper method
     def insertElement(self):
-        self.shaManager.insertUriSha("http://www.wikier.org/foaf.rdf", SHA)
+        self.shaManager.insertUriSha(URI, SHA)
 
     def testInsertion(self):
         self.insertElement()
@@ -37,6 +38,7 @@ class TestShaManager(unittest.TestCase):
         self.insertElement()
         result = self.shaManager.searchSha(SHA)
         self.assertEquals(len(result), 1)
+        self.assertEquals(result[0], URI)
 
     def deleteDB(self):
         os.remove(TESTDB)
