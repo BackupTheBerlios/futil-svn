@@ -1,0 +1,45 @@
+
+body {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #404070;
+}
+
+h1 {
+  font-size: 2.5em;
+  display: block;
+  margin: 0;
+  padding: 0.5em;
+  color: #ffffff;
+  background-color: #96afcc;
+  background-image: url(resources/images/foaf.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  width: 100%;
+  margin-top: 2em;
+  border-bottom: 1px solid #404070;
+}
+
+img {
+  border: 0;
+}
+
+div#content {
+  margin: 2em;
+}
+
+.accessibility {
+  display: none;
+}
+
+div#foot {
+  text-align: right;
+  margin: 2em;
+}
