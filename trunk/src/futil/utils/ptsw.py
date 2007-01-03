@@ -7,7 +7,7 @@
 #
 # Interesant web services:
 #  - All FOAFs:
-#        http://pingthesemanticweb.com/export/?type=foaf&serialization=xml&timeframe=any_time&nbresults=0
+#        http://pingthesemanticweb.com/export/?type=foaf&timeframe=any_time&nbresults=0
 #
 #  - Updated FOAFs:
 #        http://pingthesemanticweb.com/export/?type=foaf&serialization=all&ns=&domain=&timeframe=last_day&nbresults=0
