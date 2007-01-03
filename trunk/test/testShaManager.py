@@ -33,10 +33,13 @@ class TestShaManager(unittest.TestCase):
         except sqlite.IntegrityError:
             self.assertTrue(True)
 
+    def testSearch(self):
+        self.insertElement()
+        result = self.shaManager.searchSha(SHA)
+        self.assertEquals(len(result), 1)
+
     def deleteDB(self):
         os.remove(TESTDB)
-
-
 
     def tearDown(self):
         self.deleteDB()

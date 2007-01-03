@@ -29,7 +29,9 @@ class ShaManager:
         con, cur = self.connect()
         query = "SELECT uri FROM shas WHERE sha =?"
         cur.execute(query, (sha,))
-        return cur.fetchmany()
+        result = cur.fetchmany()[:]
+        con.close()
+        return result
     
     def connect(self):
         connection = sqlite.connect(self.path)
