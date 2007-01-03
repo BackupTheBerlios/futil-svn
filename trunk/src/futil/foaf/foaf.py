@@ -7,7 +7,7 @@
 
 import rdflib
 from rdflib.sparql import sparqlGraph
-from rdflib.sparql import GraphPattern
+from rdflib.sparql.graphPattern import GraphPattern
 
 
 import socket
@@ -47,15 +47,12 @@ class Foaf:
     
     sparqlGr = sparqlGraph.SPARQLGraph()
     sparqlGr.parse(foafUri)
+        
     for attr, select, where in queries:
       result = sparqlGr.query(select, where)
       if result == None:
         continue
-      if ( len(result) == 1):
-        resultlist = result[0]
-      else:
-        resultlist = [str(i) for i in result ]
-      setattr(self, attr, resultlist)
+      setattr(self, attr, result)
 
   def __str__(self):
     text = ""
@@ -66,7 +63,8 @@ class Foaf:
       if isinstance(value, rdflib.Literal) or isinstance(value, basestring) :
         text += value.encode('utf-8') + "\n"
       else:
-        text += str([i.encode('utf-8') for i in value]) + "\n"
+        if not isinstance(value[0], tuple):
+            text += str([i.encode('utf-8') for i in value]) + "\n"
     return text
 
 if __name__ == "__main__":
