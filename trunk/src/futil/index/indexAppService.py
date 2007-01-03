@@ -2,7 +2,7 @@ from PyLucene import IndexWriter, IndexReader, StandardAnalyzer
 from foafDocumentFactory import FoafDocumentFactory
 
 from futil.storage.pySQLiteWrapper import PySQLiteWrapper
-from futil.foaf.foaf import Foaf
+from futil.foaf.foaf import Foaf, ErroneousFoaf
 from futil.index.indexer import Indexer
 from futil.storage.shaManager import ShaManager
 
@@ -32,8 +32,11 @@ class IndexAppService(Indexer):
 
     def indexFOAFUri(self, foafUri):
         print "Atacking ", foafUri
-        f = Foaf(foafUri)
-        return self.indexFOAF(f)
+        try: 
+            f = Foaf(foafUri)
+            return self.indexFOAF(f)
+        except ErroneousFoaf:
+            return []
         
     
     def close(self):
