@@ -8,6 +8,9 @@
 import rdflib
 from rdflib.sparql import sparqlGraph
 from rdflib.sparql.graphPattern import GraphPattern
+import os, sys, foaf
+import xml.sax._exceptions
+import rdflib.exceptions
 
 
 import socket
@@ -32,28 +35,49 @@ queries = [ ("name", ("?value"), GraphPattern([("?node", FOAF['maker'], "?manflo
                                                               ("?bn",GEO["long"],"?geolong")]))
 ]
 
+
+class ErroneousFoaf(Exception):
+    def __init__(self, value):
+        self.value = value
+        
+    def __str__(self):
+        return repr(self.value)     
+
 class Foaf:
   
 
   def __init__(self, foafUri=None):
 
-    if foafUri == None:
-      return None
-    
-    if ( foafUri.startswith('/')):	
-      foafUri = 'file://' + foafUri
-    
-    self.uri = foafUri
-    
-    sparqlGr = sparqlGraph.SPARQLGraph()
-    sparqlGr.parse(foafUri)
+    try:
+        if foafUri == None:
+          return None
         
-    for attr, select, where in queries:
-      result = sparqlGr.query(select, where)
-      if result == None:
-        continue
-      setattr(self, attr, result)
-
+        if ( foafUri.startswith('/')):	
+          foafUri = 'file://' + foafUri
+        
+        self.uri = foafUri
+        
+        sparqlGr = sparqlGraph.SPARQLGraph()
+        sparqlGr.parse(foafUri)
+            
+        for attr, select, where in queries:
+          result = sparqlGr.query(select, where)
+          if result == None:
+            continue
+        setattr(self, attr, result)
+    except xml.sax._exceptions.SAXParseException:
+        print >> sys.stderr , " BAD XML: ", foafUri
+        raise ErroneousFoaf(foafUri)
+    except rdflib.exceptions.ParserError:
+        print >> sys.stderr , " BAD RDF: ", foafUri
+        raise ErroneousFoaf(foafUri)
+    except UnicodeEncodeError:
+        print >> sys.stderr , "Encoding error in ", foafUri
+        raise ErroneousFoaf(foafUri)
+    except Exception:
+        print >> sys.stderr , "Something really strange with ", foafUri
+        raise ErroneousFoaf(foafUri)
+    
   def __str__(self):
     text = ""
     for attr, value in self.__dict__.iteritems():
@@ -71,6 +95,8 @@ if __name__ == "__main__":
   foaf = Foaf('http://frade.no-ip.info:2080/~ivan/foaf.rdf')
   print foaf
   foaf = Foaf('http://www.wikier.org/foaf.rdf')
+  print foaf
+  foaf = Foaf('noexiste.org')
   print foaf
 
   
