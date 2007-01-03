@@ -1,6 +1,9 @@
 import os
 from pysqlite2 import dbapi2 as sqlite
 
+#
+# TODO Add a close method and try to keep connection open (performance)
+#
 class ShaManager:
     
     def __init__(self, path="shas.db"):
@@ -27,13 +30,21 @@ class ShaManager:
     
     def searchSha(self, sha):
         con, cur = self.connect()
-        query = "SELECT uri FROM shas WHERE sha =?"
+        query = "SELECT uri,sha FROM shas WHERE sha =?"
         cur.execute(query, (sha,))
         result = cur.fetchmany()[:]
         con.close()
-        return result
+        return [uri for uri,sha in result]
     
     def connect(self):
         connection = sqlite.connect(self.path)
         cursor = connection.cursor()
         return (connection, cursor)
+
+    def printDatabase(self):
+        con, cur = self.connect()
+        query = "SELECT * FROM shas"
+        cur.execute(query, ())
+        result = cur.fetchmany()[:]
+        con.close
+        return result

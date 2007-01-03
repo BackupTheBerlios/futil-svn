@@ -5,6 +5,7 @@ from PyLucene import QueryParser
 from foafDocumentFactory import FoafDocumentFactory
 from futil.storage.shaManager import ShaManager
 
+import operator
 
 class SearchAppService:
     
@@ -30,19 +31,20 @@ class SearchAppService:
             return self.searchByName(query)
     
     def searchByURI(self, query):
-        print "Searching by URI"
+        #print "Searching by URI"
         query = "\"" + query + "\""
         parser = QueryParser("uri", KeywordAnalyzer())
         return self._performSearch(parser, query)
     
     def searchByName(self, query):
-        print "Preguntando por nombre"
+        #print "Preguntando por nombre"
         parser = QueryParser("name", StandardAnalyzer())
         return self._performSearch(parser, query)
 
     def searchBySHA(self, query):
-        print "Preguntando por SHA"
-        return self._shaManager.searchSha(query)
+        #print "Preguntando por SHA"
+        uris = self._shaManager.searchSha(query)
+        return reduce(operator.concat, map(self.searchByURI, uris))
         #parser = QueryParser("sha", StandardAnalyzer())
         #return self._performSearch(parser, query)
 
