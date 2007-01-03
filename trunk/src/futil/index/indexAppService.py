@@ -25,13 +25,12 @@ class IndexAppService(Indexer):
                 
         if ( hasattr(foaf, 'friends')):
             for friendSha, friendUri in foaf.friends:
-                print "inserting ", friendSha
                 self.shaBBDD.insertUriSha(friendUri, friendSha)
             return [u for (v,u) in foaf.friends]
         return []
 
     def indexFOAFUri(self, foafUri):
-        print "Atacking ", foafUri
+        print "Atacking ", foafUri #FIXME log
         try: 
             f = Foaf(foafUri)
             return self.indexFOAF(f)
