@@ -47,16 +47,12 @@ class PySQLiteWrapper:
             
     def visit(self, uri):
         if self.exists(uri):
-            visited = True
             date = self.todayDate()
             (con, cur) = self.connect()
-            query = """
-                        UPDATE foafs
-                        SET visited=visited, date=date
-                        WHERE uri=?
-                    """
-            cur.execute(query, (uri,))
+            query = "UPDATE foafs SET visited='True', date='" + date + "' WHERE uri='" + uri + "'"
+            cur.execute(query)
             con.commit()
+            con.close()
             return True
         else:
             print "Error: " + uri + " not exists on db"
@@ -69,10 +65,20 @@ class PySQLiteWrapper:
         con, cur = self.connect()
         query = "SELECT visited FROM foafs WHERE uri =?"
         cur.execute(query, (uri,))
-        return cur.fetchmany()[0]
+        result = cur.fetchmany()
+        if (len(result)>0):
+            return self.str2bool(result[0])
+        else:
+            return False
 
     def todayDate(self):
         date = datetime.date.today()
         return str(date).replace("-", "")
+    
+    def str2bool(self, query):
+        if (query[0] == 'True'):
+            return True
+        else:
+            return False
 
 
