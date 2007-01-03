@@ -19,7 +19,7 @@
 #    putFriendsUris = AbstractMethod('putFriendsUris')
 #    close = AbstractMethod('close')
 
-class Tracker(object):
+class Tracker:
     
     def moreUrisToExplore(self):
         pass
