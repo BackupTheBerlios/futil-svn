@@ -70,6 +70,15 @@ class PySQLiteWrapper:
             return self.str2bool(result[0])
         else:
             return False
+        
+    def getPending(self):
+        con, cur = self.connect()
+        query = "SELECT uri FROM foafs WHERE visited='False'"
+        cur.execute(query)
+        return cur.fetchmany()
+    
+    def pending(self):
+        return (len(self.getPending())>0)
 
     def todayDate(self):
         date = datetime.date.today()

@@ -28,6 +28,10 @@ class TestPySQLite(unittest.TestCase):
         
     def testVisitNull(self):
         self.assertFalse(self.pysqlite.visited(FOAFS[2]))
+        
+    def testPending(self):
+        self.pysqlite.insert(FOAFS[2])
+        self.assertTrue(self.pysqlite.pending())
 
     def deleteDB(self):
         os.remove(TESTDB)
