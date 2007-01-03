@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^wsvn http://svn.berlios.de/wsvn/futil/trunk/ [R]
