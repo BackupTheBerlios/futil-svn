@@ -14,3 +14,5 @@ tests:
 	$(PYTHON) test/testPTSW.py
 	#rm ptsw-foafs.xml
 	$(PYTHON) test/testClientView.py
+	$(PYTHON) test/testShaManager.py
+	
