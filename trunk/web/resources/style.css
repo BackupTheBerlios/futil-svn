@@ -16,7 +16,7 @@ h1 {
   padding: 0.5em;
   color: #ffffff;
   background-color: #96afcc;
-  background-image: url(resources/images/foaf.png);
+  background-image: url(/resources/images/foaf.png);
   background-position: center right;
   background-repeat: no-repeat;
 }
