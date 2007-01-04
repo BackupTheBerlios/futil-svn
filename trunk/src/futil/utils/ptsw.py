@@ -16,6 +16,7 @@
 import urllib2
 import os
 from xml.dom import minidom
+from futil.utils.logger import FutilLogger
 
 PINGED = "ptsw-foafs.xml"
 TIMEOUT = 10
@@ -24,17 +25,23 @@ class PTSW:
     
     def __init__(self):
         self.rest = "http://pingthesemanticweb.com/rest/?url="
+        self.pinged = 0
+        self.log = FutilLogger()
 
     def ping(self, uri):
         try:
-            uri = uri.replace(":", "%3A")
             import socket
             socket.setdefaulttimeout(TIMEOUT)
-            response = urllib2.urlopen(self.rest+uri).read()
+            response = urllib2.urlopen(self.rest + uri.replace(":", "%3A")).read()
             #print response
             responseParsed = self.parseResponse(response)
-            return (responseParsed['flerror'] == 0)
+            ok = (responseParsed['flerror'] == 0)
+            if ok:
+                self.pinged += 1
+                self.log.info(uri+' pinged')
+            return ok
         except:
+            self.log.info('problem pingging' + uri)
             return False
 
     def alreadyPinged(self, uri):
@@ -75,6 +82,9 @@ class PTSW:
             uris.append(doc.getAttribute('url'))
             
         return uris
+    
+    def stats(self):
+        return self.pingued
         
             
         
