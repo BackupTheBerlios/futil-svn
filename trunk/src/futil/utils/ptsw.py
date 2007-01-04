@@ -41,7 +41,7 @@ class PTSW:
                 self.log.info(uri+' pinged')
             return ok
         except:
-            self.log.info('problem pingging' + uri)
+            self.log.error('problem pinging ' + uri)
             return False
 
     def alreadyPinged(self, uri):
@@ -56,7 +56,7 @@ class PTSW:
                     return True
             return False
         else:
-            print 'ERROR: ' + PINGED + ' file not founded'
+            self.log.error('ERROR: ' + PINGED + ' file not founded')
             return False
 
     def parseResponse(self, response):
@@ -80,10 +80,14 @@ class PTSW:
         docs = dom.getElementsByTagName('rdfdocument')
         for doc in docs:
             uris.append(doc.getAttribute('url'))
+        self.log.info(str(len(uris))+' parsed from ' + pinged)
         return uris
     
     def stats(self):
-        return self.pingued
+        return str(self.pinged) + ' URIs pinged'
+    
+    def __del__(self):
+        self.log.info(self.stats())
         
             
         

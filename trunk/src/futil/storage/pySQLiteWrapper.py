@@ -4,6 +4,7 @@
 import os
 from pysqlite2 import dbapi2 as sqlite
 import datetime
+from futil.utils.logger import FutilLogger
 
 class PySQLiteWrapper:
 
@@ -12,6 +13,7 @@ class PySQLiteWrapper:
         self.connection = None
         if (not os.path.exists(self.path)):
             self.createEmptyDB()
+        self.log = FutilLogger()
             
     def createEmptyDB(self):
         (con, cur) = self.connect()
@@ -40,11 +42,15 @@ class PySQLiteWrapper:
                         INSERT INTO foafs(uri, visited, date)
                         VALUES ('%s','%s','%s')
                     """ % (uri, visited, date)
-            cur.execute(query)
-            con.commit()
-            return True
+            try:
+                cur.execute(query)
+                con.commit()
+                return True
+            except:
+                self.log.info('Error inserting: ' + uri, visited, date)
+                return False
         else:
-            print "Error: " + uri + " already exists on db"
+            self.log.info('Error: ' + uri + ' already exists on db')
             return False
             
     def visit(self, uri):
@@ -56,7 +62,7 @@ class PySQLiteWrapper:
             con.commit()
             return True
         else:
-            print "Error: " + uri + " not exists on db"
+            self.log.info('Error: ' + uri + ' not exists on db')
             return False
 
     def exists(self, uri):
