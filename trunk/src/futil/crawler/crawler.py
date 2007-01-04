@@ -1,5 +1,9 @@
-from futil.index.impl.testIndexer import TestIndexer
-from futil.tracker.impl.testTracker import TestTracker
+import sys
+sys.path.append('.')
+
+
+from futil.tracker.ptswtracker import PTSWTracker
+from futil.index.appfactory import appServiceFactory
 
 import signal, sys
 
@@ -24,8 +28,8 @@ class Crawler:
 
 if __name__ == "__main__":
     
-    tracker = TestTracker()
-    indexer = TestIndexer()
+    tracker = PTSWTracker()
+    indexer = appServiceFactory.createIndexService()
     crawler = Crawler(tracker, indexer)  #FIXME
 
     def finale(a, b):

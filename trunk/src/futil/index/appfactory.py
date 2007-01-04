@@ -4,6 +4,7 @@ from PyLucene import FSDirectory
 
 from searchAppService import SearchAppService
 from indexAppService import IndexAppService
+from futil.storage.shaManager import ShaManager
 
 import os
 

@@ -70,8 +70,3 @@ class PTSW:
     def stats(self):
         return str(self.pinged) + ' URIs pinged'
     
-    def __del__(self):
-        self.log.info(self.stats())
-        
-            
-        

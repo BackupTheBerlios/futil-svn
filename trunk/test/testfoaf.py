@@ -1,7 +1,7 @@
 import sys
 sys.path.append('./src')
 
-from futil.foaf.foaf import Foaf
+from futil.foaf.foaf import Foaf, ErroneousFoaf
 import unittest
 
 from rdflib.Literal import Literal
@@ -15,6 +15,12 @@ class TestFoaf(unittest.TestCase):
         self.assertEqual(self._foaf.name[0], Literal("Ivan Frade"))
         # sha as string
         self.assertEqual(len(self._foaf.sha[0]), 40)
+
+    def testUnreachableFoaf(self):
+        try:
+            f = Foaf('noexiste.org')
+        except ErroneousFoaf:
+            self.assertTrue(True)
 
 
 if __name__ == "__main__":
