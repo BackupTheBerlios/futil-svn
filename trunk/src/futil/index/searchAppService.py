@@ -45,8 +45,6 @@ class SearchAppService:
         #print "Preguntando por SHA"
         uris = self._shaManager.searchSha(query)
         return reduce(operator.concat, map(self.searchByURI, uris))
-        #parser = QueryParser("sha", StandardAnalyzer())
-        #return self._performSearch(parser, query)
 
     def _performSearch(self, queryParser,query):
         q = queryParser.parse(query)
@@ -58,3 +56,6 @@ class SearchAppService:
             d = hits.doc(i)
             result.append(FoafDocumentFactory.getFOAFFromDocument(d))
         return result
+
+    def close(self):
+        self._shaManager.close()
