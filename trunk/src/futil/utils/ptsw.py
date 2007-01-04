@@ -18,7 +18,7 @@ import os
 from xml.dom import minidom
 from futil.utils.logger import FutilLogger
 
-PINGED = "ptsw-foafs.xml"
+PINGED = "ptsw.xml"
 TIMEOUT = 10
 
 class PTSW:
@@ -80,7 +80,6 @@ class PTSW:
         docs = dom.getElementsByTagName('rdfdocument')
         for doc in docs:
             uris.append(doc.getAttribute('url'))
-            
         return uris
     
     def stats(self):
