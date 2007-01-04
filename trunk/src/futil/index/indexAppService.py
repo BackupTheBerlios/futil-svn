@@ -9,7 +9,7 @@ from futil.utils.logger import FutilLogger
 
 
 class IndexAppService(Indexer):
-    
+
     def __init__(self, directory, shaManager):
         self._directory = directory
         create = not IndexReader.indexExists(self._directory)
@@ -17,15 +17,15 @@ class IndexAppService(Indexer):
         self.shaBBDD = shaManager
         self.logger = FutilLogger()
 
-   
+
     def indexFOAF(self, foaf):
         document = FoafDocumentFactory.getDocumentFromFOAF(foaf)
         self._writer.addDocument(document)
-        
+
         if ( hasattr(foaf,'sha')):
-            for sha in foaf.sha:    
+            for sha in foaf.sha:
                 self.shaBBDD.insertUriSha(foaf.uri, sha)
-                
+
         if ( hasattr(foaf, 'friends')):
             for friendSha, friendUri in foaf.friends:
                 self.shaBBDD.insertUriSha(friendUri, friendSha)
@@ -33,19 +33,19 @@ class IndexAppService(Indexer):
         return []
 
     def indexFOAFUri(self, foafUri):
-        try: 
+        try:
             f = Foaf(foafUri)
             return self.indexFOAF(f)
         except ErroneousFoaf, e:
-            self.logger.info("Error parsing FOAF: " + foafUri + " - " + e)
+            self.logger.info("Error parsing FOAF: " + foafUri + " - " + str(e))
             return []
         except:
             self.logger.info("Unknow error indexing " + foafUri)
             return []
-        
-    
+
+
     def close(self):
-        if self._writer:
+        if not self._writer:
             self._writer.close()
         self._writer = None
-        self.shaBBDD.close()
+        #self.shaBBDD.close()
