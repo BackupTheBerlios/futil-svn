@@ -18,13 +18,16 @@ class ShaManager:
         con.commit()
     
     def insertUriSha(self, uri, sha):
-        (con, cur) = self.connect()
-        query = """
-                INSERT INTO shas(uri, sha)
-                VALUES ('%s','%s')
-            """ % (uri, sha)
-        cur.execute(query)
-        con.commit()
+        try:
+            (con, cur) = self.connect()
+            query = """
+                    INSERT INTO shas(uri, sha)
+                    VALUES ('%s','%s')
+                """ % (uri, sha)
+            cur.execute(query)
+            con.commit()
+        except:
+            pass
     
     def searchSha(self, sha):
         con, cur = self.connect()
@@ -36,7 +39,11 @@ class ShaManager:
     def connect(self):
         if not self.connection:
             self.connection = sqlite.connect(self.path)
-        cursor = self.connection.cursor()
+        try:
+            cursor = self.connection.cursor()
+        except: 
+            self.connection = sqlite.connect(self.path)
+            cursor = self.connection.cursor()
         return (self.connection, cursor)
 
     def printDatabase(self):
