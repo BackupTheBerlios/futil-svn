@@ -9,6 +9,7 @@ class PySQLiteWrapper:
 
     def __init__(self, path="foaf.db"):
         self.path = path
+        self.connection = None
         if (not os.path.exists(self.path)):
             self.createEmptyDB()
             
@@ -16,12 +17,14 @@ class PySQLiteWrapper:
         (con, cur) = self.connect()
         cur.execute("CREATE TABLE foafs (uri TEXT PRIMARY KEY, visited BOOL, date TEXT)")
         con.commit()
-        con.close()
 
+    def realConnect(self):
+        return sqlite.connect(self.path)
+    
     def connect(self):
-        connection = sqlite.connect(self.path)
-        cursor = connection.cursor()
-        return (connection, cursor)
+        if (self.connection==None):
+            self.connection = self.realConnect()
+        return (self.connection, self.connection.cursor())
 
     def query(self, uri):
         con, cur = self.connect()
@@ -51,7 +54,6 @@ class PySQLiteWrapper:
             query = "UPDATE foafs SET visited='True', date='" + date + "' WHERE uri='" + uri + "'"
             cur.execute(query)
             con.commit()
-            con.close()
             return True
         else:
             print "Error: " + uri + " not exists on db"
@@ -91,5 +93,9 @@ class PySQLiteWrapper:
             return True
         else:
             return False
+        
+    def __del__(self):
+        if (self.connection != None):
+            self.connection.close()
 
 
