@@ -5,6 +5,8 @@ from futil.storage.pySQLiteWrapper import PySQLiteWrapper
 from futil.foaf.foaf import Foaf, ErroneousFoaf
 from futil.index.indexer import Indexer
 from futil.storage.shaManager import ShaManager
+from futil.utils.logger import FutilLogger
+
 
 class IndexAppService(Indexer):
     
@@ -13,6 +15,7 @@ class IndexAppService(Indexer):
         create = not IndexReader.indexExists(self._directory)
         self._writer = IndexWriter(self._directory, StandardAnalyzer(), create)
         self.shaBBDD = shaManager
+        self.logger = FutilLogger()
 
    
     def indexFOAF(self, foaf):
@@ -30,11 +33,14 @@ class IndexAppService(Indexer):
         return []
 
     def indexFOAFUri(self, foafUri):
-        print "Atacking ", foafUri #FIXME log
         try: 
             f = Foaf(foafUri)
             return self.indexFOAF(f)
-        except ErroneousFoaf:
+        except ErroneousFoaf, e:
+            self.logger.info("Error parsing FOAF: " + foafUri + " - " + e)
+            return []
+        except:
+            self.logger.info("Unknow error indexing " + foafUri)
             return []
         
     
@@ -42,3 +48,4 @@ class IndexAppService(Indexer):
         if self._writer:
             self._writer.close()
         self._writer = None
+        self.shaBBDD.close()
