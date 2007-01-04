@@ -64,7 +64,7 @@ class Foaf:
           result = sparqlGr.query(select, where)
           if result == None:
             continue
-        setattr(self, attr, result)
+          setattr(self, attr, result)
     except xml.sax._exceptions.SAXParseException:
         print >> sys.stderr , " BAD XML: ", foafUri
         raise ErroneousFoaf(foafUri)
