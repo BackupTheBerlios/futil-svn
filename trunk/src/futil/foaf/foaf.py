@@ -12,6 +12,7 @@ import os, sys, foaf
 import xml.sax._exceptions
 import rdflib.exceptions
 
+from futil.utils.logger import FutilLogger
 
 import socket
 socket.setdefaulttimeout(10)
@@ -47,7 +48,7 @@ class Foaf:
   
 
   def __init__(self, foafUri=None):
-
+    self.log = FutilLogger()
     try:
         if foafUri == None:
           return None
@@ -67,15 +68,19 @@ class Foaf:
           setattr(self, attr, result)
     except xml.sax._exceptions.SAXParseException:
         print >> sys.stderr , " BAD XML: ", foafUri
+        self.log.error(" BAD XML: " + foafUri)
         raise ErroneousFoaf(foafUri)
     except rdflib.exceptions.ParserError:
         print >> sys.stderr , " BAD RDF: ", foafUri
+        self.log.error(" BAD RDF: " + foafUri)
         raise ErroneousFoaf(foafUri)
     except UnicodeEncodeError:
         print >> sys.stderr , "Encoding error in ", foafUri
+        self.log.error("Encoding error in " + foafUri)
         raise ErroneousFoaf(foafUri)
-    except Exception:
+    except:
         print >> sys.stderr , "Something really strange with ", foafUri
+        self.log.error("Encoding error in " + foafUri)
         raise ErroneousFoaf(foafUri)
     
   def __str__(self):
