@@ -21,6 +21,11 @@ h1 {
   background-repeat: no-repeat;
 }
 
+h1 a, h1 a:active, h1 a:hover, h1 a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 h2 {
   width: 100%;
   margin-top: 2em;
