@@ -40,6 +40,16 @@ class TestShaManager(unittest.TestCase):
         self.assertEquals(len(result), 1)
         self.assertEquals(result[0], URI)
 
+    def testMultipleSearch(self):   
+        self.insertElement()
+        result = self.shaManager.searchSha(SHA)
+        self.assertEquals(len(result), 1)
+        self.assertEquals(result[0], URI)
+        
+        result = self.shaManager.searchSha(SHA)
+        self.assertEquals(len(result), 1)
+        self.assertEquals(result[0], URI)
+
     def deleteDB(self):
         os.remove(TESTDB)
 

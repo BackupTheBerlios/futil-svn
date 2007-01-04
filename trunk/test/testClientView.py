@@ -60,7 +60,8 @@ class TestClientView(unittest.TestCase):
         self.shaManager.printDatabase()
 
     def tearDown(self):
-        print "Tear down"
+        self._searcher.close()
+        self.shaManager.close()
         os.remove(TESTDB)
 
 if __name__ == "__main__":
