@@ -7,6 +7,7 @@ from pysqlite2 import dbapi2 as sqlite
 class ShaManager:
     
     def __init__(self, path="shas.db"):
+        self.connection = None
         self.path = path
         if (not os.path.exists(self.path)):
             self.createEmptyDB()
@@ -15,7 +16,6 @@ class ShaManager:
         (con, cur) = self.connect()
         cur.execute("CREATE TABLE shas (uri TEXT, sha VARCHAR(40), PRIMARY KEY(uri, sha) )")
         con.commit()
-        con.close()
     
     def insertUriSha(self, uri, sha):
         (con, cur) = self.connect()
@@ -25,26 +25,26 @@ class ShaManager:
             """ % (uri, sha)
         cur.execute(query)
         con.commit()
-        con.close() # FIXME 
-    
     
     def searchSha(self, sha):
         con, cur = self.connect()
         query = "SELECT uri,sha FROM shas WHERE sha =?"
         cur.execute(query, (sha,))
         result = cur.fetchmany()[:]
-        con.close()
         return [uri for uri,sha in result]
     
     def connect(self):
-        connection = sqlite.connect(self.path)
-        cursor = connection.cursor()
-        return (connection, cursor)
+        if not self.connection:
+            self.connection = sqlite.connect(self.path)
+        cursor = self.connection.cursor()
+        return (self.connection, cursor)
 
     def printDatabase(self):
         con, cur = self.connect()
         query = "SELECT * FROM shas"
         cur.execute(query, ())
         result = cur.fetchmany()[:]
-        con.close
         return result
+    
+    def close(self):
+        self.connection.close()
