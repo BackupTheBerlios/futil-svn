@@ -12,13 +12,13 @@ class FutilLogger:
         self.logger.setLevel(level)
 
     def info(self, message):
-        self.logger.info(message)
+        self.logger.info('INFO: ' + message)
         
     def error(self, message):
-        self.logger.error(message)
+        self.logger.error('ERROR: ' + message)
         
     def warn(self, message):
-        self.logger.warn(message)
+        self.logger.warn('WARN: ' + message)
         
     def __del__(self):
         self.logger.removeHandler(self.hdlr)

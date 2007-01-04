@@ -18,7 +18,6 @@ import os
 from xml.dom import minidom
 from futil.utils.logger import FutilLogger
 
-PINGED = "ptsw.xml"
 TIMEOUT = 10
 
 class PTSW:
@@ -42,21 +41,6 @@ class PTSW:
             return ok
         except:
             self.log.error('problem pinging ' + uri)
-            return False
-
-    def alreadyPinged(self, uri):
-        #stats:
-        # - minidom.parse(PINGED): 0m21.666s
-        # - actual: 0m0.412s (bad case, not pinged) 
-        
-        if (os.path.exists(PINGED)):
-            uri = 'url="'+uri+'"'
-            for line in open(PINGED):
-                if uri in line:
-                    return True
-            return False
-        else:
-            self.log.error('ERROR: ' + PINGED + ' file not founded')
             return False
 
     def parseResponse(self, response):

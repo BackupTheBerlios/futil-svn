@@ -14,14 +14,8 @@ class TestPTSW(unittest.TestCase):
     def testPing(self):
         self.assertTrue(self.ptsw.ping("http://www.wikier.org/foaf.rdf#wikier"))
         
-    def testPingedTrue(self):
-        self.assertTrue(self.ptsw.alreadyPinged("http://www.wikier.org/foaf.rdf#wikier"))
-        
-    def testPingedFalse(self):
-        self.assertFalse(self.ptsw.alreadyPinged("http://www.wikier.org/bad.rdf"))
-        
     def testParse(self):
-        self.assertEquals(len(self.ptsw.parsePinged('ptsw.xml')), 1)
+        self.assertEquals(len(self.ptsw.parsePinged('data/ptsw-basic.xml')), 1)
 
 if __name__ == "__main__":
     unittest.main()
