@@ -1,5 +1,5 @@
 import sys
-sys.path.append('.')
+sys.path.append('./src')
 
 
 from futil.tracker.ptswtracker import PTSWTracker
@@ -28,7 +28,7 @@ class Crawler:
 
 if __name__ == "__main__":
     
-    tracker = PTSWTracker()
+    tracker = PTSWTracker(pinged='data/initial.xml')
     indexer = appServiceFactory.createIndexService()
     crawler = Crawler(tracker, indexer)  #FIXME
 
