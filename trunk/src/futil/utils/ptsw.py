@@ -31,6 +31,9 @@ class PTSW:
         try:
             import socket
             socket.setdefaulttimeout(TIMEOUT)
+            #TODO: 
+            # Problem with encoding. Try to use encodeurl
+            # response = urllib2.urlopen(urllib2.encodeurl(self.rest + uri)
             response = urllib2.urlopen(self.rest + uri.replace(":", "%3A")).read()
             #print response
             responseParsed = self.parseResponse(response)
