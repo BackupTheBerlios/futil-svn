@@ -47,7 +47,7 @@ class PySQLiteWrapper:
                 con.commit()
                 return True
             except:
-                self.log.info('Error inserting: ' + uri, visited, date)
+                self.log.info('Error inserting: ' + uri)
                 return False
         else:
             self.log.info('Error: ' + uri + ' already exists on db')
