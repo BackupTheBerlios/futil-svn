@@ -6,6 +6,8 @@ from pysqlite2 import dbapi2 as sqlite
 import datetime
 from futil.utils.logger import FutilLogger
 
+CACHE = 100
+
 class PySQLiteWrapper:
 
     def __init__(self, path="foaf.db"):
@@ -14,6 +16,7 @@ class PySQLiteWrapper:
         if (not os.path.exists(self.path)):
             self.createEmptyDB()
         self.log = FutilLogger()
+        self.pendingCache = []
             
     def createEmptyDB(self):
         (con, cur) = self.connect()
@@ -85,7 +88,16 @@ class PySQLiteWrapper:
         return cur.fetchall()
     
     def getNextPending(self):
-        return self.getPending()[0][0]
+        if (len(self.pendingCache) == 0):
+            pending = self.getPending()
+            pendingSize = len(pending)
+            self.log.info(str(pendingSize) + ' URIs pending to visit')
+            if (pendingSize > CACHE):
+                self.pendingCache = pending[:CACHE]
+            else:
+                self.pendingCache = pending
+                
+        return self.pendingCache.pop()[0]
     
     def pending(self):
         return (len(self.getPending())>0)
