@@ -5,6 +5,7 @@ class FutilLogger:
     
     def __init__(self, name='futil', level=logging.INFO):
         self.logger = logging.getLogger(name)
+        #todo: clear handlers
         self.hdlr = logging.FileHandler(name + '.log')
         formatter = logging.Formatter('%(asctime)s %(message)s')
         self.hdlr.setFormatter(formatter)
@@ -20,6 +21,6 @@ class FutilLogger:
     def warn(self, message):
         self.logger.warn('WARN: ' + message)
         
-    def __del__(self):
-        self.logger.removeHandler(self.hdlr)
-        self.hdlr.close() 
+#    def __del__(self):
+#        self.logger.removeHandler(self.hdlr)
+#        self.hdlr.close() 

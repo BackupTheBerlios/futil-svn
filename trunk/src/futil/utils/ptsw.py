@@ -13,7 +13,7 @@
 #        http://pingthesemanticweb.com/export/?type=foaf&serialization=all&ns=&domain=&timeframe=last_day&nbresults=0
 #
 
-import urllib2
+import urllib, urllib2
 import os
 from xml.dom import minidom
 from futil.utils.logger import FutilLogger
@@ -25,25 +25,35 @@ class PTSW:
     def __init__(self):
         self.rest = "http://pingthesemanticweb.com/rest/?url="
         self.pinged = 0
-        self.log = FutilLogger()
+        self.log = FutilLogger('futil-test')
 
     def ping(self, uri):
         try:
             import socket
             socket.setdefaulttimeout(TIMEOUT)
+            
             #TODO: 
-            # Problem with encoding. Try to use encodeurl
-            # response = urllib2.urlopen(urllib2.encodeurl(self.rest + uri)
-            response = urllib2.urlopen(self.rest + uri.replace(":", "%3A")).read()
-            #print response
+            # proxy: urllib2.ProxyHandler({})
+            
+            url = self.rest + urllib.quote(uri)
+            data = {}
+            headers = { 'User-Agent' : 'futil' }
+            request = urllib2.Request(url, data, headers)
+            response = urllib2.urlopen(request).read() #don't works the ping with especial URLs
             responseParsed = self.parseResponse(response)
+            
+            #todo: set stats
+            
             ok = (responseParsed['flerror'] == 0)
             if ok:
                 self.pinged += 1
                 self.log.info(uri+' pinged')
+            else:
+                self.log.error('error pinging ' + uri + ': ' + responseParsed['message'])
             return ok
-        except:
-            self.log.error('problem pinging ' + uri)
+        except Exception, details:
+            print str(details)
+            self.log.error('problem pinging ' + uri + ': ' + str(details))
             return False
 
     def parseResponse(self, response):
