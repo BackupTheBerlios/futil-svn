@@ -14,7 +14,7 @@ class TestPTSW(unittest.TestCase):
     def testPing(self):
         self.assertTrue(self.ptsw.ping("http://www.wikier.org/foaf.rdf#wikier"))
         
-    def testPingRaro(self):
+    def testPingSpecial(self):
         self.assertTrue(self.ptsw.ping("http://www.ecademy.com/module.php?mod=network&op=foafrdf&uid=42059"))
         
     def testParse(self):
