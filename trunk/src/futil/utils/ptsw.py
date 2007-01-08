@@ -85,12 +85,17 @@ class PTSW:
                 self.stats[key] += new[key]
     
     def printStats(self):
+        print '\n'
         print 'PingTheSemanticWeb wrapper stats:'
         for key in self.stats.keys():
             if (key!='pinged' and key!='flerror'):
                 print '\t- ' + key + ': ' + str(self.stats[key])
         print '\t- errors: ' + str(self.stats['flerror'])
         print '\t- TOTAL PINGED: ' + str(self.stats['pinged'])
+        print '\n'
         
         return self.stats['pinged']
+    
+    def __del__(self):
+        self.printStats()
     
