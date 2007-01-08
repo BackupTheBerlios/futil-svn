@@ -17,15 +17,18 @@ import urllib, urllib2
 import os
 from xml.dom import minidom
 from futil.utils.logger import FutilLogger
+from ConfigParser import ConfigParser
 
 TIMEOUT = 10
 
 class PTSW:
     
-    def __init__(self):
+    def __init__(self, config='.ptsw'):
         self.rest = "http://pingthesemanticweb.com/rest/?url="
-        self.log = FutilLogger('futil-test')
+        self.log = FutilLogger()
         self.stats = {'pinged':0, 'sioc':0, 'foaf':0, 'doap':0, 'owl':0, 'rdfs':0, 'rdf':0, 'flerror':0}
+        self.pathStats = config
+        self.loadStats()
 
     def ping(self, uri):
         try:
@@ -79,6 +82,45 @@ class PTSW:
         self.log.info(str(len(uris))+' parsed from ' + pinged)
         return uris
     
+    def loadStats(self):
+        if(os.path.exists(self.pathStats)):
+            config = ConfigParser()
+            try:
+                config.read(self.pathStats)
+                section = 'PTSW'    
+                
+                if (config.has_section(section)):
+                    for key in config.options(section):
+                        if self.stats.has_key(key):
+                            try:
+                                value = int(config.get(section, key))
+                            except:
+                                value = 0
+                            self.stats[key] = value     
+                else:
+                    print 'no'           
+            except:
+                self.log.error('parsing PTSW config file')
+        else:
+            self.log.info('no PTSW stats file founded')
+    
+    def saveStats(self):
+        section = 'PTSW'
+        ini = ConfigParser()
+        ini.add_section(section)
+
+        for key in self.stats.keys():
+            ini.set(section, key, str(self.stats[key]))
+                     
+        try:
+            file = open(self.pathStats, 'w+')
+            ini.write(file)
+            file.flush()
+            file.close()
+            self.log.info('PTSW stats saved in ' + self.pathStats)
+        except Exception, details:
+            self.log.error('saving PTSW stats in ' + self.pathStats + ': ' + str(details)) 
+    
     def setStats(self, new):
         for key in new.keys():
             if (key != 'message'):
@@ -93,9 +135,10 @@ class PTSW:
         print '\t- errors: ' + str(self.stats['flerror'])
         print '\t- TOTAL PINGED: ' + str(self.stats['pinged'])
         print '\n'
-        
         return self.stats['pinged']
     
     def __del__(self):
+        self.log.info(str(self.stats['pinged']) + ' pinged')
+        self.saveStats()
         self.printStats()
     

@@ -3,14 +3,13 @@ import logging
 
 class FutilLogger:
     
-    def __init__(self, name='futil', level=logging.INFO):
+    def __init__(self, name='futil'):
         self.logger = logging.getLogger(name)
-        self.clear()
+        #self.clear()
         self.hdlr = logging.FileHandler(name + '.log')
         formatter = logging.Formatter('%(asctime)s %(message)s')
         self.hdlr.setFormatter(formatter)
         self.logger.addHandler(self.hdlr)
-        self.logger.setLevel(level)
         
     def clear(self):
         handlers = self.logger.handlers
@@ -25,4 +24,7 @@ class FutilLogger:
         
     def warn(self, message):
         self.logger.warn('WARN: ' + message)
+        
+    def __del__(self):
+        self.clear()
 
