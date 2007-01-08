@@ -112,7 +112,7 @@ class PySQLiteWrapper:
         else:
             return False
         
-    def __del__(self):
+    def close(self):
         if (self.connection != None):
             self.connection.close()
 
