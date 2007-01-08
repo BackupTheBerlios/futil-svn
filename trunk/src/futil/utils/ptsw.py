@@ -137,7 +137,7 @@ class PTSW:
         print '\n'
         return self.stats['pinged']
     
-    def __del__(self):
+    def close(self):
         self.log.info(str(self.stats['pinged']) + ' pinged')
         self.saveStats()
         self.printStats()
