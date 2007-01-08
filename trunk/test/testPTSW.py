@@ -19,6 +19,10 @@ class TestPTSW(unittest.TestCase):
         
     def testParse(self):
         self.assertEquals(len(self.ptsw.parsePinged('data/ptsw-basic.xml')), 1)
+        
+    def tearDown(self):
+        #self.ptsw.printStats()
+        pass
 
 if __name__ == "__main__":
     unittest.main()

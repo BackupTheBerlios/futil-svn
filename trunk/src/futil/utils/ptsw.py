@@ -24,8 +24,8 @@ class PTSW:
     
     def __init__(self):
         self.rest = "http://pingthesemanticweb.com/rest/?url="
-        self.pinged = 0
         self.log = FutilLogger('futil-test')
+        self.stats = {'pinged':0, 'sioc':0, 'foaf':0, 'doap':0, 'owl':0, 'rdfs':0, 'rdf':0, 'flerror':0}
 
     def ping(self, uri):
         try:
@@ -42,11 +42,10 @@ class PTSW:
             response = urllib2.urlopen(request).read() #don't works the ping with especial URLs
             responseParsed = self.parseResponse(response)
             
-            #todo: set stats
-            
             ok = (responseParsed['flerror'] == 0)
+            self.setStats(responseParsed)
             if ok:
-                self.pinged += 1
+                self.stats['pinged'] += 1
                 self.log.info(uri+' pinged')
             else:
                 self.log.error('error pinging ' + uri + ': ' + responseParsed['message'])
@@ -80,6 +79,18 @@ class PTSW:
         self.log.info(str(len(uris))+' parsed from ' + pinged)
         return uris
     
-    def stats(self):
-        return str(self.pinged) + ' URIs pinged'
+    def setStats(self, new):
+        for key in new.keys():
+            if (key != 'message'):
+                self.stats[key] += new[key]
+    
+    def printStats(self):
+        print 'PingTheSemanticWeb wrapper stats:'
+        for key in self.stats.keys():
+            if (key!='pinged' and key!='flerror'):
+                print '\t- ' + key + ': ' + str(self.stats[key])
+        print '\t- errors: ' + str(self.stats['flerror'])
+        print '\t- TOTAL PINGED: ' + str(self.stats['pinged'])
+        
+        return self.stats['pinged']
     
