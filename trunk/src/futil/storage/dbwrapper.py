@@ -1,14 +1,13 @@
 #!/usr/bin/env python2.4
 # -*- coding: utf8 -*-
 
+import datetime
+
 class DBWrapper:
 
     def __init__(self):
         pass
-            
-    def createEmptyDB(self):
-        pass
-    
+
     def connect(self):
         pass
 
@@ -35,6 +34,10 @@ class DBWrapper:
     
     def pending(self):
         return True
+    
+    def todayDate(self):
+        date = datetime.date.today()
+        return str(date).replace("-", "")
         
     def close(self):
         pass

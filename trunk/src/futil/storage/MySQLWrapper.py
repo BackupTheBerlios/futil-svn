@@ -3,28 +3,22 @@
 
 import os
 from futil.storage.dbwrapper import DBWrapper
-from pysqlite2 import dbapi2 as sqlite
+import MySQLdb
 from futil.utils.logger import FutilLogger
 
 CACHE = 100
 
-class PySQLiteWrapper(DBWrapper):
+class MySQLWrapper(DBWrapper):
 
-    def __init__(self, path="foaf.db"):
-        self.path = path
+    def __init__(self, host='localhost', db='futil', user='futil', passwd='futil', table='foafs'):
+        self.data = { 'host':host, 'db':db, 'user':user, 'passwd':passwd, 'table':table}
         self.connection = None
-        if (not os.path.exists(self.path)):
-            self.createEmptyDB()
         self.log = FutilLogger()
         self.pendingCache = []
-            
-    def createEmptyDB(self):
-        (con, cur) = self.connect()
-        cur.execute("CREATE TABLE foafs (uri TEXT PRIMARY KEY, visited BOOL, date TEXT)")
-        con.commit()
 
     def realConnect(self):
-        return sqlite.connect(self.path)
+        return MySQLdb.connect(host=self.data['host'], db=self.data['db'],
+                               user=self.data['user'], passwd=self.data['passwd']) 
     
     def connect(self):
         if (self.connection==None):
@@ -33,39 +27,35 @@ class PySQLiteWrapper(DBWrapper):
 
     def query(self, uri):
         con, cur = self.connect()
-        query = "SELECT uri FROM foafs WHERE uri =?"
-        cur.execute(query, (uri,))
+        query = "SELECT uri FROM `"+self.data['table']+"` WHERE uri='"+uri+"';"
+        cur.execute(query)
         return cur.fetchall()
 
     def insert(self, uri, visited=False):
         if not self.exists(uri):
+            visited = int(visited)
             date = self.todayDate()
             (con, cur) = self.connect()
-            query = """
-                        INSERT INTO foafs(uri, visited, date)
-                        VALUES ('%s','%s','%s')
-                    """ % (uri, visited, date)
+            query = "INSERT INTO `"+self.data['table']+"` (uri, visited, date) VALUES ('"+uri+"',"+str(visited)+","+date+")"
             try:
                 cur.execute(query)
-                con.commit()
                 return True
-            except:
-                self.log.info('Error inserting: ' + uri)
+            except AssertionError, details:
+                self.log.error('Error inserting ' + uri + ': ' + str(details))
                 return False
         else:
-            self.log.info('Error: ' + uri + ' already exists on db')
+            self.log.warn('Error: ' + uri + ' already exists on db')
             return False
             
     def visit(self, uri):
         if self.exists(uri):
             date = self.todayDate()
             (con, cur) = self.connect()
-            query = "UPDATE foafs SET visited='True', date='" + date + "' WHERE uri='" + uri + "'"
+            query = "UPDATE `" + self.data['table'] + "` SET visited=1, date='" + date + "' WHERE uri='" + uri + "'"
             cur.execute(query)
-            con.commit()
             return True
         else:
-            self.log.info('Error: ' + uri + ' not exists on db')
+            self.log.error('Error: ' + uri + ' not exists on db')
             return False
 
     def exists(self, uri):
@@ -73,19 +63,20 @@ class PySQLiteWrapper(DBWrapper):
     
     def visited(self, uri):
         con, cur = self.connect()
-        query = "SELECT visited FROM foafs WHERE uri =?"
-        cur.execute(query, (uri,))
+        query = "SELECT visited FROM `"+self.data['table']+"` WHERE uri ='" + uri + "' AND visited=1"
+        cur.execute(query)
         result = cur.fetchall()
-        if (len(result)>0):
-            return self.str2bool(result[0])
-        else:
-            return False
+        return (len(result)>0)
         
     def getPending(self):
         con, cur = self.connect()
-        query = "SELECT uri FROM foafs WHERE visited='False'"
+        query = "SELECT uri FROM `"+self.data['table']+"` WHERE visited=0"
         cur.execute(query)
-        return cur.fetchall()
+        results = []
+        for result in cur.fetchall():
+            results.append(result)
+        return results
+        
     
     def getNextPending(self):
         if (len(self.pendingCache) == 0):
@@ -96,17 +87,16 @@ class PySQLiteWrapper(DBWrapper):
                 self.pendingCache = pending[:CACHE]
             else:
                 self.pendingCache = pending
-                
+            
         return self.pendingCache.pop()[0]
     
     def pending(self):
         return (len(self.getPending())>0)
     
-    def str2bool(self, query):
-        if (query[0] == 'True'):
-            return True
-        else:
-            return False
+    def clean(self):
+        con, cur = self.connect()
+        query = "delete from `" + self.data['table'] + "`;"
+        cur.execute(query)
         
     def close(self):
         if (self.connection != None):

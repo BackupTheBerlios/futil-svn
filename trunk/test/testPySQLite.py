@@ -30,7 +30,7 @@ class TestPySQLite(unittest.TestCase):
         self.pysqlite.insert(FOAF)
         self.assertTrue(self.pysqlite.pending())
         
-    def testPending(self):
+    def testPendingOne(self):
         self.pysqlite.insert(FOAF)
         self.assertEqual(self.pysqlite.getNextPending(), FOAF)
         
