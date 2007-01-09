@@ -6,7 +6,7 @@ class FutilLogger:
     def __init__(self, name='futil'):
         self.logger = logging.getLogger(name)
         self.clear()
-        self.hdlr = logging.FileHandler(name + '.log')
+        self.hdlr = logging.FileHandler('log/' + name + '.log')
         formatter = logging.Formatter('%(asctime)s %(message)s')
         self.hdlr.setFormatter(formatter)
         self.logger.addHandler(self.hdlr)
