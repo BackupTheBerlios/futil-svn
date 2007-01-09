@@ -2,13 +2,14 @@
 # -*- coding: utf8 -*-
 
 import os
+from futil.storage.dbwrapper import DBWrapper
 from pysqlite2 import dbapi2 as sqlite
 import datetime
 from futil.utils.logger import FutilLogger
 
 CACHE = 100
 
-class PySQLiteWrapper:
+class PySQLiteWrapper(DBWrapper):
 
     def __init__(self, path="foaf.db"):
         self.path = path
