@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:bio="http://purl.org/vocab/bio/0.1/"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+        xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <foaf:PersonalProfileDocument rdf:about="">
+    <dc:title>FoaF Document for inkel</dc:title>
+    <dc:description>Friend-of-a-Friend description of inkel</dc:description>
+    <foaf:topic rdf:resource="#me"/>
+    <foaf:maker rdf:resource="#me"/>
+  </foaf:PersonalProfileDocument>
+
+<foaf:Person rdf:ID="me">
+    <owl:sameAs rdf:resource="http://my.opera.com/inkel/xml/foaf#inkel-" />
+  <foaf:homepage rdf:resource="http://my.opera.com/inkel/" />
+  <foaf:mbox_sha1sum>db161c28da4ac9c8b284ba9a146b09e3899554d5</foaf:mbox_sha1sum>
+  <foaf:nick>inkel</foaf:nick>
+<foaf:jabberID>inkel@neosmt.com</foaf:jabberID>
+<foaf:icqChatID>68476573</foaf:icqChatID>
+<foaf:msnChatID>inkel.ar@gmail.com</foaf:msnChatID>
+<foaf:yahooChatID>inkel_rss</foaf:yahooChatID>
+<foaf:gender>male</foaf:gender>
+<bio:event>
+    <bio:Birth>
+      <bio:date>1978-07-16</bio:date>
+    </bio:Birth>
+  </bio:event>
+<foaf:nick>inkel</foaf:nick>
+  <rdfs:seeAlso rdf:resource="http://f14web.com.ar/inkel/rdf/foaf/inkel.xrdf"/>
+  <foaf:img rdf:resource="http://my.opera.com/inkel/picture.pl" />
+  <foaf:depiction rdf:resource="http://my.opera.com/inkel/picture.pl" />
+  <foaf:weblog rdf:resource="http://my.opera.com/inkel/blog/" />
+  <foaf:knows rdf:resource="http://my.opera.com/chaals/xml/foaf#me"/>
+</foaf:Person>
+    <foaf:Person  rdf:about="http://my.opera.com/chaals/xml/foaf#me">
+<foaf:name>Charles McCathieNevile</foaf:name>
+      <foaf:homepage rdf:resource="http://my.opera.com/chaals/" />
+      <rdfs:seeAlso rdf:resource="http://my.opera.com/chaals/xml/foaf" />
+      <foaf:mbox_sha1sum>7c373b50b2b3cb71cf73946aefdcd64f03c30772</foaf:mbox_sha1sum>
+    </foaf:Person>
+</rdf:RDF>

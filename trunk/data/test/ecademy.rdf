@@ -1,0 +1,2452 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- generator="Ecademy" -->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bio="http://purl.org/vocab/bio/0.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:admin="http://webns.net/mvcb/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:ecademy="http://www.ecademy.com/namespace/">
+
+  <foaf:PersonalProfileDocument rdf:about="">
+    <foaf:primaryTopic rdf:nodeID="_39305"/>
+    <foaf:maker rdf:nodeID="_39305"/>
+    <dc:title>FOAF for Debbie Tarrier at Ecademy</dc:title>
+    <dc:description>Ecademy Friend-of-a-Friend description for Debbie Tarrier</dc:description>
+    <admin:generatorAgent rdf:resource="http://www.ecademy.com"/>
+    <admin:errorReportsTo rdf:resource="mailto:webmaster@ecademy.com"/>
+  </foaf:PersonalProfileDocument>
+
+  <foaf:Person rdf:nodeID="_39305">
+    <foaf:name>Debbie Tarrier</foaf:name>
+    <foaf:title>Ms</foaf:title>
+    <foaf:firstName>Debbie</foaf:firstName>
+    <foaf:surname>Tarrier</foaf:surname>
+    <foaf:nick>Debs Tarrier</foaf:nick>
+    <foaf:mbox_sha1sum>d1c29956cac7a2b4ac5e48e387452d6c61df1f61</foaf:mbox_sha1sum>
+    <foaf:Organization>Focus International Property</foaf:Organization>
+
+    <foaf:based_near>
+      <geo:Point geo:lat="51.775" geo:long="-0.234959"/>
+    </foaf:based_near>
+
+    <vCard:ADR rdf:parseType="Resource">
+      <vCard:Locality>Hatfield</vCard:Locality>
+      <vCard:Region>Herts</vCard:Region>
+      <vCard:Country>UK</vCard:Country>
+    </vCard:ADR>
+
+    <foaf:homepage dc:title="Ecademy Profile Page" rdf:resource="http://www.ecademy.com/account.php?sha=d1c29956cac7a2b4ac5e48e387452d6c61df1f61"/>
+    <foaf:weblog dc:title="Ecademy Weblog" rdf:resource="http://www.ecademy.com/module.php?mod=blog&amp;op=view&amp;uid=39305"/>
+    <foaf:workplaceHomepage dc:title="Focus International Property" rdf:resource="http://www.fintp.com/1313"/>
+    <foaf:img rdf:resource="http://www.ecademy.com/images/photo/39305.jpg"/>
+    <bio:keywords>,BlackStar,STAR,MAD,Club,Nieces,Family,Dolphins,Filmmaking,Films,Movies,Media,Beach,Sea,Scuba,Contradiction,Quirky,Vibrant,Passion,Effervescent,Mischief,Environment,Nature,Optimistic,Misfit,FUN,People,Water,Champagne,Writing,Voiceovers,Narrating,Presenting,Acting,Boats,Countryside,Gym,Positive,Tigger,Telecoms,Property,Spain,Bulgaria,Portugal,Turkey,Crete,Cyprus,Barbados,Dominican,Republic,Investment,Core,Process,Lifting,Spirits,</bio:keywords>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_72666">
+        <foaf:name>!NSPIREDelivery Rory Murray</foaf:name>
+        <foaf:mbox_sha1sum>7c2c77df64d0b5dfe1d26a28ea15701ab78f8bdb</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=72666"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>21</ecademy:numberOfMessages>
+      <ecademy:testimonial><![CDATA[Once met, never forgotten!  In the very best way.  You know exactly what's what with Rory, certainly no grey areas, not even the hair!
+Despite fact we've only met twice so far, Rory makes a huge positive impact and I'm looking forward to getting to know him better, although already count him as a highly trusted friend.]]></ecademy:testimonial>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_87829">
+        <foaf:name>" Acquisitions" Fons De Lie</foaf:name>
+        <foaf:mbox_sha1sum>9523013caf4ddfb9b14724f00e21db2cadaaa533</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=87829"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_41738">
+        <foaf:name>" Michael McNulty"</foaf:name>
+        <foaf:mbox_sha1sum>291975d8647ad22560c4ea110723e1016d037314</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=41738"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>96</ecademy:numberOfMessages>
+      <ecademy:testimonial><![CDATA[Yikes, I can't believe I've overlooked writing a testimonial for Mike this long!
+I put it down to the fact that since meeting Mike, I feel like I've known him a very long time, in a good way of course and I hope it will be a lifelong friendship!  :)
+Mike is a bit of an enigma at times, however I believe that adds to the presence he has (agree with Penny there) and his excellent balance of calm and fun ranks him high in my top Ecademists.
+Connect with Mike and greatly enrich your network.]]></ecademy:testimonial>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_64103">
+        <foaf:name>" Neil Urquhart</foaf:name>
+        <foaf:mbox_sha1sum>472d287948d8979d8ba23ca3498bfc61db578315</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=64103"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_102676">
+        <foaf:name>" Niche Matchmaker" Irene Tomoe Warner</foaf:name>
+        <foaf:mbox_sha1sum>581f3e88cf4abf54494418fb2f6abe00b4a39870</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=102676"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>10</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_75120">
+        <foaf:name>""Mark Eaton</foaf:name>
+        <foaf:mbox_sha1sum>0e0b8948640cd1e1a45309a65743bc98199d2219</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=75120"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>9</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_93213">
+        <foaf:name>"Corporate Event UK" Robert Salter</foaf:name>
+        <foaf:mbox_sha1sum>2ccae385cfcb3f126e1a309f9029bfde4bd6e660</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=93213"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_93363">
+        <foaf:name>"Forensic Freddie" Mike Gordon</foaf:name>
+        <foaf:mbox_sha1sum>c140c402241a26c361e512ae92318119dee8fec1</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=93363"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>59</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_90022">
+        <foaf:name>"Marketing Advice" Fraser  Hay</foaf:name>
+        <foaf:mbox_sha1sum>ca17584c9e3fc7666c627fdf091f66404bf2b1a2</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=90022"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>65</ecademy:numberOfMessages>
+      <ecademy:testimonial><![CDATA[Light blue touchpaper and stand well back... heeeeeeere's FRASER!
+
+Fraser is a dynamo, absolutely bursting with energy.  Not sure what's in the water North of Aberdeen but I want some!  He's also scary... in that he has the ability to scare you out of complacency & lethargy, into taking action, not because you feel you should but because you want to.
+
+Fraser is also genuine, down to Earth, great fun to be with and gives great boogie! ;)
+
+A pleasure to know, your life needs Fraser in it.  'If' there is a downside anywhere in this, it's that his popularity makes it near impossible to spend time in his company, which is a damn shame.
+RED HAND GANG YEH!  Debs x
+
+]]></ecademy:testimonial>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_91327">
+        <foaf:name>"Personal Growth" Diane Corriette</foaf:name>
+        <foaf:mbox_sha1sum>c85d48943781b9c4c76be96b171ca7f0eae20d65</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=91327"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_42726">
+        <foaf:name>'Sales Guru' Shaz Quereshi</foaf:name>
+        <foaf:mbox_sha1sum>182890317589aa7dc8c2b443ba5cf74dc523e6fb</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=42726"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>10</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_30853">
+        <foaf:name>Abdul Rauf Parkar</foaf:name>
+        <foaf:mbox_sha1sum>52ba79e35b0e06faf8882831ba9e38fbdc2b8737</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=30853"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_118031">
+        <foaf:name>Adam Davis</foaf:name>
+        <foaf:mbox_sha1sum>f5320e3bf882e388370e394c4e733db17bf1ef61</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=118031"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_56963">
+        <foaf:name>Adam Eason</foaf:name>
+        <foaf:mbox_sha1sum>9baac9230d55d985ac6490da30127aa1a9d1764a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=56963"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_90018">
+        <foaf:name>Adam Farr</foaf:name>
+        <foaf:mbox_sha1sum>146993a8195b835f7dfdc61f453d05553749e9a6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=90018"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_93402">
+        <foaf:name>Adrian Kidd</foaf:name>
+        <foaf:mbox_sha1sum>3826382a70206f8ce22c2166e96a74ebfbcaca66</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=93402"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_45031">
+        <foaf:name>Aidan Murphy</foaf:name>
+        <foaf:mbox_sha1sum>992dcb543213bb67ec34d9c091938b0fe55c1e51</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=45031"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_50200">
+        <foaf:name>Ajay Sanghani</foaf:name>
+        <foaf:mbox_sha1sum>2aedcc5cedc746b5e721c1de46e87af5573e7a53</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=50200"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_42797">
+        <foaf:name>Akhil Shahani</foaf:name>
+        <foaf:mbox_sha1sum>faa47ce59c2a112f71c5a3e8c96c49d9c4627dc6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=42797"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_133647">
+        <foaf:name>Alex "Mobile Messaging" Kinch</foaf:name>
+        <foaf:mbox_sha1sum>9c3d66120ce2a21d8b686778f02fdfedb28f153e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=133647"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_95979">
+        <foaf:name>Alexander Dort - socialBC.com</foaf:name>
+        <foaf:mbox_sha1sum>6e258a5016dd9b01a64497a97304c585a5e3af60</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=95979"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_136945">
+        <foaf:name>Altaf A. Soomro</foaf:name>
+        <foaf:mbox_sha1sum>d373f058386da5e52b0012aa858dfa9ffa43101c</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=136945"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_132500">
+        <foaf:name>Andrew Coates</foaf:name>
+        <foaf:mbox_sha1sum>95515e12a96244b5a1914d7abd35f3d92199a945</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=132500"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_40062">
+        <foaf:name>Andrew Horder</foaf:name>
+        <foaf:mbox_sha1sum>e8eefa08bdb52ccb57e5fcf801f9defa3e26f992</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=40062"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_31613">
+        <foaf:name>Andrew Shaw</foaf:name>
+        <foaf:mbox_sha1sum>991ececc62ff86b511228cf8b7353868dbbb6f15</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=31613"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_22071">
+        <foaf:name>Andrew Widgery</foaf:name>
+        <foaf:mbox_sha1sum>02ffaaf84ea1f5f6e135fad51925692ea3b96497</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=22071"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>9</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_45995">
+        <foaf:name>Andrew Wilcox</foaf:name>
+        <foaf:mbox_sha1sum>ff0b6d8b595c6dc0eccb27fcf5f714473ae69915</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=45995"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_102936">
+        <foaf:name>Andrew Winterbottom</foaf:name>
+        <foaf:mbox_sha1sum>7f063e3e0c5f9e3c21dec6d17fb67f162e96ccd9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=102936"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>14</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_78449">
+        <foaf:name>Andria Smith</foaf:name>
+        <foaf:mbox_sha1sum>123f55921edc588c6803fbcff2494cc51c06d97f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=78449"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_38581">
+        <foaf:name>Andy Coote</foaf:name>
+        <foaf:mbox_sha1sum>683a30b09561c8ee03a22899a1d4b4c053001928</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=38581"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_82060">
+        <foaf:name>Andy Fairweather</foaf:name>
+        <foaf:mbox_sha1sum>d832a4ded848e1cc3d0f43b465bab60350183c33</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=82060"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>15</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_72869">
+        <foaf:name>Ann Andrews</foaf:name>
+        <foaf:mbox_sha1sum>56fb6cad045466ae3ecad3b4196a8fb147863a02</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=72869"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_84019">
+        <foaf:name>Ann Moore</foaf:name>
+        <foaf:mbox_sha1sum>ae084db26463a22f5d6980c12302a110f3013139</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=84019"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_72492">
+        <foaf:name>Anthony Meadows</foaf:name>
+        <foaf:mbox_sha1sum>1a03611d3e0fd8686dce75c61669894b7d4b991d</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=72492"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_11901">
+        <foaf:name>Antonio "Mr Sales" Falco</foaf:name>
+        <foaf:mbox_sha1sum>089c8ce54d64394297514c466dc2f2430b330f47</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=11901"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_44736">
+        <foaf:name>Are Casilla</foaf:name>
+        <foaf:mbox_sha1sum>b6c99f873a50e4dbdc7f2bf160153f6f6596d580</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=44736"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_56705">
+        <foaf:name>Asato Ohno &amp;#22823;&amp;#37326; &amp;#40635;&amp;#20154;</foaf:name>
+        <foaf:mbox_sha1sum>59cacbd7db0ba6430e2987d995a35c0609e9f5e6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=56705"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_65773">
+        <foaf:name>Ashley Blackmore</foaf:name>
+        <foaf:mbox_sha1sum>a54f27c14d4a70c73d98232389927744fe8781d4</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=65773"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_46517">
+        <foaf:name>Barbara Adams</foaf:name>
+        <foaf:mbox_sha1sum>997bbbfee4ce938d3658b91c3902a0407d65384d</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=46517"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_72172">
+        <foaf:name>Barbara Hofmeister</foaf:name>
+        <foaf:mbox_sha1sum>836a6c82d7fe579caa2232d9c8aa12e63846b135</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=72172"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_28719">
+        <foaf:name>Barbara Saul</foaf:name>
+        <foaf:mbox_sha1sum>67f838c91f8c9f7814d48f900c40beb3f39e4d2a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=28719"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>11</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_94089">
+        <foaf:name>Becky Hassler</foaf:name>
+        <foaf:mbox_sha1sum>96cb9d68bf73e640a18b0e83ad33a12289b2b366</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=94089"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_65151">
+        <foaf:name>Bert VERDONCK</foaf:name>
+        <foaf:mbox_sha1sum>3707de7ca8f0f2ce4fc93f373013af7d2964434a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=65151"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_88409">
+        <foaf:name>Bijay Rajnikantt Shah</foaf:name>
+        <foaf:mbox_sha1sum>b62a4d86992f8769980bb50d31d09076393da661</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=88409"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_42441">
+        <foaf:name>Bjørn Guldager</foaf:name>
+        <foaf:mbox_sha1sum>b73abc99a82f37cbc9e55a37bc31ed4c2fd28e78</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=42441"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_102570">
+        <foaf:name>Bob Apollo</foaf:name>
+        <foaf:mbox_sha1sum>239c5227654301bef85fe9723f2687cc2b306db1</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=102570"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_72139">
+        <foaf:name>Bob (Communication Internal) Hayward</foaf:name>
+        <foaf:mbox_sha1sum>3b2a4da60a91c78c6691c0481e6f09101070e81a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=72139"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_29799">
+        <foaf:name>Brian Chernett</foaf:name>
+        <foaf:mbox_sha1sum>47df4641ad9b1f549fc2f0c4bcb0942575582f49</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=29799"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_87116">
+        <foaf:name>Brian Marcel</foaf:name>
+        <foaf:mbox_sha1sum>8a154cf4a70529ca8fb9a634523b7e62bff23c9e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=87116"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_58124">
+        <foaf:name>Bryan Barrow</foaf:name>
+        <foaf:mbox_sha1sum>699be21ec9f2f0c4328de52da3ea781f1df03424</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=58124"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>19</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_48140">
+        <foaf:name>Bunterng Ongvilawan</foaf:name>
+        <foaf:mbox_sha1sum>66fecc144e44cef996dc9ddd3fe037451cc8f2e6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=48140"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_108952">
+        <foaf:name>Carmen Norman</foaf:name>
+        <foaf:mbox_sha1sum>5fa42af2718684a86ca2d14e54c1bce6d8eda72d</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=108952"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_61807">
+        <foaf:name>Cathy Rhodes</foaf:name>
+        <foaf:mbox_sha1sum>b5062bd23745aca2d155529b8f07abd029bcbd37</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=61807"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>14</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_90597">
+        <foaf:name>Cheryl(mortgageguru) Fisher</foaf:name>
+        <foaf:mbox_sha1sum>8d71b22fd5236a498074d014e518c9ee9e171c63</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=90597"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>9</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_41392">
+        <foaf:name>Chris Bose</foaf:name>
+        <foaf:mbox_sha1sum>f7ca2521bc1db76e9d87a66da50496501248e842</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=41392"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_24219">
+        <foaf:name>Chris McHugo</foaf:name>
+        <foaf:mbox_sha1sum>9dea79b00b6ec8cd8eb322b9122c33b611bd605e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=24219"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_85558">
+        <foaf:name>Chris Mitchell</foaf:name>
+        <foaf:mbox_sha1sum>c96035dcdbed04701c14007876adada93792d11f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=85558"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_72022">
+        <foaf:name>Chris Street</foaf:name>
+        <foaf:mbox_sha1sum>661afda0ba31c97ca4d9db7e4372c13cbd5e34ad</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=72022"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>9</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_45550">
+        <foaf:name>Christine Miller</foaf:name>
+        <foaf:mbox_sha1sum>d46a1381c44ae6260b0a3f6faba1b1fb659a887f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=45550"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_102864">
+        <foaf:name>Christophe Poizat</foaf:name>
+        <foaf:mbox_sha1sum>2470197652e4e73bc1f98e5a8406098efc101bcd</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=102864"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>9</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_72988">
+        <foaf:name>Ciarán Fenton</foaf:name>
+        <foaf:mbox_sha1sum>8bce0881cf236c4471104bb6daec97d44c08364b</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=72988"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_96743">
+        <foaf:name>Claudie Plen</foaf:name>
+        <foaf:mbox_sha1sum>856bd85e58b05d01b72bbf3aba42deacb5ca1b45</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=96743"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_62675">
+        <foaf:name>Clive Taylor</foaf:name>
+        <foaf:mbox_sha1sum>0d51adbf7ab9b329d6404bf064ff1dc16b41bcd4</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=62675"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_47355">
+        <foaf:name>Colin Flynn</foaf:name>
+        <foaf:mbox_sha1sum>281c8def01baa4d65896a614dac75b6a69c75c8b</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=47355"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_69860">
+        <foaf:name>Colin Mansell</foaf:name>
+        <foaf:mbox_sha1sum>e460900c1619ed443313acb21c08938cb0e07e34</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=69860"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>9</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_29669">
+        <foaf:name>Colin "Mr Proactive Accountant" Davison</foaf:name>
+        <foaf:mbox_sha1sum>053d2e673788ccdf4969cc36eae014f29da8926f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=29669"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_111581">
+        <foaf:name>Daniel Priestley</foaf:name>
+        <foaf:mbox_sha1sum>2ae00eac747af847db623fd263be124ce8a76b36</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=111581"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_42737">
+        <foaf:name>Dave Clarke</foaf:name>
+        <foaf:mbox_sha1sum>bbbd6137006989d7060b1eda322a6360c7c86264</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=42737"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>19</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_100265">
+        <foaf:name>Dave Gold</foaf:name>
+        <foaf:mbox_sha1sum>73da8f017ade2abd3a0e46bc381171dee01f810e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=100265"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>16</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_39744">
+        <foaf:name>David Peregrine-Jones</foaf:name>
+        <foaf:mbox_sha1sum>8a8e68d26d7882758f810066ad67bee78c984b48</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=39744"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_100548">
+        <foaf:name>David Tragen</foaf:name>
+        <foaf:mbox_sha1sum>9fa206c0781a8b29f25ef2123a79ed69921e5153</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=100548"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_24596">
+        <foaf:name>Dawn Charles</foaf:name>
+        <foaf:mbox_sha1sum>84bc2527869a1f707f441c82b6fbb01b02a57f26</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=24596"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>14</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_90992">
+        <foaf:name>Deanna Derbyshire</foaf:name>
+        <foaf:mbox_sha1sum>db49d8d96438b51aa19547392b0fada823f076c9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=90992"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_70532">
+        <foaf:name>Debbie Neville</foaf:name>
+        <foaf:mbox_sha1sum>bca22b9484bf5d804c130ba2d4e7986ed0a81ff0</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=70532"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_49738">
+        <foaf:name>Dennis T G Tan</foaf:name>
+        <foaf:mbox_sha1sum>52619a351c9226bce4bcd54955ed584d472603c3</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=49738"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_82593">
+        <foaf:name>Derek Watkins</foaf:name>
+        <foaf:mbox_sha1sum>15eaec2207fd5fb86c3acf84b94ac0e9136c11a0</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=82593"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>13</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_123520">
+        <foaf:name>Diane Hoggarth</foaf:name>
+        <foaf:mbox_sha1sum>3477d224fa211b911e64fd48183711c26fef7106</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=123520"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_104916">
+        <foaf:name>dianne J brabham</foaf:name>
+        <foaf:mbox_sha1sum>0280c70acc5368bbbdbbba70d7b42fab16434b20</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=104916"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_65019">
+        <foaf:name>Don Smith</foaf:name>
+        <foaf:mbox_sha1sum>a4ef663e4637a8aa10817758683518b6b792bac4</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=65019"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_96300">
+        <foaf:name>Dylan "DQ" Jones</foaf:name>
+        <foaf:mbox_sha1sum>1671be7008a634260f3d978f17b815580c87c0ac</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=96300"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_78945">
+        <foaf:name>Elaine Gold</foaf:name>
+        <foaf:mbox_sha1sum>33fca357ef1be7ff0b7b26cb6cced9fc64227f60</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=78945"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>67</ecademy:numberOfMessages>
+      <ecademy:testimonial><![CDATA[Calm, kind hearted, a good listener... although regular car sharing means she doesn't have much choice!  ;)
+
+Elaine is someone you instantly warm to and could rely on to remain calm in a crisis.  I hope I never have reason to test that theory but I'd cetainly want her in my corner!
+
+The more I get to know Elaine, the more I'm glad to have her as a trusted friend.  Connect with her, you can only benefit.  
+
+]]></ecademy:testimonial>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_34696">
+        <foaf:name>Ellis Pratt (Technical Authors)</foaf:name>
+        <foaf:mbox_sha1sum>5a7f05edad779af7ba969f9c470815bb6e94b4a5</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=34696"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_136939">
+        <foaf:name>elroy smith</foaf:name>
+        <foaf:mbox_sha1sum>91803fabef37e148ae2c2ab55dda96042e886af3</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=136939"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_44927">
+        <foaf:name>Emma Bird</foaf:name>
+        <foaf:mbox_sha1sum>bdabb9868ca5aa237d49758accdc5367c217075e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=44927"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_71240">
+        <foaf:name>Emma James</foaf:name>
+        <foaf:mbox_sha1sum>fdb24006f9696930102d0a06e6208d8577d09d1f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=71240"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_88603">
+        <foaf:name>Eric Hearn</foaf:name>
+        <foaf:mbox_sha1sum>88959e91dbfa608589f03724328cfa1ac92f3242</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=88603"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>10</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_115057">
+        <foaf:name>Euan Amos</foaf:name>
+        <foaf:mbox_sha1sum>14ab9891d42d245df31fb636de5783f65d01393a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=115057"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_17666">
+        <foaf:name>Eva 'Gadget Girl' Davies</foaf:name>
+        <foaf:mbox_sha1sum>b6ea04eb64b43169ce64baa2a38841795c8c6da5</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=17666"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_97314">
+        <foaf:name>Faisal Khilji</foaf:name>
+        <foaf:mbox_sha1sum>511f2f2e71a8aa8a252eb53846622e781d05de4c</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=97314"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_75372">
+        <foaf:name>Filip Hamerlinck</foaf:name>
+        <foaf:mbox_sha1sum>5b67de2bf363d74f1e341be045b9f8c6cc4c791d</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=75372"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_86112">
+        <foaf:name>Filip Roeckens</foaf:name>
+        <foaf:mbox_sha1sum>0435b65555df2010bc4c946b8652fd9c1834a1cb</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=86112"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_98607">
+        <foaf:name>Francesca Albini</foaf:name>
+        <foaf:mbox_sha1sum>d3f061e3f08181b04e853eff60e7f70ce3279af1</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=98607"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_40008">
+        <foaf:name>Frank D. Kanu</foaf:name>
+        <foaf:mbox_sha1sum>26c807d4a17e69a018779676adf362a0085a170c</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=40008"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_113481">
+        <foaf:name>Fred Plimley</foaf:name>
+        <foaf:mbox_sha1sum>fbc9f69b20fbf7e02d51399fb06f992a771bbd5f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=113481"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_89801">
+        <foaf:name>Freddy Daems</foaf:name>
+        <foaf:mbox_sha1sum>7ec9a6345894fa80f5119f0f7dcfa19a8a95dfd5</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=89801"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_67752">
+        <foaf:name>Gaelle Roche</foaf:name>
+        <foaf:mbox_sha1sum>19fc86291b9fb3dfe7906db154034e82b04b5003</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=67752"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_50308">
+        <foaf:name>Geert CONARD</foaf:name>
+        <foaf:mbox_sha1sum>ddc18ce5e4b4455e6c6a6c3b8b34f6bd45faa268</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=50308"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_2">
+        <foaf:name>Glenn Watkins</foaf:name>
+        <foaf:mbox_sha1sum>5e02fc757e7698b89ef1248487479c4f3c9dbaf6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=2"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>10</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_93406">
+        <foaf:name>Goran Askeljung</foaf:name>
+        <foaf:mbox_sha1sum>683afbd9b00e7ba4c366a821fa53246e954411a0</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=93406"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_86727">
+        <foaf:name>Gordon Robb</foaf:name>
+        <foaf:mbox_sha1sum>089f9bbdf61cbddda855185b8b270025dc52e852</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=86727"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_23659">
+        <foaf:name>Graham Hill</foaf:name>
+        <foaf:mbox_sha1sum>9ebfa28dc91ce60ffb7d9e0b321ba95a12f3146f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=23659"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_101509">
+        <foaf:name>Graham Wadsworth</foaf:name>
+        <foaf:mbox_sha1sum>94a51c6d1bbdea42e4733ecfab3605abf430b358</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=101509"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>8</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_89938">
+        <foaf:name>Guy "Internet Video" Massey</foaf:name>
+        <foaf:mbox_sha1sum>f8bb750a5ba92d0248c0bfb34a969ebc17a2b4ed</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=89938"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>147</ecademy:numberOfMessages>
+      <ecademy:testimonial><![CDATA[On first meeting, quickly feels like have known for yonks!  Great company!
+Debs]]></ecademy:testimonial>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_132926">
+        <foaf:name>Haider Ali</foaf:name>
+        <foaf:mbox_sha1sum>602cab056bbd336cbba03ea5fe5ceebc239888fa</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=132926"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_38893">
+        <foaf:name>Hardeep Singh</foaf:name>
+        <foaf:mbox_sha1sum>5e7e154360328a06c789172fcc516582fa3e7a64</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=38893"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_31235">
+        <foaf:name>Harry "The Doc" Rowe</foaf:name>
+        <foaf:mbox_sha1sum>f54b82e9beb6eaa5db11aeb4b82fc47656ffeed5</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=31235"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_75305">
+        <foaf:name>Harun (The Persuader) Rabbani</foaf:name>
+        <foaf:mbox_sha1sum>60ee50bb13859eebc9b1c06f1b2eaf7cef2054ef</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=75305"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>8</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_71729">
+        <foaf:name>Heather-Jane Sears</foaf:name>
+        <foaf:mbox_sha1sum>fdcce6aacef94956404cc6cc047f8e841f92dfe8</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=71729"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>8</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_118678">
+        <foaf:name>Heidi Heyns</foaf:name>
+        <foaf:mbox_sha1sum>fafa8c1146641b4d4c686cda428dda0a672645f5</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=118678"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_31124">
+        <foaf:name>Hélder Falcão</foaf:name>
+        <foaf:mbox_sha1sum>18771dabfce7d520f83214b6c626177831bb7d10</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=31124"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_90585">
+        <foaf:name>Helen Mays</foaf:name>
+        <foaf:mbox_sha1sum>b9b7469e1a8c81d62268779cb6b281cbe7147dcd</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=90585"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_65424">
+        <foaf:name>Henry Faktor</foaf:name>
+        <foaf:mbox_sha1sum>3d1bd5cbd7e16ba4ebf3fd1f95983f19538048f9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=65424"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_58196">
+        <foaf:name>Henry Lu</foaf:name>
+        <foaf:mbox_sha1sum>bf76b58fbc2124c1f1d6b75f31a4fcecabf5e8f6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=58196"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_35224">
+        <foaf:name>Howard Bryant</foaf:name>
+        <foaf:mbox_sha1sum>c5cf58bb43d7e104b62651fe093936ab860a4ec3</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=35224"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_73119">
+        <foaf:name>Ian MacMillan</foaf:name>
+        <foaf:mbox_sha1sum>0f53e7d19650de610cae6dd710995396c7c0978a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=73119"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_70820">
+        <foaf:name>Ivan Misner</foaf:name>
+        <foaf:mbox_sha1sum>ec729578f465aff791f80cdf3d6850898a89fd34</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=70820"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_93052">
+        <foaf:name>J William (Bill) Moore</foaf:name>
+        <foaf:mbox_sha1sum>c173e7034a2efa977e147203e83797612741df37</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=93052"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_98049">
+        <foaf:name>Jack Richardson</foaf:name>
+        <foaf:mbox_sha1sum>120bb1f43268faddcf4c1e5263a7b35f40cf17ce</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=98049"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_105919">
+        <foaf:name>Jamie 'Animator' Denham</foaf:name>
+        <foaf:mbox_sha1sum>87271123fe6ae4bc69f20e555efdcc63bb012216</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=105919"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>10</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_73243">
+        <foaf:name>Jan Mulder</foaf:name>
+        <foaf:mbox_sha1sum>10a9a2800ee3310fa2069139a38fec0c9de6268a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=73243"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_58355">
+        <foaf:name>Jan"NetworkingCoach" Vermeiren</foaf:name>
+        <foaf:mbox_sha1sum>ef825aec5dc3d08d1775e4e59d660e82b55dfad9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=58355"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_72433">
+        <foaf:name>Jason Elton</foaf:name>
+        <foaf:mbox_sha1sum>8335e53d1c0f03d3b397b87c2819eb396bf06e69</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=72433"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_81446">
+        <foaf:name>Jean Flower</foaf:name>
+        <foaf:mbox_sha1sum>4e7fb9f0a4d82a7312d66a97cd86f77159f9cfac</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=81446"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_51716">
+        <foaf:name>Jean (Gentle) Loyens</foaf:name>
+        <foaf:mbox_sha1sum>caeebd64f60a912d288489d533d173e4a016b049</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=51716"/>
+        <rdfs:seeAlso dc:title="Off-Ecademy FOAF file" rdf:resource="http://www.norman.com"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_26509">
+        <foaf:name>Jeffrey Meek</foaf:name>
+        <foaf:mbox_sha1sum>103b2e25c297fd2158cdd54c8f2f0a84a511d686</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=26509"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_37353">
+        <foaf:name>Jennie Rubel</foaf:name>
+        <foaf:mbox_sha1sum>0a983ff71bd69dd5b86582b3574c283db774d482</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=37353"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_73884">
+        <foaf:name>Jennifer Potts</foaf:name>
+        <foaf:mbox_sha1sum>0b1a9ecdac39cf506b7ab3358e192bc0d436d17e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=73884"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_39574">
+        <foaf:name>Jeremy Dent</foaf:name>
+        <foaf:mbox_sha1sum>04ab6a64e189199cd23365af9cb7f55f5f5ce7cc</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=39574"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>19</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_120674">
+        <foaf:name>Jeremy Hurst</foaf:name>
+        <foaf:mbox_sha1sum>1eaad819e4ee62c5c6c44372fced3043b876acb3</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=120674"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_90097">
+        <foaf:name>Jeremy "Open Source" Tarrier</foaf:name>
+        <foaf:mbox_sha1sum>e32bb872dc07601bb36a24e1f3cf3ad7adb7dd6a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=90097"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_124489">
+        <foaf:name>Jim Browning</foaf:name>
+        <foaf:mbox_sha1sum>753c8afd34735a50064bf6cb40b4b435611d2be2</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=124489"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_102206">
+        <foaf:name>Jim Gardiner</foaf:name>
+        <foaf:mbox_sha1sum>4d8b5ac2652eb21622b0e3fe95cc904a235e89e5</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=102206"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_79376">
+        <foaf:name>Jo Salter</foaf:name>
+        <foaf:mbox_sha1sum>04b000a8a82feef4d40e2c7942e69531ae61ee3c</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=79376"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_85441">
+        <foaf:name>John Cave</foaf:name>
+        <foaf:mbox_sha1sum>993c08f34fffede640d81347035e792677f42e04</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=85441"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_40461">
+        <foaf:name>John Eyton</foaf:name>
+        <foaf:mbox_sha1sum>9f69d9c8382a6f2c6efcaa92fc8f4d57e3227539</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=40461"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_10577">
+        <foaf:name>John McHugh</foaf:name>
+        <foaf:mbox_sha1sum>0ab7bfee8aa2c1370b105a5cffd8c3a54032b018</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=10577"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_106411">
+        <foaf:name>John Sargood</foaf:name>
+        <foaf:mbox_sha1sum>ff097a9f623dc3fb6bd0429a84a4ae5507652d96</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=106411"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_115649">
+        <foaf:name>Jon Upton</foaf:name>
+        <foaf:mbox_sha1sum>a74d150f2050450dbdabeec95eaabe501fe66bc6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=115649"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_69198">
+        <foaf:name>Jonny Restrick</foaf:name>
+        <foaf:mbox_sha1sum>83f7d55a186448a9f932fef6fedb5de6fdda0b08</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=69198"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_88802">
+        <foaf:name>Jos Mols</foaf:name>
+        <foaf:mbox_sha1sum>3d07bac9709a6e8fca71390d257421317a31161b</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=88802"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_48712">
+        <foaf:name>José Machado</foaf:name>
+        <foaf:mbox_sha1sum>e1fb9155097d0d27a6d0ad5a31b308ba750aa6a4</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=48712"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_78129">
+        <foaf:name>Judith Germain</foaf:name>
+        <foaf:mbox_sha1sum>6112f306353e4eb57a7d017f9946b06fec5f57d7</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=78129"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>13</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_1">
+        <foaf:name>Julian Bond</foaf:name>
+        <foaf:mbox_sha1sum>e42b34b637b3c06d872e5b8938aad918b3bf345a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=1"/>
+        <rdfs:seeAlso dc:title="Off-Ecademy FOAF file" rdf:resource="http://www.voidstar.com/foaf.xml"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_61207">
+        <foaf:name>Karel Frielink</foaf:name>
+        <foaf:mbox_sha1sum>1428604dda7a4a0e44f0481a3f8d3b55cba70af6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=61207"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_90269">
+        <foaf:name>Keith Gould</foaf:name>
+        <foaf:mbox_sha1sum>48be5b2a6a5ea842c0d5a448c27b877853b1bfb9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=90269"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_40645">
+        <foaf:name>Kerry Santo</foaf:name>
+        <foaf:mbox_sha1sum>8eaa257744b7e7eece8329916983692a6ad83ed8</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=40645"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_105232">
+        <foaf:name>Khaleel Mohamed</foaf:name>
+        <foaf:mbox_sha1sum>395dbcdc8ad7ebe17ccb5d4d4afc2f21ca0e6c7d</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=105232"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_44700">
+        <foaf:name>Kim Sharman - NRG</foaf:name>
+        <foaf:mbox_sha1sum>693bddb2231934ee7ba66580339dbde5998c9173</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=44700"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_70176">
+        <foaf:name>Kirk Redhead</foaf:name>
+        <foaf:mbox_sha1sum>b0fef2d2c7c2e845c1a47b3513dbffd5d97a8827</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=70176"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_45075">
+        <foaf:name>Kristina Julin-Stringer</foaf:name>
+        <foaf:mbox_sha1sum>b957d278dd912aa58f18a907aca32fd6ee2c3f8f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=45075"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_40750">
+        <foaf:name>Larry Osei-Kwaku- Networking EXPO</foaf:name>
+        <foaf:mbox_sha1sum>6eadde31116eb49f0379be584e78bcf32171ba29</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=40750"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_15187">
+        <foaf:name>Leon Benjamin</foaf:name>
+        <foaf:mbox_sha1sum>19991dcc451a14af417eec181a2c6669e778bd14</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=15187"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_87466">
+        <foaf:name>Lesley Katavich</foaf:name>
+        <foaf:mbox_sha1sum>ce7e616b7bfed329cccd5e3da931b693f8b20d68</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=87466"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>10</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_104266">
+        <foaf:name>Liam Wall</foaf:name>
+        <foaf:mbox_sha1sum>8dd49bc75ae08912304a9134910c64c0e612de03</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=104266"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_124439">
+        <foaf:name>Lilach Bullock</foaf:name>
+        <foaf:mbox_sha1sum>f4279c7340a3d12e2143816d4d25d7fcb6317ce4</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=124439"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_94513">
+        <foaf:name>Lis Cashin</foaf:name>
+        <foaf:mbox_sha1sum>be9b964a79467e6646e194129f8ce4a273577dfc</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=94513"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_61594">
+        <foaf:name>Lisa West</foaf:name>
+        <foaf:mbox_sha1sum>0cf63212fdf32d59ac1b7fe185d9a6e6bd4f0e02</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=61594"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_90444">
+        <foaf:name>Malcolm Tullett</foaf:name>
+        <foaf:mbox_sha1sum>3b844ba09d76b26c826b5e7fd20e9587887dd96f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=90444"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_77110">
+        <foaf:name>MANJIT SANDHU</foaf:name>
+        <foaf:mbox_sha1sum>7111780b1d3bf117d255896fe5ed05d61082c201</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=77110"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_96597">
+        <foaf:name>Marc Cherrie</foaf:name>
+        <foaf:mbox_sha1sum>bf45677492beb20b7095da3deee87edf433916c9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=96597"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>12</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_89865">
+        <foaf:name>Marc-William ATTIE</foaf:name>
+        <foaf:mbox_sha1sum>27c3b90d21a0f0742f25bcdae8a4e2b76fd0ce41</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=89865"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_46543">
+        <foaf:name>Marcus de Maria (Wealth)</foaf:name>
+        <foaf:mbox_sha1sum>90253480f5d9e7dafd6e564751fbfdf397dd1322</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=46543"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_119654">
+        <foaf:name>Margaret Wright</foaf:name>
+        <foaf:mbox_sha1sum>e3d68f56808df85ec285e67f2e32f17a32f382e8</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=119654"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_96056">
+        <foaf:name>Maria "Thrilla from Manila" Thomson</foaf:name>
+        <foaf:mbox_sha1sum>e508f14fd0303069c89f56263f3f7c5d6613831e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=96056"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_47111">
+        <foaf:name>Marin Ivezic</foaf:name>
+        <foaf:mbox_sha1sum>e7367a13774b5d3bc6e0ffd83d1181286a02caac</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=47111"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_103749">
+        <foaf:name>Mark Feeney</foaf:name>
+        <foaf:mbox_sha1sum>491ac2fcc03cc35de7338bec6b38fc857a015157</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=103749"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_86824">
+        <foaf:name>Mark Shaw</foaf:name>
+        <foaf:mbox_sha1sum>cd07aff918b91c1b84e403844b0ef3ce82ab88ce</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=86824"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>9</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_64637">
+        <foaf:name>Mark C J Posen</foaf:name>
+        <foaf:mbox_sha1sum>075bebb51116baa8cdfe11fb25a1275257ceb01b</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=64637"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_91975">
+        <foaf:name>Marlon Nolan</foaf:name>
+        <foaf:mbox_sha1sum>16456940ea1a0169665e8cd3b49815644955e435</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=91975"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_34711">
+        <foaf:name>Martin Bamford</foaf:name>
+        <foaf:mbox_sha1sum>67ced54799894a3527a776ce5905651b803f5e3e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=34711"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_44844">
+        <foaf:name>Martin Davies - NRG</foaf:name>
+        <foaf:mbox_sha1sum>abe9123eb4249cd2a7e9f4f16e99291799178559</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=44844"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_33963">
+        <foaf:name>Martin Shepherdly</foaf:name>
+        <foaf:mbox_sha1sum>3f03de08e467021f38fe812f1ef6d13eff5af6ae</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=33963"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_99910">
+        <foaf:name>Martyn Kelly</foaf:name>
+        <foaf:mbox_sha1sum>7776d67f308bf6a1302c847808f271908c3965d7</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=99910"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_64148">
+        <foaf:name>Matthew Barnett</foaf:name>
+        <foaf:mbox_sha1sum>c556966e758aa81fb6162bc7370548fef17d9cbe</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=64148"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>15</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_100986">
+        <foaf:name>Matthew Duggan</foaf:name>
+        <foaf:mbox_sha1sum>38e7e3b7f61a31b186b9b2f936eebd3090339b5e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=100986"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>11</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_97452">
+        <foaf:name>Matthew Human</foaf:name>
+        <foaf:mbox_sha1sum>3d1933a51b62398ba8b181ad7efffe0d0ed79c72</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=97452"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_19353">
+        <foaf:name>Maurice Watts, the Marketer</foaf:name>
+        <foaf:mbox_sha1sum>be8139fe746c0f084d53dbe79dcf1f324eb01ed9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=19353"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_76937">
+        <foaf:name>Max Garkavtsev Go Nearshore</foaf:name>
+        <foaf:mbox_sha1sum>edaec773b781f00c0f94422852e00a07bdda3319</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=76937"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_84153">
+        <foaf:name>Mehul Patel</foaf:name>
+        <foaf:mbox_sha1sum>17f0748b8e9a8e436df9bab36ed3ff897a69a711</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=84153"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_137853">
+        <foaf:name>Melanie Tyler</foaf:name>
+        <foaf:mbox_sha1sum>9b4e7b8304bdc2ec4dae67bfeb97fa794610082f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=137853"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>11</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_59224">
+        <foaf:name>Melcom Copeland</foaf:name>
+        <foaf:mbox_sha1sum>256df85908de697014a67e9e3377d489bdfd35ee</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=59224"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_80815">
+        <foaf:name>Michael Birley</foaf:name>
+        <foaf:mbox_sha1sum>e7f81852f94a869289902d20de297520fcdef94d</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=80815"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_95706">
+        <foaf:name>Michael Clark</foaf:name>
+        <foaf:mbox_sha1sum>5acd14428bd6b4ad28c036eea0e1ae2df6432f65</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=95706"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_91028">
+        <foaf:name>Michael Cusack</foaf:name>
+        <foaf:mbox_sha1sum>e735ce46d55d8e1d05f05b81d4d32081b2f8eded</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=91028"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_82932">
+        <foaf:name>Michael Young</foaf:name>
+        <foaf:mbox_sha1sum>8151b9f73ab5a586ebd1d29212d228d5cad079b9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=82932"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>10</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_84108">
+        <foaf:name>Mike Bradley</foaf:name>
+        <foaf:mbox_sha1sum>f515aeb3b8bf02c6ee8d0f5371a3d3857e6e7763</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=84108"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_43104">
+        <foaf:name>Mike Marr</foaf:name>
+        <foaf:mbox_sha1sum>90a203d7bd90618af8c52abf7567259559920d50</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=43104"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>24</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_70757">
+        <foaf:name>Mike 'Smiling Star' Farrow</foaf:name>
+        <foaf:mbox_sha1sum>ab218d4a23d26e1293e5a9e9634634fa7ed24841</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=70757"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>13</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_136281">
+        <foaf:name>Milton Rodrigues</foaf:name>
+        <foaf:mbox_sha1sum>57723e905a47d157860b3b3451c4a0b915beb1b0</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=136281"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_38436">
+        <foaf:name>Mindy Gibbins-Klein (The Book Midwife)</foaf:name>
+        <foaf:mbox_sha1sum>8d8d3eb5128eaca2d127c82ca7fbb672b8ad2ed6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=38436"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>16</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_49517">
+        <foaf:name>Movie Matthews</foaf:name>
+        <foaf:mbox_sha1sum>1849826f66dfeada3ea3dd8026dfc21d3ba4b02e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=49517"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_72378">
+        <foaf:name>Nick Ingram (IFA)</foaf:name>
+        <foaf:mbox_sha1sum>fb9fe80df936770b6bdbc7a71264e8b1b44567e1</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=72378"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>32</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_72197">
+        <foaf:name>Nicole Wehden</foaf:name>
+        <foaf:mbox_sha1sum>ee4774e80883ac1c090ee42904c2e373ffdae2ca</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=72197"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_37621">
+        <foaf:name>Nicole 'away 'til 30/01/2007' Bachmann</foaf:name>
+        <foaf:mbox_sha1sum>a459f212fe7de82aadc9c116e8da8b5f69f4f782</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=37621"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>11</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_80621">
+        <foaf:name>Nigel Whittaker</foaf:name>
+        <foaf:mbox_sha1sum>1523c2bf7ee684d2010db0ed059035be36eeb89c</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=80621"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_19074">
+        <foaf:name>Noel Austin</foaf:name>
+        <foaf:mbox_sha1sum>a1c2d54c3a78880baa5f1d778bf4f23e6758a4d0</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=19074"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_44974">
+        <foaf:name>Olein Webster</foaf:name>
+        <foaf:mbox_sha1sum>345c796e8fe106ce9d652797cb2aecf81620b2cd</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=44974"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_39103">
+        <foaf:name>Patrick Moore</foaf:name>
+        <foaf:mbox_sha1sum>3b96a4d844eecfb962edbd599a0aa23583db1ef6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=39103"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>25</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_42748">
+        <foaf:name>Paul Dancer</foaf:name>
+        <foaf:mbox_sha1sum>5399727eff9fa1517bb2dd7937332013fc84c3cf</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=42748"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_88118">
+        <foaf:name>Paul Formstone</foaf:name>
+        <foaf:mbox_sha1sum>f00e20d8c7ae125e0f65b32dc86c3be860eadfe7</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=88118"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_13384">
+        <foaf:name>Paul Sherman</foaf:name>
+        <foaf:mbox_sha1sum>d1b82a3c917058ebd44fff6d8bbeb03c84e52629</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=13384"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_94209">
+        <foaf:name>Paul Terry</foaf:name>
+        <foaf:mbox_sha1sum>b0b3deb792e1cc5b1d08bc064f11e3501c404336</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=94209"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_71850">
+        <foaf:name>Paul "Ideaneer" Johnston</foaf:name>
+        <foaf:mbox_sha1sum>a3eeaeda9fede2ec038a7394a3ebf971c9f0db88</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=71850"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_1001">
+        <foaf:name>Penny Power</foaf:name>
+        <foaf:mbox_sha1sum>ad366970a4f73cda1fa430f7183f1de311d2efec</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=1001"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_96833">
+        <foaf:name>Pete Dickson</foaf:name>
+        <foaf:mbox_sha1sum>f2718811d90fb297d59b8ce61e070039b5aefd74</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=96833"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>10</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_50862">
+        <foaf:name>Peter K. Sanner</foaf:name>
+        <foaf:mbox_sha1sum>7c790eb706057935a7f3ac1ce994391bc4760140</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=50862"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_58271">
+        <foaf:name>Phil Hunt</foaf:name>
+        <foaf:mbox_sha1sum>580c542a6710baa5d95f8c6ae3a184b25e7804f9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=58271"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_53930">
+        <foaf:name>Philip Calvert</foaf:name>
+        <foaf:mbox_sha1sum>e936df80250fd5b221161c3b8eacdac2a981be75</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=53930"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_54895">
+        <foaf:name>Philip de Lisle</foaf:name>
+        <foaf:mbox_sha1sum>97bcaaf889620f493b4f52f1e8df381b89120fa6</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=54895"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_55325">
+        <foaf:name>Pierre Leonard "Translations"</foaf:name>
+        <foaf:mbox_sha1sum>b422e5d1aae856756f4d5a89aa8ea4a80edfec2d</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=55325"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_21479">
+        <foaf:name>Piers Mummery</foaf:name>
+        <foaf:mbox_sha1sum>0cfcf61abdc920c0dd1fe98a8f100297052592bb</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=21479"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_60673">
+        <foaf:name>Prem Kumar</foaf:name>
+        <foaf:mbox_sha1sum>13346a8137c6ddf8b9b23a3a56ff4655368879c5</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=60673"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_56815">
+        <foaf:name>Rajen Internet Web &amp; Security Kantaria</foaf:name>
+        <foaf:mbox_sha1sum>827626cd0afa7da8652829f3ec1dcac462966e29</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=56815"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_35094">
+        <foaf:name>Rehan "Global Property" Khaled</foaf:name>
+        <foaf:mbox_sha1sum>dd42c4ed2f5778b3a6211d5306435d756e0aba02</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=35094"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_104930">
+        <foaf:name>RHIDIAN JONES</foaf:name>
+        <foaf:mbox_sha1sum>dd935ed564d41882052cfcf90cd9dcfceef00468</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=104930"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_1899">
+        <foaf:name>Richard A.lberg</foaf:name>
+        <foaf:mbox_sha1sum>da8aed4bbea7ccb9b3fa9e9b453acb97e04fcdb4</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=1899"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_85425">
+        <foaf:name>Richard Flewitt</foaf:name>
+        <foaf:mbox_sha1sum>f761a9362f401b3e242685441f70911debcb954d</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=85425"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>12</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_124519">
+        <foaf:name>Richard Marshall</foaf:name>
+        <foaf:mbox_sha1sum>ecc84c6acc316e31474922b445975c3846af5c59</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=124519"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_42104">
+        <foaf:name>Rob Hook</foaf:name>
+        <foaf:mbox_sha1sum>572e961e071caf0ee84a3edc28074401608e16eb</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=42104"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>9</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_8690">
+        <foaf:name>Rob Tokolics</foaf:name>
+        <foaf:mbox_sha1sum>55f3bdad21ba994f7b6e3bb141e56f96bdc56b47</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=8690"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_113664">
+        <foaf:name>Robert Isherwood-Crook</foaf:name>
+        <foaf:mbox_sha1sum>724a4b18e27718465b39f11303f8a51f27beddb9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=113664"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_116994">
+        <foaf:name>Robert Kesten</foaf:name>
+        <foaf:mbox_sha1sum>76acf143b8365c43cc2e0d3696df59f4fe3cadb9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=116994"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_74199">
+        <foaf:name>Robert Quaranta</foaf:name>
+        <foaf:mbox_sha1sum>53e57d68590562ce072045cd8fd1ec44bdfe539b</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=74199"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_104166">
+        <foaf:name>Robin Robson</foaf:name>
+        <foaf:mbox_sha1sum>bc66848d4def6e95906e0ed312349bd80b87ce80</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=104166"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_54983">
+        <foaf:name>Robin "Software" Winnett</foaf:name>
+        <foaf:mbox_sha1sum>cfce5017c375e3232fd93b44fc6f0dc36014306e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=54983"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_57736">
+        <foaf:name>Rod Sloane</foaf:name>
+        <foaf:mbox_sha1sum>8c9c7919bbac6b387deac88c5f6f13e89c44d778</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=57736"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>8</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_107273">
+        <foaf:name>Rod Thomas</foaf:name>
+        <foaf:mbox_sha1sum>97cca730ffcdc4e8bbcef5b8043f14c38798f018</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=107273"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>8</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_92202">
+        <foaf:name>Ron Bates</foaf:name>
+        <foaf:mbox_sha1sum>e09f8066b2fa6184248b551d3a877c1d4aa6c31e</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=92202"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_69061">
+        <foaf:name>Ronald Wopereis</foaf:name>
+        <foaf:mbox_sha1sum>986ec19d67d08dfd7331813032adc53ed8cbbc0b</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=69061"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_37212">
+        <foaf:name>Rory Woolridge</foaf:name>
+        <foaf:mbox_sha1sum>46d56ed056527f7fdbf1655f5148f976846eab85</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=37212"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_111056">
+        <foaf:name>Ros and Cranleigh Lee (NZ)</foaf:name>
+        <foaf:mbox_sha1sum>889cface491bbdb792610232b409fe0e99ef27bf</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=111056"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_87670">
+        <foaf:name>Russ King</foaf:name>
+        <foaf:mbox_sha1sum>0ac6dc804095c1e29ca3de11135580bdca08252a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=87670"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_105994">
+        <foaf:name>Ryan Flynn</foaf:name>
+        <foaf:mbox_sha1sum>58391dd1508d06cd064593665f1ff3a62d35f886</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=105994"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_107134">
+        <foaf:name>Samantha Caldicott</foaf:name>
+        <foaf:mbox_sha1sum>ad94e5cd8c99b10a135fb0d096f9706deeaaa181</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=107134"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_90678">
+        <foaf:name>Sarah-Jayne White</foaf:name>
+        <foaf:mbox_sha1sum>1a8b47c1565bbb1f9c82cad734fea8224a212fa3</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=90678"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_118087">
+        <foaf:name>Scott Mochar</foaf:name>
+        <foaf:mbox_sha1sum>db7252a9b0d3bc61f5974a7abed2aec4e9cbbe64</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=118087"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_58369">
+        <foaf:name>Servaas de Kock</foaf:name>
+        <foaf:mbox_sha1sum>5239d2ffed3e1371a77f2144b5bf78aa7162314f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=58369"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_43778">
+        <foaf:name>Sharif "Santa Claus" George</foaf:name>
+        <foaf:mbox_sha1sum>227b6c1840107fa782b56022b9178af240d90efc</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=43778"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_96787">
+        <foaf:name>Simon Palmer</foaf:name>
+        <foaf:mbox_sha1sum>ddf71ad16cd2add66cc9ac77bd4f18a2726de405</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=96787"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_45896">
+        <foaf:name>Simon Phillips</foaf:name>
+        <foaf:mbox_sha1sum>0d6fccf37749184378b7b8971648411ae51adf53</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=45896"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>11</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_61687">
+        <foaf:name>Simon Warman-Freed</foaf:name>
+        <foaf:mbox_sha1sum>f8226df65d81d0b6a7e3ddf28004577c23f68e20</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=61687"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_46072">
+        <foaf:name>Simon West</foaf:name>
+        <foaf:mbox_sha1sum>0c1ac79124a400ae96000fc103566cdf9f749222</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=46072"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_94248">
+        <foaf:name>Skaiste Ciantar Sky Translations Ltd</foaf:name>
+        <foaf:mbox_sha1sum>2ef165a86592388f90876b012c090d0b627bcefe</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=94248"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_73693">
+        <foaf:name>Stéphanie INGRAM</foaf:name>
+        <foaf:mbox_sha1sum>60bcb51158a29c2bacb3fa7ef10070f046224d69</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=73693"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>9</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_47353">
+        <foaf:name>Stephen Harvard Davis</foaf:name>
+        <foaf:mbox_sha1sum>b32fd1bbbf9d7efdebdf256d798027dd0a2a9179</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=47353"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_99857">
+        <foaf:name>Steve Anzelc</foaf:name>
+        <foaf:mbox_sha1sum>07079bdcab041c0fecf5eff9cc8df4412201085b</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=99857"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_58617">
+        <foaf:name>Stewart Evans</foaf:name>
+        <foaf:mbox_sha1sum>76f22d9d5e536fcbe74c5a0d5e1aa1ad982e111a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=58617"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_56926">
+        <foaf:name>Susan Popoola</foaf:name>
+        <foaf:mbox_sha1sum>3416b5d181bde4702d07c66f60290eb47e31c186</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=56926"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_94427">
+        <foaf:name>Terence O'Mahony ICON BS</foaf:name>
+        <foaf:mbox_sha1sum>5dc1f40205a94800e910ee8f110016379101b786</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=94427"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>5</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_2084">
+        <foaf:name>Tim Strafford-Taylor</foaf:name>
+        <foaf:mbox_sha1sum>24d670c2ce4aa7c10152134aa668d9e4e2097eef</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=2084"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>11</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_103541">
+        <foaf:name>Tim Virdee</foaf:name>
+        <foaf:mbox_sha1sum>de22f881ae949ea78fe8056621898ad3cdb04fc9</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=103541"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_56786">
+        <foaf:name>Tim Chappell(Medical Insurance quote)</foaf:name>
+        <foaf:mbox_sha1sum>7153f18789bbc5019c6ee66edbc7e00b9eea355b</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=56786"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>6</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_73924">
+        <foaf:name>Timi Ogunjobi</foaf:name>
+        <foaf:mbox_sha1sum>0840616dd7793010eff97fbe61defc509a5d080a</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=73924"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>7</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_20422">
+        <foaf:name>Tom Evans</foaf:name>
+        <foaf:mbox_sha1sum>ed6dc7db580f6289b8437bf142809ce09a3034a8</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=20422"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>71</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_39782">
+        <foaf:name>Tony Burgess</foaf:name>
+        <foaf:mbox_sha1sum>4c6291cd9cff926e79ab24d9206b03d05a092efc</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=39782"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_106744">
+        <foaf:name>Toussaint van der Wal</foaf:name>
+        <foaf:mbox_sha1sum>82855864502b381e31f1e134c264774cae8016df</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=106744"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>4</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_86398">
+        <foaf:name>Trevor "TJ" Jenkins</foaf:name>
+        <foaf:mbox_sha1sum>f8755cb59d24cb6319f422e6008c1d0101840c91</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=86398"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_94514">
+        <foaf:name>Trevor Cooke</foaf:name>
+        <foaf:mbox_sha1sum>1d6ca1e162d5ba9b97013feec775d475c9445d9f</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=94514"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_129911">
+        <foaf:name>Ulf S. Sighede</foaf:name>
+        <foaf:mbox_sha1sum>26ed41adf206f04a6cc471a279e2ba064b2f9d82</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=129911"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_19310">
+        <foaf:name>Vladimir Dimitroff</foaf:name>
+        <foaf:mbox_sha1sum>2890d3229c9b4ba50e1f51dcea1c32b8318681c0</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=19310"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_42893">
+        <foaf:name>Warren Cass</foaf:name>
+        <foaf:mbox_sha1sum>5029e160db72d9ccb8439b3bfabfcc8157ee6fd8</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=42893"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>26</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_37979">
+        <foaf:name>William Buist</foaf:name>
+        <foaf:mbox_sha1sum>b822d55e090cb06c156c7771f4842dd3d0c59ab0</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=37979"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>25</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_80109">
+        <foaf:name>Winston Saga</foaf:name>
+        <foaf:mbox_sha1sum>b80badd128846b7a8393b77d6e983a685eb59793</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=80109"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>19</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_36680">
+        <foaf:name>Wouter Havinga</foaf:name>
+        <foaf:mbox_sha1sum>09116c6c7e9322581219c3917dee16d6070a06b4</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=36680"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>3</ecademy:numberOfMessages>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="_69255">
+        <foaf:name>Yves 'MOTIV-ACTION' Miserez</foaf:name>
+        <foaf:mbox_sha1sum>9b632432d6c11b725f8d43182bad8a35c032e9ed</foaf:mbox_sha1sum>
+        <rdfs:seeAlso dc:title="Ecademy FOAF file" rdf:resource="http://www.ecademy.com/module.php?mod=network&amp;op=foafrdf&amp;uid=69255"/>
+      </foaf:Person>
+      <ecademy:numberOfMessages>2</ecademy:numberOfMessages>
+    </foaf:knows>
+
+  </foaf:Person>
+</rdf:RDF>
