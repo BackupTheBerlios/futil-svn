@@ -18,3 +18,4 @@ tests:
 
 stats:
 	scripts/pool.sh
+	scripts/popular.sh
