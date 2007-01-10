@@ -6,6 +6,9 @@ import rdflib
 import xml
 
 class ShaFilter(FoafFilter):
+    """
+     Filter to extract sha of foaf's owner
+    """
 
     def __init__(self, next=None):
         self.next = next

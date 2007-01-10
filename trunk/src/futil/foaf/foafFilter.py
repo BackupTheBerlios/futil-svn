@@ -1,20 +1,23 @@
 import xml.sax._exceptions
 import rdflib.exceptions
 
-foafNS = { "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-                        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-                        "foaf": "http://xmlns.com/foaf/0.1/"}
+foafNS = {  "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "foaf": "http://xmlns.com/foaf/0.1/"}
 
 
 class FoafFilter:
 
     def __init__(self, next=None):
+        """
+         next: Following filter, subclass of FoafFilter
+        """
         self.next = next
 
-    def getFoafNS(self):
-        return self.foafNS
-
     def run(self, data, foaf=None):
+        """
+         "Chain of responsability" iteration method
+        """
         if foaf == None:
             foaf = {}
 
@@ -27,6 +30,9 @@ class FoafFilter:
     def process(self, data, foaf):
         """
         To be implemented by subclasses
+         data: dictionary with foaf in sparqlgraph and xml DOM formats
+         foaf: dictionary. Each filter will add a new key with appropiate
+          contents
         """
         pass
 
@@ -50,6 +56,9 @@ class FoafFilter:
             return None
 
     def evaluateXPath(self, xmldom, query):
+        """
+         Helper method to evaluate xpath queries
+        """
         c = xml.xpath.Context.Context(xmldom)
         c.setNamespaces(foafNS)
         e = xml.xpath.Compile(query)

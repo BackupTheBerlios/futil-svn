@@ -16,7 +16,9 @@ from xml import xpath
 
 
 class FoafAnalyzer:
-
+    """
+     Analyzer to apply filters
+    """
     def __init__(self):
         pass
 
@@ -26,17 +28,20 @@ class FoafAnalyzer:
 
 
 class UriLoader:
-    def __init__(self):
-        self._analyzer = FoafAnalyzer()
+    """
+     Load an URI (local or remote) in XML-DOM and SparQL Graph formats
+    """
+    def __init__(self, analyzer=None):
+        self._analyzer = analyzer or FoafAnalyzer()
 
-    def isOnline(self, uri):
+    def __isOnline(self, uri):
         return uri.startswith('http://')
 
 
-    def getData(self, fileUri):
+    def __getData(self, fileUri):
         data = {}
 
-        if self.isOnline( fileUri ):
+        if self.__isOnline( fileUri ):
             text = urllib2.urlopen(fileUri).read()
         else:
             text = open(fileUri).read()
@@ -53,7 +58,10 @@ class UriLoader:
         return data
 
     def getFoafFrom(self, uri):
-        raw_data = self.getData(uri)
+        """
+         Load foaf in both formats from uri and apply analyzer
+        """
+        raw_data = self.__getData(uri)
         return self._analyzer.run(raw_data)
 
 if __name__ == "__main__":
