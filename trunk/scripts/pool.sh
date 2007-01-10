@@ -7,8 +7,9 @@ set terminal postscript eps color enhanced
 set output "data/pool.eps"
 set xlabel "URIs visited (x100)"
 set ylabel "URIs pending to visit"
-set title "futil pool size"
-plot "data/pool.data" using 1:2 with lines
+set grid
+plot "data/pool.data" using 1:2 with lines title "futil pool size"
+save "data/pool.plt"
 EOF
 
 evince data/pool.eps &
