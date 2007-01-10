@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cat log/futil.log | grep "to visit" | awk '{print $4}' | cat -n > data/pool.data
+cat log/futil.log | grep "URIs pending to visit" | awk '{print $4}' | cat -n > data/pool.data
 
 gnuplot << EOF
 set terminal postscript eps color enhanced
