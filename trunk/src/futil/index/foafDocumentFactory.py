@@ -33,7 +33,8 @@ class FoafDocumentFactory:
                 else:
                     doc.add(Field(attr, value, fields[attr][0], fields[attr][1]))
             else:
-                print "E: Field " + attr + " ignored in index"
+                pass
+                # DEBUG information print "E: Field " + attr + " ignored in index"
         return doc
     getDocumentFromFOAF = Static(getDocumentFromFOAF)
 
