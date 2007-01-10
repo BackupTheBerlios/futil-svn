@@ -45,7 +45,7 @@ class IndexAppService(Indexer):
 
 
     def close(self):
-        if not self._writer:
+        if self._writer:
             self._writer.close()
         self._writer = None
         #self.shaBBDD.close()
