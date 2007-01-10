@@ -6,6 +6,7 @@ clean:
 	rm -f `find . -name "*~"`
 	rm -f `find . -name "*pyc"`
 	rm -f `find . -name "*.bak"`
+	rm -f data/*.data data/*.eps
 
 tests:
 	$(PYTHON) test/testfoaf.py
@@ -14,3 +15,6 @@ tests:
 	$(PYTHON) test/testFutilTracker.py
 	$(PYTHON) test/testClientView.py
 	$(PYTHON) test/testShaManager.py
+
+stats:
+	scripts/pool.sh
