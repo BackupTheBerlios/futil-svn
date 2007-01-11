@@ -1,8 +1,13 @@
+# -*- coding: utf8 -*-
 import sys
 sys.path.append('./src')
 
+import rdflib
+
 import unittest
 from futil.foaf.foafAnalyzer import UriLoader
+
+
 
 FRADE = "data/test/frade.rdf"
 WIKIER = "data/test/wikier.rdf"
@@ -31,7 +36,20 @@ class TestFoaf(unittest.TestCase):
         foaf = loader.getFoafFrom(OPERA)
         self.assertEquals(foaf['sha'], [u'db161c28da4ac9c8b284ba9a146b09e3899554d5'])
 
-
+    def testName(self):
+        loader = UriLoader()
+        foaf = loader.getFoafFrom(FRADE)
+        self.assertEquals(foaf['name'], [rdflib.Literal('Ivan Frade')])
+        
+        foaf = loader.getFoafFrom(WIKIER)
+        self.assertEquals(foaf['name'], [rdflib.Literal(u'Sergio Fernández', lang=u'es')])
+        
+        foaf = loader.getFoafFrom(TRIBES)
+        self.assertEquals(foaf['name'], [rdflib.Literal('~*~')])
+        foaf = loader.getFoafFrom(ECADEMY)
+        self.assertEquals(foaf['name'], [rdflib.Literal('Debbie Tarrier')])
+        foaf = loader.getFoafFrom(OPERA)
+        self.assertEquals(foaf['name'], [rdflib.Literal(u'Charles McCathieNevile')])
 
 if __name__ == "__main__":
   unittest.main()
