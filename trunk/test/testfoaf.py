@@ -18,7 +18,7 @@ class TestFoaf(unittest.TestCase):
 
     def testUnreachableFoaf(self):
         try:
-            f = Foaf('noexiste.org')
+            f = Foaf('http://noexiste.org')
         except ErroneousFoaf:
             self.assertTrue(True)
 

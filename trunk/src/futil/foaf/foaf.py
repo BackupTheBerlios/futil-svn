@@ -11,6 +11,7 @@ from rdflib.sparql.graphPattern import GraphPattern
 import os, sys, foaf
 import xml.sax._exceptions
 import rdflib.exceptions
+import urllib2
 
 #from futil.utils.logger import FutilLogger
 
@@ -90,6 +91,8 @@ class Foaf:
           #if result == None:
             continue
           setattr(self, attr, result)
+    except urllib2.URLError:
+        print >> sys.stderr , " URL exception: ", foafUri          
     except xml.sax._exceptions.SAXParseException:
         print >> sys.stderr , " BAD XML: ", foafUri
 ##        self.log.error(" BAD XML: " + foafUri)

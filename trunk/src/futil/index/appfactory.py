@@ -8,7 +8,7 @@ from futil.storage.shaManager import ShaManager
 
 import os
 
-INDEX_DIR = "/tmp/borrame"
+INDEX_DIR = "index"
 
 d = FSDirectory.getDirectory(INDEX_DIR, not os.path.exists(INDEX_DIR))
 s = ShaManager()

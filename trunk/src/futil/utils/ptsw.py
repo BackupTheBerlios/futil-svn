@@ -75,7 +75,10 @@ class PTSW:
 
     def parsePinged(self, pinged):
         uris = []
-        dom = minidom.parse(pinged)
+        try:
+            dom = minidom.parse(pinged)
+        except:
+            self.log.error('problem parsing ' + pingued)
         docs = dom.getElementsByTagName('rdfdocument')
         for doc in docs:
             uris.append(doc.getAttribute('url'))
