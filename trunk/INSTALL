@@ -1,0 +1,15 @@
+
+Installing FUTIL
+================
+
+For the moment, it's not possible to install FUTIL, it must be executed directly.
+
+But it has some requirements:
+	* Python >= 2.4.0
+	* RDFLib >= 2.3.1
+	* PyLucene >= 2.0.0
+	* PySQLite >= 2.3.2
+	* Python-MySQLdb >= 1.2.1
+	* PyXML >= 0.8.4
+	* Python-URL >= 1.0.1
+
