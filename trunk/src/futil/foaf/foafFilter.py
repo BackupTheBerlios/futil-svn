@@ -38,12 +38,12 @@ class FoafFilter:
 
 
 
-    def evaluateSparQL(self, graph, select, where):
+    def evaluateSparQL(self, graph, select, where, optional=None):
         """
          Helper method to evaluate sparQL queries
         """
         try:
-            result = graph.query(select, where)
+            result = graph.query(select, where, optional)
             return result
         except xml.sax._exceptions.SAXParseException:
             print >> sys.stderr , " BAD XML: ", foafUri
