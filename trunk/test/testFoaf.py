@@ -13,7 +13,7 @@ FRADE = "data/test/frade.rdf"
 WIKIER = "data/test/wikier.rdf"
 TRIBES = "data/test/tribes.rdf"
 ECADEMY = "data/test/ecademy.rdf"
-OPERA = "data/test/opera.rdf"
+OPERA = "data/test/opera2.rdf"
 
 
 class TestFoaf(unittest.TestCase):
@@ -34,7 +34,7 @@ class TestFoaf(unittest.TestCase):
         foaf = loader.getFoafFrom(ECADEMY)
         self.assertEquals(foaf['sha'], [u'd1c29956cac7a2b4ac5e48e387452d6c61df1f61'])
         foaf = loader.getFoafFrom(OPERA)
-        self.assertEquals(foaf['sha'], [u'db161c28da4ac9c8b284ba9a146b09e3899554d5'])
+        self.assertEquals(foaf['sha'], [u'819a368bea77c9ece2f4af144e1a60ccfce4e376'])
 
     def testName(self):
         loader = UriLoader()
@@ -49,7 +49,7 @@ class TestFoaf(unittest.TestCase):
         foaf = loader.getFoafFrom(ECADEMY)
         self.assertEquals(foaf['name'], [rdflib.Literal('Debbie Tarrier')])
         foaf = loader.getFoafFrom(OPERA)
-        self.assertEquals(foaf['name'], [rdflib.Literal(u'Charles McCathieNevile')])
+        self.assertEquals(foaf['name'], [])
 
     def testFriends(self):
         loader = UriLoader()
@@ -79,21 +79,28 @@ class TestFoaf(unittest.TestCase):
              ('6b31c41e80d36cc08a489462c0c2c37d7de8d2e5', u'http://criptonita.com/~nacho/foaf.rdf'), 
              ('0363c58a9ec61db68e3fa37cfcd38b301deaab97', u'http://www.kagueto.net/files/foaf.rdf')])
 
-
-##
-##    FIXME Implement test cases
-##
-##        self.assertEquals(foaf['name'], [rdflib.Literal('~*~')])
-##        foaf = loader.getFoafFrom(ECADEMY)
-##        self.assertEquals(foaf['name'], [rdflib.Literal('Debbie Tarrier')])
-##        foaf = loader.getFoafFrom(OPERA)
-##        self.assertEquals(foaf['name'], [rdflib.Literal(u'Charles McCathieNevile')])
+        foaf = loader.getFoafFrom(TRIBES)
+        self.assertEquals(len(foaf['friends']), 485)
+        foaf = loader.getFoafFrom(ECADEMY)
+        self.assertEquals(len(foaf['friends']), 267)
+        foaf = loader.getFoafFrom(OPERA)
+        self.assertListEquals(foaf['friends'], 
+        [('1d69281af85b84cd835ab50bcf4ef2dcb2369175', u'http://my.opera.com/sparklecitygirl/xml/foaf'), 
+            ('c6ae1fdfe38a26a7ada2dc3cce523d9153f7cb00', u'http://my.opera.com/kutch_hariompariwar/xml/foaf'), 
+            ('cad5eaac9ea250c47c63384f04810bb4dd3c9b33', u'http://my.opera.com/six_string_wizard/xml/foaf'),
+            ('f09f0562d95fbb230d95c2ca3eee557a6a3bdc38', u'http://my.opera.com/mimag/xml/foaf'), 
+            ('cdaa6158e4d46c0bb5eeedd74e53247db8fb27b8', u'http://my.opera.com/seifip/xml/foaf'), 
+            ('31441e1cd62c38dd41e883bc4ac540d6c6c77d23', u'http://my.opera.com/honeybe/xml/foaf'), 
+            ('242e339959af5a23da371ffa43f429eabf8a489e', u'http://my.opera.com/chinajon/xml/foaf'),
+            ('3343e5aadc080b4a413220be2443c0bdc762b3df', u'http://my.opera.com/Nyingje/xml/foaf'),
+            ('b15d7e177925df04a76abb0714877640ad8495c1', u'http://my.opera.com/zenya/xml/foaf'), 
+            ('ec65076a7228f613e3f1b0cf27661395299ca14d', u'http://my.opera.com/SerbianFighter/xml/foaf')])
+        
 
 
             
     def assertListEquals(self, obtained, expected):
-        self.assertEquals(len(obtained), len(expected), 
-                "Different lenght in list of expected and obtained results")
+        self.assertEquals(len(obtained), len(expected), "Different lenght in list of expected and obtained results")
          
         for e in expected:
             if not e in obtained:

@@ -16,6 +16,8 @@ class FriendsFilter(FoafFilter):
         self.select = ("?sha1", "?uri")
         self.where = GraphPattern([("?node", RDFS["seeAlso"], "?uri"),
                                     ("?node", RDF["type"], FOAF["Person"])])
+##                                    ("?parent", RDF["type"], FOAF["Person"]),
+##                                    ("?parent", RDF["knows"], "?node")])
         self.optional = GraphPattern([("?node", FOAF["mbox_sha1sum"], "?sha1")])
     
     def tryXPath(self, xmlDom, query):
