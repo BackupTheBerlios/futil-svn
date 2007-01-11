@@ -8,9 +8,7 @@ import xml
 class NameFilter(FoafFilter):
     
     def __init__(self, next=None):
-        self.next = next
-        if ( next ):
-            FoafFilter.__init__(next)
+        FoafFilter.__init__(self, next)
         
         FOAF = rdflib.Namespace("http://xmlns.com/foaf/0.1/")
         self.select = ("?value")
@@ -22,7 +20,7 @@ class NameFilter(FoafFilter):
         return map(lambda x: x.toprettyxml().replace('\n',''), nodes)
     
     def process(self, data, foaf):
-        print "Proccessing ", self.__class__
+        #print "Proccessing ", self.__class__
         result = self.evaluateSparQL(data['graph'], self.select, self.where)
         if result == None or result == []:
             result = self.tryXPath(data['xmlDom'], "/rdf:RDF/foaf:Person/foaf:name/text()")

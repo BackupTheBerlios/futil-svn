@@ -51,5 +51,24 @@ class TestFoaf(unittest.TestCase):
         foaf = loader.getFoafFrom(OPERA)
         self.assertEquals(foaf['name'], [rdflib.Literal(u'Charles McCathieNevile')])
 
+    def testFriends(self):
+        loader = UriLoader()
+        foaf = loader.getFoafFrom(FRADE)
+        self.assertListEquals(foaf['friends'], 
+        [ ('98a99390f2fe9395041bddc41e933f50e59a5ecb','http://www.berrueta.net/foaf.rdf'),
+          ('97d9756f1281858d0e9e4489003073e4986546ce','http://xtrasgu.asturlinux.org/descargas/foaf.rdf'),
+          ('119222cf3a2893a375cc4f884a0138155c771415','http://www.wikier.org/foaf.rdf'),
+          ('bd6566af7b3bfa28f917aa545bf4174661817d79','http://www.asturlinux.org/~jsmanrique/foaf.rdf'),
+          ('','http://www.kagueto.net/files/foaf.rdf')])
+
+    def assertListEquals(self, obtained, expected):
+        self.assertEquals(len(obtained), len(expected), 
+                "Different lenght in list of expected and obtained results")
+        
+        for e in expected:
+            if not e in obtained:
+                self.assertTrue(False, "Expected " + str(e) + " not in obtained results")
+        self.assertTrue(True)
+    
 if __name__ == "__main__":
   unittest.main()

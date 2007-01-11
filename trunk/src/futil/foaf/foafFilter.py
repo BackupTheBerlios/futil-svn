@@ -8,7 +8,7 @@ foafNS = {  "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 
 class FoafFilter:
 
-    def __init__(self, next=None):
+    def __init__(self, next):
         """
          next: Following filter, subclass of FoafFilter
         """
