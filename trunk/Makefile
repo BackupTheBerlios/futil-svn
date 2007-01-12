@@ -6,6 +6,7 @@ clean:
 	rm -f `find . -name "*~"`
 	rm -f `find . -name "*pyc"`
 	rm -f `find . -name "*.bak"`
+	rm -f `find . -name "semantic.cache"`
 	rm -f data/*.data data/*.eps
 	rm -rf doc/epydoc
 
