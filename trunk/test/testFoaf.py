@@ -25,7 +25,8 @@ class TestFoaf(CommonFilterTest):
           ('bd6566af7b3bfa28f917aa545bf4174661817d79','http://www.asturlinux.org/~jsmanrique/foaf.rdf'),
           ('','http://www.kagueto.net/files/foaf.rdf')])
         self.assertEquals(foaf['geopos'], [('43.35401','-5.854694')])
-
+        self.assertEquals(foaf['nick'], ['Asjastras'])
+        print foaf
 
 if __name__ == "__main__":
   unittest.main()

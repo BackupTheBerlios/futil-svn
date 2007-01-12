@@ -6,6 +6,7 @@ from futil.foaf.nameFilter import NameFilter
 from futil.foaf.shaFilter import ShaFilter
 from futil.foaf.friendsFilter import FriendsFilter
 from futil.foaf.geoposFilter import GeoPosFilter
+from futil.foaf.nickFilter import NickFilter
 import urllib2
 
 # SparQL
@@ -26,7 +27,7 @@ class FoafAnalyzer:
         pass
 
     def run(self, data):
-        chain = GeoPosFilter(FriendsFilter(NameFilter(ShaFilter())))
+        chain = GeoPosFilter(FriendsFilter(NameFilter(ShaFilter(NickFilter()))))
         return chain.run(data)
 
 
