@@ -7,7 +7,11 @@ clean:
 	rm -f `find . -name "*pyc"`
 	rm -f `find . -name "*.bak"`
 	rm -f data/*.data data/*.eps
+	rm -rf doc/epydoc
 
+epydoc:
+	mkdir -p doc/epydoc
+	epydoc -n futil -o doc/epydoc/ --html src/futil/
 tests:
 	$(PYTHON) test/testfoaf.py
 	$(PYTHON) test/testPySQLite.py
