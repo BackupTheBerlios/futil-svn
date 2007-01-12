@@ -6,7 +6,10 @@ import rdflib
 import xml
 
 class FriendsFilter(FoafFilter):
-    
+    """
+     Filter to extract friends of foaf's owner. 
+    Set the result in "friends" key.
+    """    
     def __init__(self, next=None):
         FoafFilter.__init__(self, next)
         
