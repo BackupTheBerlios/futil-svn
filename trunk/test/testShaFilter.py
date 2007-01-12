@@ -2,7 +2,6 @@
 import sys
 sys.path.append('./src')
 
-import rdflib
 import unittest
 from futil.foaf.foafAnalyzer import UriLoader
 from futil.foaf.shaFilter import ShaFilter
