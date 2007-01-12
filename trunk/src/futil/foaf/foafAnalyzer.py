@@ -25,7 +25,6 @@ class FoafAnalyzer:
         pass
 
     def run(self, data):
-        sha = ShaFilter()
         chain = FriendsFilter(NameFilter(ShaFilter()))
         return chain.run(data)
 
