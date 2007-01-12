@@ -26,7 +26,14 @@ class TestFoaf(CommonFilterTest):
           ('','http://www.kagueto.net/files/foaf.rdf')])
         self.assertEquals(foaf['geopos'], [('43.35401','-5.854694')])
         self.assertEquals(foaf['nick'], ['Asjastras'])
-        
+
+    def testBadXml(self):
+        """
+         Load bad XML
+        """
+        loader = UriLoader()
+        foaf = loader.getFoafFrom(self.BADXML)
+        self.assertEquals(foaf, {})
 
 if __name__ == "__main__":
   unittest.main()

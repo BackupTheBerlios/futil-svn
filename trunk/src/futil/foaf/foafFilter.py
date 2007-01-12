@@ -1,5 +1,4 @@
-import xml.sax._exceptions
-import rdflib.exceptions
+
 
 foafNS = {  "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
             "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -45,15 +44,10 @@ class FoafFilter:
         try:
             result = graph.query(select, where, optional)
             return result
-        except xml.sax._exceptions.SAXParseException:
-            print >> sys.stderr , " BAD XML: ", foafUri
-            return None
-        except rdflib.exceptions.ParserError:
-            print >> sys.stderr , " BAD RDF: ", foafUri
-            return None
         except UnicodeEncodeError:
             print >> sys.stderr , "Encoding error in ", foafUri
             return None
+    
 
     def evaluateXPath(self, xmldom, query):
         """

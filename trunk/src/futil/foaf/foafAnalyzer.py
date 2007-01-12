@@ -13,6 +13,8 @@ import urllib2
 import rdflib
 from rdflib.sparql import sparqlGraph
 from rdflib.sparql.graphPattern import GraphPattern
+import xml.sax._exceptions
+import rdflib.exceptions
 
 # XML
 from xml.dom import minidom
@@ -65,8 +67,20 @@ class UriLoader:
         """
          Load foaf in both formats from uri and apply analyzer
         """
-        raw_data = self.__getData(uri)
-        return self._analyzer.run(raw_data)
+        try:
+            raw_data = self.__getData(uri)
+            return self._analyzer.run(raw_data)
+        except xml.sax._exceptions.SAXParseException:
+            print >> sys.stderr , " BAD XML: ", foafUri
+            return {}
+        except rdflib.exceptions.ParserError:
+            print >> sys.stderr , " BAD RDF: ", foafUri
+            return {}
+        except UnicodeEncodeError:
+            print >> sys.stderr , "Encoding error in ", foafUri
+            return {}
+        except:
+            return {}
 
 if __name__ == "__main__":
 
