@@ -6,36 +6,28 @@ import rdflib
 
 import unittest
 from futil.foaf.foafAnalyzer import UriLoader
+from commonFilterTest import CommonFilterTest
 
-
-
-FRADE = "data/test/frade.rdf"
-WIKIER = "data/test/wikier.rdf"
-TRIBES = "data/test/tribes.rdf"
-ECADEMY = "data/test/ecademy.rdf"
-OPERA = "data/test/opera2.rdf"
-
-
-class TestFoaf(unittest.TestCase):
+class TestFoaf(CommonFilterTest):
 
     def testName(self):
         loader = UriLoader()
-        foaf = loader.getFoafFrom(FRADE)
+        foaf = loader.getFoafFrom(self.FRADE)
         self.assertEquals(foaf['name'], [rdflib.Literal('Ivan Frade')])
         
-        foaf = loader.getFoafFrom(WIKIER)
+        foaf = loader.getFoafFrom(self.WIKIER)
         self.assertEquals(foaf['name'], [rdflib.Literal(u'Sergio Fernández', lang=u'es')])
         
-        foaf = loader.getFoafFrom(TRIBES)
+        foaf = loader.getFoafFrom(self.TRIBES)
         self.assertEquals(foaf['name'], [rdflib.Literal('~*~')])
-        foaf = loader.getFoafFrom(ECADEMY)
+        foaf = loader.getFoafFrom(self.ECADEMY)
         self.assertEquals(foaf['name'], [rdflib.Literal('Debbie Tarrier')])
-        foaf = loader.getFoafFrom(OPERA)
+        foaf = loader.getFoafFrom(self.OPERA)
         self.assertEquals(foaf['name'], [])
 
     def testFriends(self):
         loader = UriLoader()
-        foaf = loader.getFoafFrom(FRADE)
+        foaf = loader.getFoafFrom(self.FRADE)
         self.assertListEquals(foaf['friends'], 
         [ ('98a99390f2fe9395041bddc41e933f50e59a5ecb','http://www.berrueta.net/foaf.rdf'),
           ('97d9756f1281858d0e9e4489003073e4986546ce','http://xtrasgu.asturlinux.org/descargas/foaf.rdf'),
@@ -43,7 +35,7 @@ class TestFoaf(unittest.TestCase):
           ('bd6566af7b3bfa28f917aa545bf4174661817d79','http://www.asturlinux.org/~jsmanrique/foaf.rdf'),
           ('','http://www.kagueto.net/files/foaf.rdf')])
         
-        foaf = loader.getFoafFrom(WIKIER)        
+        foaf = loader.getFoafFrom(self.WIKIER)        
         self.assertListEquals(foaf['friends'],
             [('057048f30557d8e26f71fdec6ef43542166ca932', u'http://www.ivanminguez.net/foaf.rdf'), 
              ('84d076726727b596b08198e26ef37e4817353e97', u'http://frade.no-ip.info:2080/~ivan/foaf.rdf'), 
@@ -61,11 +53,11 @@ class TestFoaf(unittest.TestCase):
              ('6b31c41e80d36cc08a489462c0c2c37d7de8d2e5', u'http://criptonita.com/~nacho/foaf.rdf'), 
              ('0363c58a9ec61db68e3fa37cfcd38b301deaab97', u'http://www.kagueto.net/files/foaf.rdf')])
 
-        foaf = loader.getFoafFrom(TRIBES)
+        foaf = loader.getFoafFrom(self.TRIBES)
         self.assertEquals(len(foaf['friends']), 485)
-        foaf = loader.getFoafFrom(ECADEMY)
+        foaf = loader.getFoafFrom(self.ECADEMY)
         self.assertEquals(len(foaf['friends']), 267)
-        foaf = loader.getFoafFrom(OPERA)
+        foaf = loader.getFoafFrom(self.OPERA)
         self.assertListEquals(foaf['friends'], 
         [('1d69281af85b84cd835ab50bcf4ef2dcb2369175', u'http://my.opera.com/sparklecitygirl/xml/foaf'), 
             ('c6ae1fdfe38a26a7ada2dc3cce523d9153f7cb00', u'http://my.opera.com/kutch_hariompariwar/xml/foaf'), 
@@ -79,22 +71,5 @@ class TestFoaf(unittest.TestCase):
             ('ec65076a7228f613e3f1b0cf27661395299ca14d', u'http://my.opera.com/SerbianFighter/xml/foaf')])
         
 
-
-            
-    def assertListEquals(self, obtained, expected):
-        self.assertEquals(len(obtained), len(expected), "Different lenght in list of expected and obtained results")
-         
-        for e in expected:
-            if not e in obtained:
-                self.assertTrue(False, "Expected " + str(e) + " not in obtained results")
-        self.assertTrue(True)
-    
-    def diffList(self, list1, list2):
-        only1 = [l for l in list1 if not l in list2]
-        only2 = [l for l in list2 if not l in list1]
-        print only1
-        print " * * * * * * * "
-        print only2
-        
 if __name__ == "__main__":
   unittest.main()
