@@ -24,6 +24,7 @@ class TestFoaf(CommonFilterTest):
           ('119222cf3a2893a375cc4f884a0138155c771415','http://www.wikier.org/foaf.rdf'),
           ('bd6566af7b3bfa28f917aa545bf4174661817d79','http://www.asturlinux.org/~jsmanrique/foaf.rdf'),
           ('','http://www.kagueto.net/files/foaf.rdf')])
+        self.assertEquals(foaf['geopos'], [('43.35401','-5.854694')])
 
 
 if __name__ == "__main__":

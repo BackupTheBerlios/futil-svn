@@ -5,6 +5,7 @@ sys.path.append('./src')
 from futil.foaf.nameFilter import NameFilter
 from futil.foaf.shaFilter import ShaFilter
 from futil.foaf.friendsFilter import FriendsFilter
+from futil.foaf.geoposFilter import GeoPosFilter
 import urllib2
 
 # SparQL
@@ -25,7 +26,7 @@ class FoafAnalyzer:
         pass
 
     def run(self, data):
-        chain = FriendsFilter(NameFilter(ShaFilter()))
+        chain = GeoPosFilter(FriendsFilter(NameFilter(ShaFilter())))
         return chain.run(data)
 
 
