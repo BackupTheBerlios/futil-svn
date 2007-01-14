@@ -44,6 +44,22 @@ div#content {
   display: none;
 }
 
+ol#experiments {
+  list-style: none;
+}
+
+ol#experiments > li {
+  background-color: #eeeeee;
+  margin: 2em;
+  padding: 1em;
+  font-family: monospace;
+}
+
+ol#experiments > li > h3 {
+  font-weight: bold;
+  margin: 0.1em;
+}
+
 div#foot {
   text-align: right;
   margin: 2em;
