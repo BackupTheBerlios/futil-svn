@@ -20,6 +20,23 @@ import rdflib.exceptions
 from xml.dom import minidom
 from xml import xpath
 
+class MockLogger:
+    def __init__(self):
+        pass
+    
+    def clear(self):
+        pass
+    
+    def info(self, message):
+        print >> sys.stderr, 'INFO: ' + message
+        
+    def error(self, message):
+        print >> sys.stderr, 'ERROR: ' + message
+    
+    def warn(self, message):
+        print >> sys.stderr, 'WARN: ' + message
+
+
 
 class FoafAnalyzer:
     """
@@ -32,35 +49,43 @@ class FoafAnalyzer:
         chain = GeoPosFilter(FriendsFilter(NameFilter(ShaFilter(NickFilter()))))
         return chain.run(data)
 
-
 class UriLoader:
     """
      Load an URI (local or remote) in XML-DOM and SparQL Graph formats
     """
-    def __init__(self, analyzer=None):
+    def __init__(self, analyzer=None, logger=None):
         self._analyzer = analyzer or FoafAnalyzer()
+        self._logger = logger or MockLogger()
 
     def __isOnline(self, uri):
         return uri.startswith('http://')
 
 
     def __getData(self, fileUri):
-        data = {}
+        data = {"uri":[fileUri]}
 
         if self.__isOnline( fileUri ):
             text = urllib2.urlopen(fileUri).read()
         else:
             text = open(fileUri).read()
 
-        # Load XML
-        doc = minidom.parseString(text)
-        data['xmlDom'] = doc
-
-        # Load SparQl
-        sparqlGr = sparqlGraph.SPARQLGraph()
-        sparqlGr.parse(fileUri)
-        data['graph'] = sparqlGr
-
+        try:
+            # Load XML
+            doc = minidom.parseString(text)
+            data['xmlDom'] = doc
+        except:
+            self._logger.error(" BAD XML: " + fileUri)
+            data['xmlDom'] = None
+        
+        try:
+            # Load SparQl
+            sparqlGr = sparqlGraph.SPARQLGraph()
+            sparqlGr.parse(fileUri)
+            data['graph'] = sparqlGr
+        except:
+            self._logger.error(" BAD RDF: " + fileUri)
+            data['graph'] = None
+            
         return data
 
     def getFoafFrom(self, uri):
@@ -70,17 +95,11 @@ class UriLoader:
         try:
             raw_data = self.__getData(uri)
             return self._analyzer.run(raw_data)
-        except xml.sax._exceptions.SAXParseException:
-            print >> sys.stderr , " BAD XML: ", foafUri
-            return {}
-        except rdflib.exceptions.ParserError:
-            print >> sys.stderr , " BAD RDF: ", foafUri
-            return {}
         except UnicodeEncodeError:
-            print >> sys.stderr , "Encoding error in ", foafUri
+            self._logger.error("Encoding error in " + uri)
             return {}
-        except:
-            return {}
+        except Exception, e:
+            self._logger.error("Exception " + str(e))
 
 if __name__ == "__main__":
 
