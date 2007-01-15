@@ -9,6 +9,10 @@ from futil.foaf.geoposFilter import GeoPosFilter
 from futil.foaf.nickFilter import NickFilter
 import urllib2
 
+import socket
+socket.setdefaulttimeout(6)
+
+
 # SparQL
 import rdflib
 from rdflib.sparql import sparqlGraph
@@ -101,7 +105,9 @@ class UriLoader:
             self._logger.error("Encoding error in " + uri)
             return {}
         except Exception, e:
+            # Timeout, invalid URI
             self._logger.error("Exception " + str(e))
+            return {}
 
 if __name__ == "__main__":
 
