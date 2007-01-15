@@ -21,6 +21,14 @@ tests:
 	$(PYTHON) test/testClientView.py
 	$(PYTHON) test/testShaManager.py
 
+test-foaf:
+	$(PYTHON) test/testFriendsFilter.py
+	$(PYTHON) test/testGeoposFilter.py
+	$(PYTHON) test/testNameFilter.py
+	$(PYTHON) test/testNickFilter.py
+	$(PYTHON) test/testShaFilter.py
+	$(PYTHON) test/testFoaf.py
+
 stats:
 	scripts/pool.sh
 	scripts/popular.sh
