@@ -1,4 +1,4 @@
-
+import xml
 
 foafNS = {  "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
             "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -38,6 +38,8 @@ class FoafFilter:
 
 
     def evaluateSparQL(self, graph, select, where, optional=None):
+        if ( not graph):
+            return []
         """
          Helper method to evaluate sparQL queries
         """
@@ -53,6 +55,8 @@ class FoafFilter:
         """
          Helper method to evaluate xpath queries
         """
+        if ( not xmldom ):
+            return []
         c = xml.xpath.Context.Context(xmldom)
         c.setNamespaces(foafNS)
         e = xml.xpath.Compile(query)
