@@ -6,7 +6,7 @@ from futil.foaf.foaf import Foaf, ErroneousFoaf
 from futil.index.indexer import Indexer
 from futil.storage.shaManager import ShaManager
 from futil.utils.logger import FutilLogger
-
+from futil.foaf.foafAnalyzer import UriLoader
 
 class IndexAppService(Indexer):
 
@@ -16,25 +16,25 @@ class IndexAppService(Indexer):
         self._writer = IndexWriter(self._directory, StandardAnalyzer(), create)
         self.shaBBDD = shaManager
         self.logger = FutilLogger()
+        self.uriLoader = UriLoader(logger=self.logger)
 
 
     def indexFOAF(self, foaf):
         document = FoafDocumentFactory.getDocumentFromFOAF(foaf)
         self._writer.addDocument(document)
+        if ( foaf.has_key('sha')):
+            for sha in foaf['sha']:
+                self.shaBBDD.insertUriSha(foaf['uri'][0], sha)
 
-        if ( hasattr(foaf,'sha')):
-            for sha in foaf.sha:
-                self.shaBBDD.insertUriSha(foaf.uri, sha)
-
-        if ( hasattr(foaf, 'friends')):
-            for friendSha, friendUri in foaf.friends:
+        if ( foaf.has_key('friends')):
+            for friendSha, friendUri in filter( lambda x: x[0] != '', foaf['friends']):
                 self.shaBBDD.insertUriSha(friendUri, friendSha)
-            return [u for (v,u) in foaf.friends]
+            return [u for (v,u) in foaf['friends']]
         return []
 
     def indexFOAFUri(self, foafUri):
         try:
-            f = Foaf(foafUri)
+            f = self.uriLoader.getFoafFrom(foafUri)
             return self.indexFOAF(f)
         except ErroneousFoaf, e:
             self.logger.info("Error parsing FOAF: " + foafUri + " - " + str(e))

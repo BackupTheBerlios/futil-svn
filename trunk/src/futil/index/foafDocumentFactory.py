@@ -9,7 +9,10 @@ fields = {
     "name" : ( Field.Store.YES, Field.Index.TOKENIZED),
     "nick" : ( Field.Store.YES, Field.Index.TOKENIZED),
 #    "sha"  : ( Field.Store.YES, Field.Index.UN_TOKENIZED),
-    "uri"  : ( Field.Store.YES, Field.Index.UN_TOKENIZED)
+    "uri"  : ( Field.Store.YES, Field.Index.UN_TOKENIZED),
+    "friends": (Field.Store.YES, Field.Index.UN_TOKENIZED),
+    "geolat": (Field.Store.YES, Field.Index.UN_TOKENIZED),
+    "geolong": (Field.Store.YES, Field.Index.UN_TOKENIZED)
 }
 
 """
@@ -25,13 +28,15 @@ class FoafDocumentFactory:
     
     def getDocumentFromFOAF(foaf):
         doc = Document()
-        for attr, value in foaf.__dict__.iteritems():
+        for attr, value in foaf.iteritems():
             if ( fields.has_key(attr)):
-                if isinstance(value, list):
-                    for x in value:
+                # Now is always a list!
+                for x in value:
+                    if isinstance(x, tuple): #for example (sha, uri)
+                        doc.add(Field(attr, x[1], fields[attr][0], fields[attr][1]))
+                    else:
                         doc.add(Field(attr, x, fields[attr][0], fields[attr][1]))
-                else:
-                    doc.add(Field(attr, value, fields[attr][0], fields[attr][1]))
+                
             else:
                 pass
                 # DEBUG information print "E: Field " + attr + " ignored in index"

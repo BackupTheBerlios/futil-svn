@@ -31,7 +31,9 @@ class FoafFilter:
         To be implemented by subclasses
          data: dictionary with foaf in sparqlgraph and xml DOM formats
          foaf: dictionary. Each filter will add a new key with appropiate
-          contents
+          contents. The contents are ALWAYS a list!
+         If the filter has no results to add, can return the same foaf, or
+            add the key with an empty list.
         """
         pass
 

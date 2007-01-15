@@ -8,7 +8,7 @@ import xml
 class GeoPosFilter(FoafFilter):
     """
      Filter to extract geoposition of foaf's owner (if exists!)
-     It sets "geopos" in foaf dictionary
+     It sets "geolat" y "geolong" in foaf dictionary
     """
 
     def __init__(self, next=None):
@@ -34,5 +34,10 @@ class GeoPosFilter(FoafFilter):
         if result == None or result == []:
             result = self.evaluateSparQL(data['graph'], self.select, self.relaxedWhere)
             # If somebody else has his geodata in the foaf... multiple results!
-        foaf['geopos'] = result
+        if ( len(result) > 0 ):
+            foaf['geolat'] = [result[0][0]]
+            foaf['geolong'] = [result[0][1]]
+        else:
+            foaf['geolat'] = []
+            foaf['geolong'] = []
         return foaf

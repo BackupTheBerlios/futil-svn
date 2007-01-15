@@ -14,5 +14,5 @@ d = FSDirectory.getDirectory(INDEX_DIR, not os.path.exists(INDEX_DIR))
 s = ShaManager()
 
 appServiceFactory = Factory()
-#appServiceFactory.register("createSearchService", SearchAppService, d)
+appServiceFactory.register("createSearchService", SearchAppService, d, s)
 appServiceFactory.register("createIndexService", IndexAppService, d, s)

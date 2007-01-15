@@ -24,6 +24,8 @@ sergio = {"name":["sergio"],
         "uri":["http://www.wikier.org/foaf.rdf"], 
         "sha":["1123456789012345678901234567890123456789"]}
 
+TESTFILE = "data/test/frade.rdf"
+
 class TestClientView(unittest.TestCase):
 
 
@@ -55,7 +57,6 @@ class TestClientView(unittest.TestCase):
         r = self._searcher.search("http://www.wikier.org/foaf.rdf")
         self.assertEqual(len(r), 1)
         self.assertEqual(r[0].name, "sergio")
-
 
     def printDatabase(self):
         self.shaManager.printDatabase()

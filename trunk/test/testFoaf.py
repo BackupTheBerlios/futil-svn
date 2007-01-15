@@ -28,6 +28,7 @@ class TestFoaf(CommonFilterTest):
         self.assertEquals(foaf['geolong'], ['-5.854694'])
         self.assertEquals(foaf['nick'], ['Asjastras'])
 
+
     def testBadXml(self):
         """
          Load bad XML
