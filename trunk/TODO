@@ -2,5 +2,11 @@
 futil todo tasks:
 ----------------
 
-	- implement a mechanism who allows us a dynamic treatment of the information 
-	  according to the context (main app, tests or others)
+	- implement a mechanism who allows us a dynamic treatment of the 
+	  information according to the context (main app, tests or others)
+
+	- store useful metrics:
+		* links from/to comercial sites (specially from/to 
+		  non-comercial sites)
+		* friends average
+
