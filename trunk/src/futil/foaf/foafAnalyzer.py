@@ -62,7 +62,7 @@ class UriLoader:
 
 
     def __getData(self, fileUri):
-        data = {"uri":[fileUri]}
+        data = {}
 
         if self.__isOnline( fileUri ):
             text = urllib2.urlopen(fileUri).read()
@@ -94,7 +94,9 @@ class UriLoader:
         """
         try:
             raw_data = self.__getData(uri)
-            return self._analyzer.run(raw_data)
+            foaf = self._analyzer.run(raw_data)
+            foaf['uri'] = [uri]
+            return foaf
         except UnicodeEncodeError:
             self._logger.error("Encoding error in " + uri)
             return {}
