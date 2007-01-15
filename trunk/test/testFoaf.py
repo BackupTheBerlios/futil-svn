@@ -33,7 +33,8 @@ class TestFoaf(CommonFilterTest):
         """
         loader = UriLoader()
         foaf = loader.getFoafFrom(self.BADXML)
-        self.assertEquals(foaf, {})
+        expected =  {'sha': [], 'nick': [], 'friends': [], 'geopos': [], 'name':[], 'uri':[self.BADXML] }
+        self.assertEquals(foaf, expected)
 
 if __name__ == "__main__":
   unittest.main()
