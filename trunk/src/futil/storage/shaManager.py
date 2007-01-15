@@ -1,12 +1,15 @@
 import os
 from pysqlite2 import dbapi2 as sqlite
 
+from futil.utils.logger import FutilLogger
+
 #
 # TODO Add a close method and try to keep connection open (performance)
 #
 class ShaManager:
 
     def __init__(self, path="shas.db"):
+        self._logger = FutilLogger()
         self.connection = None
         self.path = path
         if (not os.path.exists(self.path)):
@@ -26,7 +29,8 @@ class ShaManager:
                 """ % (uri, sha)
             cur.execute(query)
             con.commit()
-        except:
+        except Exception, e:
+            self._logger.error("Inserting in sha database " + str(e))
             pass
 
     def searchSha(self, sha):
@@ -54,5 +58,5 @@ class ShaManager:
         return result
 
     def close(self):
-        if not self.connection:
+        if self.connection:
             self.connection.close()
