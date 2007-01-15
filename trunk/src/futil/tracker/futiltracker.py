@@ -5,10 +5,10 @@ from futil.utils.logger import FutilLogger
 
 class FutilTracker(Tracker):
     
-    def __init__(self, db='foaf.db'):
+    def __init__(self, db='foaf.db', app='futil'):
         self.added = 0
         self.db = PySQLiteWrapper(db)
-        self.log = FutilLogger()
+        self.log = FutilLogger(app)
     
     def moreUrisToExplore(self):
         return self.db.pending()

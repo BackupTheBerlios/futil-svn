@@ -6,7 +6,7 @@ sys.path.append('./src')
 from futil.utils.ptsw import PTSW
 import unittest
 
-ptsw = PTSW('.ptsw-test')
+ptsw = PTSW(app='test', config='.ptsw-test')
 
 class TestPTSW(unittest.TestCase):
 

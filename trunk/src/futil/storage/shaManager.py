@@ -8,8 +8,8 @@ from futil.utils.logger import FutilLogger
 #
 class ShaManager:
 
-    def __init__(self, path="shas.db"):
-        self._logger = FutilLogger()
+    def __init__(self, path='shas.db', app='futil'):
+        self._logger = FutilLogger(app)
         self.connection = None
         self.path = path
         if (not os.path.exists(self.path)):

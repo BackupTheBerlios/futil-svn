@@ -17,7 +17,7 @@ URI = "http://www.wikier.org:2080/foaf.rdf"
 class TestShaManager(unittest.TestCase):
 
     def setUp(self):
-        self.shaManager = ShaManager(TESTDB)
+        self.shaManager = ShaManager(TESTDB, 'test')
 
     # Helper method
     def insertElement(self):

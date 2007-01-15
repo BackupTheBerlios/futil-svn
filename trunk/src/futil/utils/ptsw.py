@@ -23,9 +23,9 @@ TIMEOUT = 10
 
 class PTSW:
     
-    def __init__(self, config='.ptsw'):
+    def __init__(self, app='futil', config='.ptsw'):
         self.rest = "http://pingthesemanticweb.com/rest/?url="
-        self.log = FutilLogger()
+        self.log = FutilLogger(app)
         self.stats = {'pinged':0, 'sioc':0, 'foaf':0, 'doap':0, 'owl':0, 'rdfs':0, 'rdf':0, 'flerror':0}
         self.pathStats = config
         self.loadStats()

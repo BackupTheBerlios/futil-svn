@@ -10,12 +10,12 @@ from futil.foaf.foafAnalyzer import UriLoader
 
 class IndexAppService(Indexer):
 
-    def __init__(self, directory, shaManager):
+    def __init__(self, directory, shaManager, app='futil'):
         self._directory = directory
         create = not IndexReader.indexExists(self._directory)
         self._writer = IndexWriter(self._directory, StandardAnalyzer(), create)
         self.shaBBDD = shaManager
-        self.logger = FutilLogger()
+        self.logger = FutilLogger(app)
         self.uriLoader = UriLoader(logger=self.logger)
 
 

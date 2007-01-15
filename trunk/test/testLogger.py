@@ -6,7 +6,7 @@ sys.path.append('./src')
 from futil.utils.logger import FutilLogger
 import unittest
 
-log = FutilLogger('logger-test')
+log = FutilLogger('test')
 
 class TestPTSW(unittest.TestCase):
 

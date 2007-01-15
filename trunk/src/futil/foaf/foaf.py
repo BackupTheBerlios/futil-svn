@@ -70,8 +70,8 @@ class Foaf:
         print "Result xpath: "#, result
     return None
 
-  def __init__(self, foafUri=None):
-##    self.log = FutilLogger()
+  def __init__(self, foafUri=None, app='futil'):
+##    self.log = FutilLogger(app)
     try:
         if foafUri == None:
           return None
