@@ -1,0 +1,6 @@
+
+futil todo tasks:
+----------------
+
+	- implement a mechanism who allows us a dynamic treatment of the information 
+	  according to the context (main app, tests or others)
