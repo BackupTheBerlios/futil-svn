@@ -19,6 +19,10 @@ class TestMySQL(unittest.TestCase):
         self.assertTrue(mysql.insert(FOAF))
         self.assertTrue(mysql.exists(FOAF))
         
+    def testInsertionDup(self):
+        self.assertTrue(mysql.insert(FOAF))
+        self.assertFalse(mysql.insert(FOAF))
+        
     def testVisit(self):
         mysql.insert(FOAF)
         self.assertFalse(mysql.visited(FOAF))

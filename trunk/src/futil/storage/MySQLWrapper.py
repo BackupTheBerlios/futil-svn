@@ -1,7 +1,7 @@
 #!/usr/bin/env python2.4
 # -*- coding: utf8 -*-
 
-import os
+import os, sys
 from futil.storage.dbwrapper import DBWrapper
 import MySQLdb
 from futil.utils.logger import FutilLogger
@@ -10,15 +10,19 @@ CACHE = 100
 
 class MySQLWrapper(DBWrapper):
 
-    def __init__(self, host='localhost', db='futil', user='futil', passwd='futil', table='foafs'):
+    def __init__(self, app='futil', host='localhost', db='futil', user='futil', passwd='futil', table='foafs'):
         self.data = { 'host':host, 'db':db, 'user':user, 'passwd':passwd, 'table':table}
         self.connection = None
-        self.log = FutilLogger()
+        self.log = FutilLogger(app)
         self.pendingCache = []
 
     def realConnect(self):
-        return MySQLdb.connect(host=self.data['host'], db=self.data['db'],
-                               user=self.data['user'], passwd=self.data['passwd']) 
+        try:
+            return MySQLdb.connect(host=self.data['host'], db=self.data['db'],
+                                   user=self.data['user'], passwd=self.data['passwd']) 
+        except MySQLdb.Error, e:
+            self.log.error('conecting to db: ' + str(e[1]))
+            sys.exit(-1)
     
     def connect(self):
         if (self.connection==None):
@@ -32,19 +36,18 @@ class MySQLWrapper(DBWrapper):
         return cur.fetchall()
 
     def insert(self, uri, visited=False):
-        if not self.exists(uri):
-            visited = int(visited)
-            date = self.todayDate()
-            (con, cur) = self.connect()
-            query = "INSERT INTO `"+self.data['table']+"` (uri, visited, date) VALUES ('"+uri+"',"+str(visited)+","+date+")"
-            try:
-                cur.execute(query)
-                return True
-            except AssertionError, details:
-                self.log.error('Error inserting ' + uri + ': ' + str(details))
-                return False
-        else:
-            self.log.warn('Error: ' + uri + ' already exists on db')
+        visited = int(visited)
+        date = self.todayDate()
+        (con, cur) = self.connect()
+        query = "INSERT INTO `"+self.data['table']+"` (uri, visited, date) VALUES ('"+uri+"',"+str(visited)+","+date+")"
+        try:
+            cur.execute(query)
+            return True
+        except MySQLdb.IntegrityError, details:
+            self.log.warn(uri + ' already exists on db')
+            return False
+        except AssertionError, details:
+            self.log.error('inserting ' + uri + ': ' + str(details))
             return False
             
     def visit(self, uri):
@@ -55,7 +58,7 @@ class MySQLWrapper(DBWrapper):
             cur.execute(query)
             return True
         else:
-            self.log.error('Error: ' + uri + ' not exists on db')
+            self.log.error(uri + ' not exists on db')
             return False
 
     def exists(self, uri):
