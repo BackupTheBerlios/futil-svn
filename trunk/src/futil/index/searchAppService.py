@@ -44,6 +44,8 @@ class SearchAppService:
     def searchBySHA(self, query):
         #print "Preguntando por SHA"
         uris = self._shaManager.searchSha(query)
+        if uris == None or len(uris) == 0 :
+            return []
         return reduce(operator.concat, map(self.searchByURI, uris))
 
     def _performSearch(self, queryParser,query):
