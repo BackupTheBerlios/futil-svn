@@ -31,4 +31,5 @@ test-foaf:
 
 stats:
 	scripts/pool.sh
+	scripts/popularSites.sh
 	scripts/popular.sh
