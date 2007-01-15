@@ -24,7 +24,8 @@ class TestFoaf(CommonFilterTest):
           ('119222cf3a2893a375cc4f884a0138155c771415','http://www.wikier.org/foaf.rdf'),
           ('bd6566af7b3bfa28f917aa545bf4174661817d79','http://www.asturlinux.org/~jsmanrique/foaf.rdf'),
           ('','http://www.kagueto.net/files/foaf.rdf')])
-        self.assertEquals(foaf['geopos'], [('43.35401','-5.854694')])
+        self.assertEquals(foaf['geolat'], ['43.35401'])
+        self.assertEquals(foaf['geolong'], ['-5.854694'])
         self.assertEquals(foaf['nick'], ['Asjastras'])
 
     def testBadXml(self):
@@ -33,7 +34,13 @@ class TestFoaf(CommonFilterTest):
         """
         loader = UriLoader()
         foaf = loader.getFoafFrom(self.BADXML)
-        expected =  {'sha': [], 'nick': [], 'friends': [], 'geopos': [], 'name':[], 'uri':[self.BADXML] }
+        expected =  {'sha': [], 
+                    'nick': [], 
+                    'friends': [], 
+                    'geolat': [],
+                    'geolong': [],
+                    'name':[], 
+                    'uri':[self.BADXML] }
         self.assertEquals(foaf, expected)
 
 if __name__ == "__main__":

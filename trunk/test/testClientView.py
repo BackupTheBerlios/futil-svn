@@ -47,6 +47,10 @@ class TestClientView(unittest.TestCase):
         self.assertEqual(len(r), 1)
         self.assertEqual(r[0].name, "ivan")
 
+    def testSearchByShaNoExists(self):
+        r = self._searcher.search("0123456789012345678901234567890123456xxx")
+        self.assertEqual(len(r), 0)
+
     def testSearchByUri(self):
         r = self._searcher.search("http://www.wikier.org/foaf.rdf")
         self.assertEqual(len(r), 1)

@@ -8,6 +8,7 @@ class CommonFilterTest(unittest.TestCase):
     ECADEMY = "data/test/ecademy.rdf"
     OPERA = "data/test/opera2.rdf"
     BADXML = "data/test/badxml.rdf"
+    NOGEOPOS = 'data/test/nogeodata.rdf'
     
     def assertListEquals(self, obtained, expected):
         self.assertEquals(len(obtained), len(expected), "Different lenght in list of expected and obtained results")
