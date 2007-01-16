@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SITES=('my.opera.com' 'people.tribe.net' 'livejournal.com' 'ecademy.com' 'linkedin.com' 'kwark.org' 'w3.org')
+SITES=('my.opera.com' 'people.tribe.net' 'livejournal.com' 'ecademy.com' 'linkedin.com' 'kwark.org' 'elgg.net' 'w3.org')
 
 
 echo Popular Sites:
