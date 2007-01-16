@@ -6,7 +6,9 @@ import rdflib
 import xml
 
 class NameFilter(FoafFilter):
-
+    """
+    Write a "name" attribute in dictionary with foaf owner's name.
+    """
     def __init__(self, next=None):
         FoafFilter.__init__(self, next)
 
