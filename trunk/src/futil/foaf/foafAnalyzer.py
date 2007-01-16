@@ -2,12 +2,15 @@ import sys
 sys.path.append('./src')
 
 # Filters
+import futil
 from futil.foaf.nameFilter import NameFilter
 from futil.foaf.shaFilter import ShaFilter
 from futil.foaf.friendsFilter import FriendsFilter
 from futil.foaf.geoposFilter import GeoPosFilter
 from futil.foaf.nickFilter import NickFilter
-import urllib2
+import urllib, urllib2
+import robotparser
+from urlparse import urlparse
 
 import socket
 socket.setdefaulttimeout(6)
@@ -63,16 +66,47 @@ class UriLoader:
 
     def __isOnline(self, uri):
         return uri.startswith('http://')
+    
+    def __getBase(self, uri):
+        parsed = urlparse(uri)
+        base = parsed[0] + '://' + parsed[1] + '/'
+        return base
+        
+    def __alowed(self, uri):
+        base = self.__getBase(uri)
+        try:
+            rp = robotparser.RobotFileParser()
+            rp.set_url(base + 'robots.txt')
+            rp.read()
+            return rp.can_fetch("*", uri)
+        except Exception, e:
+            self._logger.info(host + 'robots.txt not found, assuming is allowed') 
+            return True
 
 
-    def __getData(self, fileUri):
-        data = {}
-
+    def __loadDocument(self, fileUri):
         if self.__isOnline( fileUri ):
-            text = urllib2.urlopen(fileUri).read()
+            try:
+                data = {}
+                headers = {'Accept': 'application/rdf+xml', 
+                           'User-Agent' : futil.__agent__ }
+                request = urllib2.Request(fileUri, data, headers)
+                text = urllib2.urlopen(request).read()
+            except urllib2.HTTPError, e:
+                #FIXME: try to open the urls with port using our useragent
+                self._logger.error(str(e))
+                text = urllib2.urlopen(fileUri).read()
         else:
             text = open(fileUri).read()
 
+        return text
+
+    def __getData(self, fileUri):
+        
+        data = {}
+        
+        text = self.__loadDocument(fileUri)
+        
         try:
             # Load XML
             doc = minidom.parseString(text)
@@ -89,25 +123,30 @@ class UriLoader:
         except:
             self._logger.error(" BAD RDF: " + fileUri)
             data['graph'] = None
-            
+
         return data
 
     def getFoafFrom(self, uri):
         """
          Load foaf in both formats from uri and apply analyzer
         """
-        try:
-            raw_data = self.__getData(uri)
-            foaf = self._analyzer.run(raw_data)
-            foaf['uri'] = [uri]
-            return foaf
-        except UnicodeEncodeError:
-            self._logger.error("Encoding error in " + uri)
-            return {}
-        except Exception, e:
-            # Timeout, invalid URI
-            self._logger.error("Exception " + str(e))
-            return {}
+        
+        if self.__alowed(uri):
+            try:
+                raw_data = self.__getData(uri)
+                foaf = self._analyzer.run(raw_data)
+                foaf['uri'] = [uri]
+                return foaf
+            except UnicodeEncodeError:
+                self._logger.error("Encoding error in " + uri)
+                return {}
+            except Exception, e:
+                # Timeout, invalid URI
+                print "Exception " + str(e)
+                self._logger.error("Exception " + str(e))
+                return {}
+        else:
+            print 'No allowed to crawl on', self.__getHost(uri)
 
 if __name__ == "__main__":
 

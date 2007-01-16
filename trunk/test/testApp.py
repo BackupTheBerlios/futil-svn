@@ -61,7 +61,7 @@ class TestClientView(unittest.TestCase):
         self.shaManager.printDatabase()
         self._searcher.close()
         self.shaManager.close()
-        os.remove(TESTDB)
+        #os.remove(TESTDB)
 
 if __name__ == "__main__":
     unittest.main()

@@ -43,7 +43,7 @@ class PTSW:
             data = {}
             headers = { 'User-Agent' : futil.__agent__ }
             request = urllib2.Request(url, data, headers)
-            response = urllib2.urlopen(request).read() #don't works the ping with especial URLs
+            response = urllib2.urlopen(request).read()
             responseParsed = self.parseResponse(response)
             
             ok = (responseParsed['flerror'] == 0)
