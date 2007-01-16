@@ -16,6 +16,7 @@
 import urllib, urllib2
 import os
 from xml.dom import minidom
+import futil
 from futil.utils.logger import FutilLogger
 from ConfigParser import ConfigParser
 
@@ -40,7 +41,7 @@ class PTSW:
             
             url = self.rest + urllib.quote(uri)
             data = {}
-            headers = { 'User-Agent' : 'futil' }
+            headers = { 'User-Agent' : futil.__agent__ }
             request = urllib2.Request(url, data, headers)
             response = urllib2.urlopen(request).read() #don't works the ping with especial URLs
             responseParsed = self.parseResponse(response)
