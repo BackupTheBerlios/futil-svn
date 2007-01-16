@@ -80,7 +80,7 @@ class UriLoader:
             rp.read()
             return rp.can_fetch("*", uri)
         except Exception, e:
-            self._logger.info(host + 'robots.txt not found, assuming is allowed') 
+            self._logger.info(host + 'robots.txt not founded, assuming is allowed to crawl') 
             return True
 
 
