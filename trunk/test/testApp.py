@@ -38,7 +38,7 @@ class TestClientView(unittest.TestCase):
     def testSearchBySha(self):
         r = self._searcher.search("84d076726727b596b08198e26ef37e4817353e97")
         self.assertEqual(len(r), 1)
-        self.assertEqual(r[0].name, u'Ivan Frade')
+        self.assertEqual(r[0]['name'], u'Ivan Frade')
 
     def testSearchByShaNoExists(self):
         r = self._searcher.search("0123456789012345678901234567890123456xxx")
@@ -47,7 +47,7 @@ class TestClientView(unittest.TestCase):
     def testSearchByUri(self):
         r = self._searcher.search("http://www.wikier.org/foaf.rdf")
         self.assertEqual(len(r), 1)
-        self.assertEqual(r[0].name, u'Sergio Fernández')
+        self.assertEqual(r[0]['name'], u'Sergio Fernández')
 
     def testIndexBadUri(self):
         try:
