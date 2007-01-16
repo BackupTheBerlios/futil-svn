@@ -1,12 +1,6 @@
 import sys
 sys.path.append('./src')
 
-
-from futil.tracker.ptswtracker import PTSWTracker
-from futil.index.appfactory import appServiceFactory
-
-import signal, sys
-
 class Crawler:
     
     def __init__(self, tracker, indexer):
@@ -24,17 +18,3 @@ class Crawler:
         print "Finishing..."
         self.tracker.close()
         self.indexer.close()
-
-
-if __name__ == "__main__":
-    
-    tracker = PTSWTracker(pinged='data/initial.xml')
-    indexer = appServiceFactory.createIndexService()
-    crawler = Crawler(tracker, indexer)  #FIXME
-
-    def finale(a, b):
-        crawler.finish()
-        sys.exit(0)
-
-    signal.signal(signal.SIGHUP, finale)
-    crawler.start()
