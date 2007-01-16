@@ -32,6 +32,10 @@ h2 {
   border-bottom: 1px solid #404070;
 }
 
+p {
+  text-align: justify;
+}
+
 img {
   border: 0;
 }
