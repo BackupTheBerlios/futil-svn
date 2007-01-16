@@ -13,8 +13,12 @@ class Crawler:
             uri = self.tracker.getNextUri()
             friends = self.indexer.indexFOAFUri(uri)
             self.tracker.putFriendsUris(friends)
-        
-    def finish(self):
-        print "Finishing..."
+        self.close()
+    
+    def close(self):
         self.tracker.close()
         self.indexer.close()
+
+    def finish(self):
+        print "Finishing..."
+        self.close()
