@@ -25,3 +25,4 @@ class FutilTracker(Tracker):
     
     def close(self):
         print self.added, 'FOAFs added'
+        self.db.close()

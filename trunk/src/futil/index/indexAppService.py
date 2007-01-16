@@ -35,9 +35,6 @@ class IndexAppService(Indexer):
         try:
             f = self.uriLoader.getFoafFrom(foafUri)
             return self.indexFOAF(f)
-        except ErroneousFoaf, e:
-            self.logger.info("Error parsing FOAF: " + foafUri + " - " + str(e))
-            return []
         except:
             self.logger.info("Unknow error indexing " + foafUri)
             return []
@@ -47,4 +44,4 @@ class IndexAppService(Indexer):
         if self._writer:
             self._writer.close()
         self._writer = None
-        #self.shaBBDD.close()
+        self.shaBBDD.close()

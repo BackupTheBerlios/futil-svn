@@ -109,6 +109,11 @@ class PySQLiteWrapper(DBWrapper):
             return False
         
     def close(self):
+        
+        def alwaysFalse():
+            return False
+        self.pending = alwaysFalse
+        
         if (self.connection != None):
             self.connection.close()
 
