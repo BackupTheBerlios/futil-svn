@@ -2,7 +2,6 @@ from PyLucene import IndexWriter, IndexReader, StandardAnalyzer
 from foafDocumentFactory import FoafDocumentFactory
 
 from futil.storage.pySQLiteWrapper import PySQLiteWrapper
-from futil.foaf.foaf import Foaf, ErroneousFoaf
 from futil.index.indexer import Indexer
 from futil.storage.shaManager import ShaManager
 from futil.utils.logger import FutilLogger
