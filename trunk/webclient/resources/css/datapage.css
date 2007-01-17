@@ -1,0 +1,41 @@
+body { 
+       background-color:#ADD8E6;
+       }
+
+#personal { 
+            border: dashed 1px;
+            background-color: #D26F6F;
+            padding-left: 2%;
+ }
+
+#photo { 
+         background-color:#90EE90;
+         position:fixed;
+         border: dashed 1px;
+         margin-right: 0px;
+         margin-left: 60%;
+         margin-top: 2%;
+         }
+
+#photo img{ 
+            padding: 10px;
+            }
+
+#listfriends { 
+               border: dashed 1px;
+               width: 59%;
+               background-color:#E7E790;
+               margin-top: 2%;
+               }
+#listfriends h2 { 
+               margin: 2% 0 0 3%;
+               }
+
+#listfriends ul { 
+                  list-style:none;
+                  padding-left: 8%;
+                  }
+
+#listfriends ul li { 
+                    margin: 1% 0 2% 0;
+                     }

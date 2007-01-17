@@ -1,0 +1,45 @@
+html {
+	background:white;
+}
+
+#footer { 
+          margin-left:auto;
+          margin-right: auto;
+          margin-top: 10%;
+          width: 50%;
+          font-size: x-small;
+}
+
+#header { 
+/*      display: block; */
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2%;
+      margin-bottom: 5%;
+      width: 50%;
+}
+
+#bodypart {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px;
+            margin-bottom: 0px;
+            margin-top:10px;
+            text-align: center;
+}
+
+#bodypart a { 
+              margin-right: 4%;
+              font-size: small;
+}
+
+#textbox { 
+           width: 300px;
+}
+
+#bodypart .buttons { 
+           width: 35%;
+           margin-left: auto;
+           margin-right: auto;
+ }
