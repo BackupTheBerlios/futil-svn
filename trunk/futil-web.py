@@ -8,12 +8,13 @@ port = '8880'
 WS_NS = 'http://futil.berlios.de/wsFOAF'
 
 urls = (
-  '/search/(.*)', 'FutilSearch'
+  '/search/(.*)', 'FutilSearchREST'
+  '/(.*)', 'Main'
 )
 
 remote = SOAPProxy(host+':'+port, namespace=WS_NS, soapaction='', simplify_objects=1)
 
-class FutilSearch:
+class FutilSearchREST:
     def GET(self, query):
         try:
             results = remote.search(query)
