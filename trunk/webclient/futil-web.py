@@ -1,5 +1,5 @@
 import webpy as web
-render = web.template.render('templates/')
+#render = web.render('templates/')
 
 from SOAPpy import SOAPProxy
 import socket
@@ -34,18 +34,18 @@ class FutilSearch:
         try:
             query = params.query
             #resultsAsDict = proxy.search(query)
-            resultsAsDict = [{"sha":["123123123","12313213"], "name":["test"]},
+            results = [{"sha":["123123123","12313213"], "name":["test"]},
                              {"sha":["00000000"], "name":["otroName"]}
                             ]
-            results = [Foaf(f) for f in resultsAsDict]
+            #results = [Foaf(f) for f in resultsAsDict]
             #print "FIXME Draw with template in HTML %i results" %( len(results))
             try:
-                print render.results(results, cache=False)
+                web.render('results.html',{'results':results})
             except Exception, e:
                 print str(e)
         except AttributeError:
             web.header("Content-Type","text/html; charset=utf-8")
-            print open('templates/form.html').read()
+            print open('form.html').read()
 
 class Resources:
     def GET(self, filename):

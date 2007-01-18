@@ -1,12 +1,46 @@
-$def with (results)
 <html>
  <head>
  <title>Full metal FOAF</title>
  </head>
  <body>
   <div id="results">
-    $for r in results: $r
+  <ul>
+    #for $r in $results:
+      <li> <!-- person -->
+        <ul>
+	#if $r.has_key('name'):
+	   #for $name in $r.name:
+           <li>$name</li>
+	   #end for
+	#else
+	  <li>Unretrievable name</li>
+	#end if
+        </ul>
+
+	<ul>
+	#if $r.has_key('nick'):
+	   #for $nick in $r.nick:
+	   <li>$nick</li> <!-- nick -->
+	   #end for
+	#else
+	  <li>(No nick available)</li>
+	#end if
+	</ul>
+
+
+	<ul>
+	#if $r.has_key('sha'):
+	   #for $sha in $r.sha:
+	   <li>$sha</li> <!-- sha -->
+	   #end for
+	#else
+	  <li>Unretrievable sha</li>
+	#end if
+	</ul>
+      </li>
+    #end for
+  </ul>  
   </div>
-<p>hola</p>
+ <p>hola</p>
  </body>
 </html>
