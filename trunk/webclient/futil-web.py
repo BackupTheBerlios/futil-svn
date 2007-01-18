@@ -19,8 +19,10 @@ class FutilSearchREST:
     def GET(self, query):
         try:
             results = proxy.search(query)
+            output = "<response>\n"
             for result in results:
-                print result
+                output += str(result)
+            output += "</response>\n"    
         except socket.error, e:
             print "Launch the futil server ( futil.ws.wsServer ) and reboot web client"
 
@@ -29,7 +31,8 @@ class FutilSearch:
         params = web.input()
         try:
             query = params.query
-            print query
+            results = proxy.search(query)
+            print "FIXME Draw with template in HTML %i results" %( len(results))
         except AttributeError:
             web.header("Content-Type","text/html; charset=utf-8") 
             print open('templates/form.html').read()
