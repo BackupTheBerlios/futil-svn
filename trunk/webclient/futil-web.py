@@ -21,8 +21,10 @@ proxy = SOAPProxy(host+':'+port, namespace=WS_NS, soapaction='', simplify_object
 class FutilSearchREST:
     def GET(self, query):
         try:
-            results = proxy.search(query)
-            print foaf.foafs2RestXml(results)
+            #results = proxy.search(query)
+            results = [{"sha":["123123123","12313213"], "name":["test"]},
+                             {"sha":["00000000"], "name":["otroName"]}]
+            print foafs2xml(results)
         except socket.error, e:
             print "Launch the futil server ( futil.ws.wsServer ) and reboot web client"
 
@@ -31,7 +33,10 @@ class FutilSearch:
         params = web.input()
         try:
             query = params.query
-            resultsAsDict = proxy.search(query)
+            #resultsAsDict = proxy.search(query)
+            resultsAsDict = [{"sha":["123123123","12313213"], "name":["test"]},
+                             {"sha":["00000000"], "name":["otroName"]}
+                            ]
             results = [Foaf(f) for f in resultsAsDict]
             #print "FIXME Draw with template in HTML %i results" %( len(results))
             try:
@@ -39,7 +44,7 @@ class FutilSearch:
             except Exception, e:
                 print str(e)
         except AttributeError:
-            web.header("Content-Type","text/html; charset=utf-8") 
+            web.header("Content-Type","text/html; charset=utf-8")
             print open('templates/form.html').read()
 
 class Resources:
