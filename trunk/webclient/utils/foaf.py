@@ -9,7 +9,7 @@ class Foaf:
         self.__dict__ = data
         
     def toxml(self):
-        doc  = getDOMImplementation().createDocument(None, 'person', None)
+        doc = getDOMImplementation().createDocument(None, 'person', None)
         person = doc.documentElement
         #person.setAttribute('xmlns', "FIXME")
         
@@ -20,7 +20,17 @@ class Foaf:
                 node.appendChild(doc.createTextNode(str(value)))
                 person.appendChild(node)
         
-        return doc
+        return person
         
     def __str__(self):
         return self.toxml().toprettyxml(indent='  ', newl='\n')
+
+
+def foafs2xml(foafs):
+    doc = getDOMImplementation().createDocument(None, 'response', None)
+    response = doc.documentElement
+    
+    for foaf in foafs:
+        response.appendChild(foaf.toxml())
+        
+    return response.toprettyxml(indent='  ', newl='\n')
