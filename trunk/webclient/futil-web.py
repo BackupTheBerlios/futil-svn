@@ -1,4 +1,4 @@
-import web
+import webpy as web
 
 from SOAPpy import SOAPProxy
 import socket
@@ -9,32 +9,41 @@ WS_NS = 'http://futil.berlios.de/wsFOAF'
 
 urls = (
   '/search/(.*)', 'FutilSearchREST',
-  '/futil', 'Main',
-  '/resources/(.*)', 'Main'
+  '/futil', 'FutilSearch',
+  '/resources/(.*)', 'Resources'
 )
 
-remote = SOAPProxy(host+':'+port, namespace=WS_NS, soapaction='', simplify_objects=1)
+proxy = SOAPProxy(host+':'+port, namespace=WS_NS, soapaction='', simplify_objects=1)
 
 class FutilSearchREST:
     def GET(self, query):
         try:
-            results = remote.search(query)
+            results = proxy.search(query)
             for result in results:
                 print result
         except socket.error, e:
-            print "Launch the futil server ( futil.ws.wsServer ) and reboot web.py script"
+            print "Launch the futil server ( futil.ws.wsServer ) and reboot web client"
 
-class Main:
-    def GET(self, filename=None):
-        if not filename:
+class FutilSearch:
+    def GET(self):
+        params = web.input()
+        try:
+            query = params.query
+            print query
+        except AttributeError:
+            web.header("Content-Type","text/html; charset=utf-8") 
             print open('templates/form.html').read()
-        else:
-            print open('resources/' + filename).read()
+
+class Resources:
+    def GET(self, filename):
+        print open('resources/' + filename).read()
 
 #
 # Web.py launch logic. Support to 0.1 and 0.2 versions
 #
 # Ubuntu has 0.138
+#
+# We ship a webpy inside project. Keep this code to deliver packages ;)
 #
 if float(web.__version__) < 0.2 :
     web.internalerror = web.debugerror
