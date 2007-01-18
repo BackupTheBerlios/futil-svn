@@ -2,44 +2,75 @@ html {
 	background:white;
 }
 
-#footer { 
-          margin-left:auto;
-          margin-right: auto;
-          margin-top: 10%;
-          width: 50%;
-          font-size: x-small;
+body {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #header { 
-/*      display: block; */
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 2%;
-      margin-bottom: 5%;
-      width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 #bodypart {
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0px;
-            margin-bottom: 0px;
-            margin-top:10px;
-            text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top:10px;
+  text-align: center;
 }
 
-#bodypart a { 
-              margin-right: 4%;
-              font-size: small;
+#bodypart { 
+  margin-right: 4%;
+  font-size: small;
 }
 
-#textbox { 
-           width: 300px;
+#bodypart ul#aboutfoaf {
+  text-align: center;
+  margin: 2em;
 }
 
-#bodypart .buttons { 
-           width: 35%;
-           margin-left: auto;
-           margin-right: auto;
- }
+#bodypart ul#aboutfoaf li {
+  display: inline;
+  margin: 1em;
+}
+
+#bodypart input { 
+  margin-left: 0.1em;;
+  margin-right: 0.1em;;
+}
+
+#bodypart button { 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spell_link {
+  display: none;
+}
+
+img {
+  border: 0;
+  margin: 0.1em;
+}
+
+p {
+  text-align: justify;
+}
+
+.accessibility {
+  display: none;
+}
+
+#footer { 
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 6em;
+  font-size: 0.7em;
+}

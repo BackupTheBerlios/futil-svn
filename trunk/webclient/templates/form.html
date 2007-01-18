@@ -1,53 +1,74 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<link rel="Stylesheet" href="resources/css/style.css" type="text/css" />
+
 <head>
-<title>
- Futil: How i learned to stop worrying and love the FOAF
-</title>
+  <title>Futil: How i learned to stop worrying and love the FOAF</title>
+  <link rel="Stylesheet" href="resources/css/style.css" type="text/css" />
 </head>
+
 <body>
+
 <div id="header">
-<!-- <script type="text/javascript" src="http://metaatem.net/spell.php?string=foofle"/> -->
-<!-- <noscript> -->
-   <a href="http://www.flickr.com/photos/65057044@N00/151827881" id="fs_1" title="&quot;FF&quot;">
-    <img alt="FF" title="FF" src="http://static.flickr.com/54/151827881_70a444f956_s.jpg" border="0"/>
+ <script type="text/javascript" src="http://metaatem.net/spell.php?string=foofle"/>
+ <noscript>
+   <a href="http://www.flickr.com/photos/65057044@N00/151827881" id="fs_1" title="F">
+    <img alt="F" src="http://static.flickr.com/54/151827881_70a444f956_s.jpg" />
    </a>
-   <a href="http://www.flickr.com/photos/47379017@N00/121295306" id="fs_2" title="o">
-    <img alt="o" src="http://static.flickr.com/22/121295306_1bf2df5a87_s.jpg" border="0"/>
+   <a href="http://www.flickr.com/photos/47379017@N00/121295306" id="fs_2" title="O">
+    <img alt="O" src="http://static.flickr.com/22/121295306_1bf2df5a87_s.jpg" />
    </a>    
-   <a href="http://www.flickr.com/photos/92709190@N00/198545995" id="fs_3" title="&quot;Oh&quot;">
-    <img alt="Oh" title="Oh" src="http://static.flickr.com/74/198545995_a88f9dd34e_s.jpg" border="0"/>
+   <a href="http://www.flickr.com/photos/92709190@N00/198545995" id="fs_3" title="O">
+    <img alt="O" src="http://static.flickr.com/74/198545995_a88f9dd34e_s.jpg" />
    </a>    
-   <a href="http://www.flickr.com/photos/60139144@N00/108362755" id="fs_4" title="&quot;F&quot;">
-    <img alt="F" title="F" src="http://static.flickr.com/46/108362755_8347ad60dd_s.jpg" border="0"/>
+   <a href="http://www.flickr.com/photos/60139144@N00/108362755" id="fs_4" title="F">
+    <img alt="F" src="http://static.flickr.com/46/108362755_8347ad60dd_s.jpg" />
    </a>    
    <a href="http://www.flickr.com/photos/49968232@N00/183919168" id="fs_5" title="L">
-    <img alt="L" src="http://static.flickr.com/78/183919168_5c91baf0b2_s.jpg" border="0"/>
+    <img alt="L" src="http://static.flickr.com/78/183919168_5c91baf0b2_s.jpg" />
    </a>    
    <a href="http://www.flickr.com/photos/82505070@N00/225401647" id="fs_6" title="E">
-    <img alt="E" src="http://static.flickr.com/76/225401647_8b933e6033_s.jpg" border="0"/>
+    <img alt="E" src="http://static.flickr.com/76/225401647_8b933e6033_s.jpg" />
    </a>
-<!-- </noscript> -->
+ </noscript>
 </div>
+
 <div id="bodypart">
-<a href="http://www.foaf-project.org/">What's FOAF?</a>
-<a href="http://www.ldodds.com/foaf/foaf-a-matic.html">Create your FOAF!</a>
-<form method="get" action="#">
-  <p class="centered">A foaf url, name or sha: <input id="textbox"
-  type="text" name="guy" value="http://"/>
-  <button type="submit">Show it!</button></p>
-</form>
+  <ul id="aboutfoaf">
+    <li>
+      <a href="http://www.foaf-project.org/">What's <acronym title="Friend of a Friend">FOAF</acronym>?</a>
+    </li>
+    <li>
+      <a href="http://www.ldodds.com/foaf/foaf-a-matic.html">Create your <acronym title="Friend of a Friend">FOAF</acronym>!</a>
+    <li>
+  </ul>
+  <form method="get" action="#">
+    <label for="query">
+      A <acronym title="Friend of a Friend">FOAF</acronym> <acronym title="Uniform Resource Identifier">URI</acronym></li>,
+      name, mail or <acronym title="Secure Hash Algorithm ">SHA</acronym>:
+      <input id="query" type="text" name="query" value="http://" size="50" 
+      onfocus="if(this.value==this.defaultValue)this.value=''"
+      onblur="if(this.value=='')this.value=this.defaultValue" />
+    </label>
+    <button type="submit">Query it!</button>
+  </form>
 </div>
+
 <div id="footer">
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version. You can
-<a href="https://developer.berlios.de/projects/futil/">download
-source code here</a>. Send your suggestions and opinions to
-ivan DOT frade AT gmail DOT com.
+  <p>
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version. You can
+    <a href="https://developer.berlios.de/projects/futil/">download
+    source code here</a>. Send your suggestions and opinions to
+    ivan DOT frade AT gmail DOT com or sergio AT wikier DOT org.
+  </p>
+  <p style="text-align: center">
+    2006-2007 &copy; <a href="http://futil.berlios.de/"><abbr title="FOAF Utils">futil</abbr></a>
+  </p>
 </div>
+
 </body>
+
 </html>
