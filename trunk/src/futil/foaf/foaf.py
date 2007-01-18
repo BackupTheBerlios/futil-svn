@@ -54,7 +54,10 @@ class ErroneousFoaf(Exception):
         return repr(self.value)
 
 class Foaf:
-
+  """
+    @deprecated: DON'T USE THIS CLASS. Old version. I keep it in repository to remember
+     the value.encoding trick with RDFLiteral. 
+  """  
   def tryXpath(self, uri, xpath):
     print "Trying xpath: ", xpath
     if xpath == None:
