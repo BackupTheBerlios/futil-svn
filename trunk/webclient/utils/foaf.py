@@ -33,4 +33,4 @@ def foafs2xml(foafs):
     for foaf in foafs:
         response.appendChild(foaf.toxml().cloneNode(True))
         
-    return response.toprettyxml(indent='  ', newl='\n')
+    return doc.toprettyxml(indent='  ', newl='\n')
