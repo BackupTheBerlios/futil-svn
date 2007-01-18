@@ -1,7 +1,10 @@
 import webpy as web
+render = web.template.render('templates/')
 
 from SOAPpy import SOAPProxy
 import socket
+
+from utils.foaf import Foaf, foafs2xml
 
 host = '127.0.0.1'
 port = '8880'
@@ -19,10 +22,7 @@ class FutilSearchREST:
     def GET(self, query):
         try:
             results = proxy.search(query)
-            output = "<response>\n"
-            for result in results:
-                output += str(result)
-            output += "</response>\n"    
+            print foaf.foafs2RestXml(results)
         except socket.error, e:
             print "Launch the futil server ( futil.ws.wsServer ) and reboot web client"
 
@@ -31,8 +31,13 @@ class FutilSearch:
         params = web.input()
         try:
             query = params.query
-            results = proxy.search(query)
-            print "FIXME Draw with template in HTML %i results" %( len(results))
+            resultsAsDict = proxy.search(query)
+            results = [Foaf(f) for f in resultsAsDict]
+            #print "FIXME Draw with template in HTML %i results" %( len(results))
+            try:
+                print render.results(results, cache=False)
+            except Exception, e:
+                print str(e)
         except AttributeError:
             web.header("Content-Type","text/html; charset=utf-8") 
             print open('templates/form.html').read()
