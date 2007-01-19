@@ -1,13 +1,13 @@
 
 from futil.tracker.tracker import Tracker
-from futil.storage.pySQLiteWrapper import PySQLiteWrapper
+from futil.storage.MySQLWrapper import MySQLWrapper
 from futil.utils.logger import FutilLogger
 
 class FutilTracker(Tracker):
     
-    def __init__(self, db='foaf.db', app='futil'):
+    def __init__(self, app='futil'):
         self.added = 0
-        self.db = PySQLiteWrapper(db)
+        self.db = MySQLWrapper()
         self.log = FutilLogger(app)
     
     def moreUrisToExplore(self):
