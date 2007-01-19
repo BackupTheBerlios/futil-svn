@@ -146,7 +146,7 @@ class UriLoader:
                 self._logger.error("Exception " + str(e))
                 return {}
         else:
-            print 'No allowed to crawl', uri
+            self._logger.warn('No allowed to crawl ' + uri)
 
 if __name__ == "__main__":
 
