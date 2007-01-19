@@ -26,8 +26,8 @@ class Foaf:
 
         return person
 
-    def __str__(self):
-        return self.toxml().toprettyxml(indent='  ', newl='\n')
+##    def __str__(self):
+##        return self.toxml().toprettyxml(indent='  ', newl='\n')
 
 
 def foafs2xml(foafs):
