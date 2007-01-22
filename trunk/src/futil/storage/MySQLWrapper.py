@@ -49,6 +49,9 @@ class MySQLWrapper(DBWrapper):
         except AssertionError, details:
             self.log.error('inserting ' + uri + ': ' + str(details))
             return False
+        except Exception, details:
+            self.log.error('inserting ' + uri + ': ' + str(details))
+            return False
             
     def visit(self, uri):
         if self.exists(uri):
