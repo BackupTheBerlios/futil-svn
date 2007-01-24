@@ -21,20 +21,44 @@
 
     <div id="content">
 
+		<h2>What</h2>
+		<p>
+			<abbr title="FOAF Utils">FUTIL</abbr> collects different utils implemented in python 
+			to manipulate FOAF files.
+		</p>
+		<p>Currently, FOAF Utils includes:
+			<ul>
+				<li>FOAF Crawler: a generic engine to navegate FOAFs perfoming different and configurable
+				operations.</li>
+				<li>FOAF Index/Search: using <a href="http://pylucene.osafoundation.org/">PyLucene</a> as backend. That's a plain syntactic search.</li>
+				<li>FOAF Parsing: implementation to extract FOAF data to a python dictionary datatype. It uses
+				an easily extensible filter system.</li>
+				<li>"REST" interface to search. At least you can ask in an URL an receive a XML with results.</li>
+			</ul>		
+		</p>
+		<p>Soon:
+			<ul>
+				<li>Web interface to search in crawled and indexed FOAFs</li>
+			</ul>
+		</p>
+
+		<h2>Why</h2>
       <p>
-        <abbr title="FOAF Utils">FUTIL</abbr> was born with the idea to make more useful 
-        (for humans and machines) all the semantic information stored in the millions of 
-        <acronym title="Friend of a Friend">FOAF</acronym>s published in the 
-        <acronym title="World Wide Web">WWW</acronym>. 
-        Initially to satisfy information puntual necessities of 
-        <a href="http://swaml.berlios.de/"><acronym title="Semantic Web Archive of Mailing Lists">SWAML</acronym></a> 
-        project, but without forgetting others outside the scope of that project.
-      </p>
+		 <abbr title="FOAF Utils">FUTIL</abbr> is the confluence of two interests: originally we pretend 
+		 to index FOAF, allowing people to search his friends. There is no easy (enough) way to know 
+		 where are the FOAFs of your friends. At the same time, Sergio was developing 
+		 <a href="http://swaml.berlios.de/"><acronym title="Semantic Web Archive of Mailing Lists">
+		 SWAML</acronym></a> and founded a new requirement: given a SHA
+		 codification of an email, try to find the FOAF of the author.
+		 </p>
+		 <p>The natural solution was retrive the SHA data in the same crawling process and offer a 
+		 web service interface to search. And that's FUTIL.
+		 </p>		 
+		 <p>Futil in spanish means "futile" or "trivial". Although we work on semantic web related stuff,
+		 that's a personal project: we mantein this software in our free time.
+		 </p>     
 
-
-      </p>
-
-      <h2 id="people">People involved</h2>
+      <h2 id="people">Who (Contact)</h2>
       <ul>
         <li>
           <a href="http://www.asturlinux.org/comunidad/blog/frade">Iván Frade</a>
@@ -45,11 +69,14 @@
           (<a href="http://www.wikier.org/foaf.rdf#wikier"><img src="resources/images/foaf.gif" width="26" height="14" alt="foaf" /></a>)
         </li>
       </ul>
-
+      <p>If you wish to contact with us, please use the 
+      <a href="http://lists.berlios.de/mailman/listinfo/futil-dev">development mailing list</a>.
+      </p>
+<!--
       <h2 id="experiments">Experiments</h2>
       <p>We are making some practical experiments related with 
       <acronym title="Friend of a Friend">FOAF</acronym>.</p>
-
+-->
 <!--
       <ol id="experiments">
         <li id="experiment1">
@@ -65,27 +92,24 @@
       </ol>
 
 -->
-
+<!--
       <p>The conclusions will be applied to develop some services to make 
       more useful all the (semantic) information described in
       <acronym title="Friend of a Friend">FOAF</acronym> profiles.</p>
 
       <p>Soon more information...</p>
-
-      <h2 id="files">Files</h2>
-      <p><a href="wsvn">Browse <abbr title="Subversion">SVN</abbr></a>.</p>
-
+-->
+      <h2 id="files">Where (Files)</h2>
+      <p>At the moment, <a href="wsvn">Browse <abbr title="Subversion">SVN</abbr></a>.</p>
+		<p>We expect to offer soon a web interface to search.</p>
+		
       <h2 id="links">Related links</h2>
       <ul>
-        <li><a href="http://www.foaf-project.org/"><acronym title="Friend of a Friend">FOAF</acronym></a></li>
-        <li><a href="http://pingthesemanticweb.com/">pingthesemanticweb.com</a></li>
-        <li><a href="http://weso.sourceforge.net/"><acronym title="Web Semántica Oviedo">WESO</acronym></a></li>
-        <li><a href="http://swaml.berlios.de/"><acronym title="Semantic Web Archive of Mailing Lists">SWAML</acronym></a></li>
+        <li><a href="http://www.foaf-project.org/"><acronym title="Friend of a Friend">FOAF</acronym></a>: </li>
+        <li><a href="http://pingthesemanticweb.com/">pingthesemanticweb.com</a>: We are pinging every new foaf we discover during crawler process.</li>
+        <li><a href="http://weso.sourceforge.net/"><acronym title="Web Semántica Oviedo">WESO</acronym></a>: Our semantic web group at university.</li>
+        <li><a href="http://swaml.berlios.de/"><acronym title="Semantic Web Archive of Mailing Lists">SWAML</acronym></a>: Sergio's degree project.</li>
       </ul>
-
-      <h2 id="contact">Contact</h2>
-      <p>If you wish to contact with us, please use the 
-      <a href="http://lists.berlios.de/mailman/listinfo/futil-dev">development mailing list</a>.</p>
 
     </div>
 
