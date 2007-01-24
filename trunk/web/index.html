@@ -21,60 +21,68 @@
 
     <div id="content">
 
-		<h2>What</h2>
-		<p>
-			<abbr title="FOAF Utils">FUTIL</abbr> collects different utils implemented in python 
-			to manipulate <acronym title="Friend of a Friend">FOAF</acronym> files.
-		</p>
-		<p>Currently, <acronym title="Friend of a Friend">FOAF</acronym> Utils includes:
-          <ul>
-            <li>
-              <acronym title="Friend of a Friend">FOAF</acronym> Crawler: a generic engine to navegate 
-              <acronym title="Friend of a Friend">FOAF</acronym>s perfoming different and configurable
-              operations.
-            </li>
-            <li>
-              <acronym title="Friend of a Friend">FOAF</acronym> Index/Search: using <a href="http://pylucene.osafoundation.org/">PyLucene</a> 
-              as backend. That's a plain syntactic search.
-            </li>
-            <li>
-              <acronym title="Friend of a Friend">FOAF</acronym> Parsing: implementation to extract 
-              <acronym title="Friend of a Friend">FOAF</acronym> data to a python dictionary datatype. 
-              It uses an easily extensible filter system.
-            </li>
-            <li>
-              <abbr title="Representational State Transfer">REST</abbr> interface to search. At least 
-              you can ask in an <acronym title="Uniform Resource Identifier">URI</acronym> an receive a 
-              <acronym title="eXtensible Markup Language">XML</acronym> with results.
-            </li>
-          </ul>		
-		</p>
-		<p>Soon:
-			<ul>
-				<li>Web interface to search in crawled and indexed <acronym title="Friend of a Friend">FOAF</acronym>s</li>
-			</ul>
-		</p>
+      <h2 id="what">What</h2>
+      <p>
+        <abbr title="FOAF Utils">FUTIL</abbr> collects different utils implemented in python 
+        to manipulate <acronym title="Friend of a Friend">FOAF</acronym> files.
+      </p>
+      <p>Currently, <abbr title="FOAF Utils">FUTIL</abbr> includes:</p>
+      <ul>
+        <li>
+          <acronym title="Friend of a Friend">FOAF</acronym> Crawler: a generic engine to navegate 
+          <acronym title="Friend of a Friend">FOAF</acronym>s perfoming different and configurable
+          operations.
+        </li>
+        <li>
+          <acronym title="Friend of a Friend">FOAF</acronym> Index/Search: using 
+          <a href="http://pylucene.osafoundation.org/">PyLucene</a> 
+          as backend. That's a plain syntactic search.
+        </li>
+        <li>
+          <acronym title="Friend of a Friend">FOAF</acronym> Parsing: implementation to extract 
+          <acronym title="Friend of a Friend">FOAF</acronym> data to a python dictionary datatype. 
+          It uses an easily extensible filter system.
+        </li>
+        <li>
+          <abbr title="Representational State Transfer">REST</abbr> interface to search. At least 
+          you can ask in an <acronym title="Uniform Resource Identifier">URI</acronym> an receive 
+          a <acronym title="eXtensible Markup Language">XML</acronym> with results.
+        </li>
+      </ul>		
 
-		<h2>Why</h2>
-        <p>
-		  <acronym title="Friend of a Friend">FOAF</acronym>  is the confluence of two interests: originally we 
-          pretend to index <acronym title="Friend of a Friend">FOAF</acronym> , allowing people to search his friends. 
-          There is no easy (enough) way to know where are the <acronym title="Friend of a Friend">FOAF</acronym> s 
-          of your friends. At the same time, Sergio was developing 
-          <a href="http://swaml.berlios.de/"><acronym title="Semantic Web Archive of Mailing Lists">SWAML</acronym></a> 
-          and founded a new requirement: given a <acronym title="Secure Hash Algorithm">SHA</acronym> codification 
-          of an email, try to find the <acronym title="Friend of a Friend">FOAF</acronym> of the author.
-		</p>
-		<p>
-          The natural solution was retrive the <acronym title="Secure Hash Algorithm">SHA</acronym> data in the 
-          same crawling process and offer a web service interface to search. And that's <abbr title="FOAF Utils">FUTIL</abbr>.
-		</p>		 
-		<p>
-          <span xml:lang="es">Fútil</span> in spanish means "futile" or "trivial". Although we work on semantic web 
-          related stuff, that's a personal project: we maintain this software in our free time.
-		</p>     
+      <p>Soon:
+        <ul>
+          <li>
+            Web interface to search in crawled and indexed 
+            <acronym title="Friend of a Friend">FOAF</acronym>s.
+          </li>
+        </ul>
+      </p>
 
-      <h2 id="people">Who (contact)</h2>
+      <h2 id="why">Why</h2>
+      <p>
+		<acronym title="Friend of a Friend">FOAF</acronym>  is the confluence of two interests:
+        originally we pretend to index <acronym title="Friend of a Friend">FOAF</acronym>,
+        allowing people to search his friends. There is no easy (enough) way to know where are 
+        the <acronym title="Friend of a Friend">FOAF</acronym>s of your friends. At the same 
+        time, Sergio was developing 
+        <a href="http://swaml.berlios.de/"><acronym title="Semantic Web Archive of Mailing Lists">SWAML</acronym></a> 
+        and founded a new requirement: given a 
+        <acronym title="Secure Hash Algorithm">SHA</acronym> codification of an email, try to 
+        find the <acronym title="Friend of a Friend">FOAF</acronym> of the author.
+      </p>
+      <p>
+        The natural solution was retrive the <acronym title="Secure Hash Algorithm">SHA</acronym>
+        data in the same crawling process and offer a web service interface to search. And that's
+        <abbr title="FOAF Utils">FUTIL</abbr>.
+      </p>		 
+      <p>
+        <span xml:lang="es">Fútil</span> in spanish means "futile" or "trivial". Although we work
+        on semantic web related stuff, that's a personal project: we maintain this software in our
+        free time.
+      </p>     
+
+      <h2 id="who">Who (contact)</h2>
       <ul>
         <li>
           <a href="http://www.asturlinux.org/comunidad/blog/frade">Iván Frade</a>
@@ -117,7 +125,7 @@
       <p>Soon more information...</p>
 -->
 
-      <h2 id="files">Where (files)</h2>
+      <h2 id="where">Where (files)</h2>
       <p>
         At the moment, <a href="wsvn">Browse <abbr title="Subversion">SVN</abbr></a>.
 		We expect to offer soon a web interface to search.
