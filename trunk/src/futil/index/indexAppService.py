@@ -16,11 +16,22 @@ class IndexAppService(Indexer):
         self.shaBBDD = shaManager
         self.logger = FutilLogger(app)
         self.uriLoader = UriLoader(logger=self.logger)
+        self.resetCounter()
+
+    def resetCounter(self):
+        self.counter = 1000
+
+    def countInsertion(self):
+        self.counter -= 1
+        if self.counter == 0:
+            self.resetCounter()
+            self._writer.optimize()
 
 
     def indexFOAF(self, foaf):
         document = FoafDocumentFactory.getDocumentFromFOAF(foaf)
         self._writer.addDocument(document)
+        self.countInsertion()
         if ( foaf.has_key('sha')):
             for sha in foaf['sha']:
                 self.shaBBDD.insertUriSha(foaf['uri'][0], sha)

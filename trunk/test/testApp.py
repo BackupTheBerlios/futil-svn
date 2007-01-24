@@ -21,7 +21,7 @@ class TestClientView(unittest.TestCase):
 
 
     def setUp(self):
-        
+
         self._directory = RAMDirectory()
         self.shaManager = ShaManager(TESTDB)
         indexer = IndexAppService(self._directory, self.shaManager)
@@ -56,6 +56,18 @@ class TestClientView(unittest.TestCase):
             indexer.close()
         finally:
             indexer.close()
+
+    def testOptimization(self):
+        indexer = IndexAppService(self._directory, self.shaManager)
+        self.assertEquals(indexer.counter, 1000)
+        for i in range(0,100):
+            indexer.indexFOAF({"sha":"xxxxxxx", "uri":"http://www.blablabla.org"})
+        self.assertEquals(indexer.counter, 900)
+
+        indexer.counter = 5
+        for i in range(0,6):
+            indexer.indexFOAF({"sha":"xxxxxxx", "uri":"http://www.blablabla.org"})
+        self.assertEquals(indexer.counter, 999)
 
     def tearDown(self):
         self.shaManager.printDatabase()
