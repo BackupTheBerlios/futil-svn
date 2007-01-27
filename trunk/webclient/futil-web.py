@@ -1,5 +1,10 @@
 import webpy as web
-#render = web.render('templates/')
+#
+# To use webpy2 owns template engine:
+# render = web.render('templates/')
+#
+# use wepy2's cheetah to render templates
+render = web.cheetah.render
 
 from SOAPpy import SOAPProxy
 import socket
@@ -40,12 +45,12 @@ class FutilSearch:
             #results = [Foaf(f) for f in resultsAsDict]
             #print "FIXME Draw with template in HTML %i results" %( len(results))
             try:
-                web.render('results.html',{'results':results})
+                render('results.html',{'results':results})
             except Exception, e:
                 print str(e)
         except AttributeError:
             web.header("Content-Type","text/html; charset=utf-8")
-            print open('form.html').read()
+            render('form.html')
 
 class Resources:
     def GET(self, filename):
