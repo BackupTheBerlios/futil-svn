@@ -6,6 +6,7 @@ from foafDocumentFactory import FoafDocumentFactory
 from futil.storage.shaManager import ShaManager
 
 import operator
+import sha
 
 class SearchAppService:
 
@@ -28,6 +29,10 @@ class SearchAppService:
             return self.searchBySHA(query)
         elif query.startswith("http://"):
             return self.searchByURI(query)
+        elif '@' in query:
+            if not query.startswith('mailto'):
+                query = "mailto:" + query
+            return self.searchBySHA(sha.new(query).hexdigest())
         else:
             return self.searchByName(query)
 

@@ -49,6 +49,18 @@ class TestClientView(unittest.TestCase):
         self.assertEqual(len(r), 1)
         self.assertEqual(r[0]['name'], u'Sergio Fernández')
 
+    def testSearchByMail(self):
+        import sha
+        mail = 'mailto:wikier@asturlinux.org'
+        r = self._searcher.search(mail)
+        self.assertEqual(len(r),1)
+        self.assertEqual(r[0]['name'],  u'Sergio Fernández')
+
+        mail = 'wikier@asturlinux.org'
+        r = self._searcher.search(mail)
+        self.assertEqual(len(r),1)
+        self.assertEqual(r[0]['name'],  u'Sergio Fernández')
+
     def testIndexBadUri(self):
         try:
             indexer = IndexAppService(self._directory, self.shaManager)
