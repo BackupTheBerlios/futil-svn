@@ -1,0 +1,15 @@
+html {
+	background:white;
+}
+
+div {
+	padding: 2 10 2 2;
+}
+
+li {
+	margin-top: 20;
+}
+
+.uriText {
+	color: green;
+}

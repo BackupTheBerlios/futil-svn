@@ -1,46 +1,38 @@
 <html>
  <head>
- <title>Full metal FOAF</title>
+ <link rel="stylesheet" href="resources/css/results.css"/>
  </head>
  <body>
-  <div id="results">
-  <ul>
-    #for $r in $results:
-      <li> <!-- person -->
-        <ul>
-	#if $r.has_key('name'):
-	   #for $name in $r.name:
-           <li>$name</li>
-	   #end for
-	#else
-	  <li>Unretrievable name</li>
-	#end if
-        </ul>
+ 
+  <!-- form part. Try to extract -->
+  <form method="get" action="#">
+    <label for="query">
+      A <acronym title="Friend of a Friend">FOAF</acronym> <acronym title="Uniform Resource Identifier">URI</acronym>,
+      name, mail or <acronym title="Secure Hash Algorithm ">SHA</acronym>:
+      <input id="query" type="text" name="query" value="http://" size="50" 
+      onfocus="if(this.value==this.defaultValue)this.value=''"
+      onblur="if(this.value=='')this.value=this.defaultValue" />
+    </label>
+    <button type="submit">Query it!</button>
+  </form>
 
-	<ul>
-	#if $r.has_key('nick'):
-	   #for $nick in $r.nick:
-	   <li>$nick</li> <!-- nick -->
-	   #end for
-	#else
-	  <li>(No nick available)</li>
-	#end if
-	</ul>
+  <hr/>
+  <ul id="results">
+    <li> 
+    <div class="resultName"><a href="http://futil.berlios.de/view?http://...">Ivan Frade</a> - (Asjastras)</div>
+    <div class="resultGeoPos">GEO Position: <a href="http://maps.google.com/...">(98,12)</a></div>
+    <div class="resultUri"><span class="uriText">http://frade.no-ip.info:2080/~ivan/foaf.rdf</span></div>
+    </li>
+
+    <li> 
+    <div class="resultName"><a href="http://futil.berlios.de/view?http://...">Sergio Fernandez</a> - (Wikier, javi,...)</div>
+    <div class="resultGeoPos">GEO Position: <a href="http://maps.google.com/...">(98,13)</a></div>
+    <div class="resultUri"><span class="uriText">http://www.wikier.org/foaf.rdf</span></div>
+    </li>
+
+  </ul>
 
 
-	<ul>
-	#if $r.has_key('sha'):
-	   #for $sha in $r.sha:
-	   <li>$sha</li> <!-- sha -->
-	   #end for
-	#else
-	  <li>Unretrievable sha</li>
-	#end if
-	</ul>
-      </li>
-    #end for
-  </ul>  
-  </div>
- <p>hola</p>
+
  </body>
 </html>
