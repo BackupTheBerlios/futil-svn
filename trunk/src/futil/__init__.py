@@ -1,5 +1,5 @@
-# SWAML <http://swaml.berlios.de/>
-# Semantic Web Archive of Mailing Lists
+# FUTIL <http://futil.berlios.de/>
+# FOAF Utils
 #
 # Copyright (C) 2006-2007 Ivan Frade, Sergio Fdez
 #
