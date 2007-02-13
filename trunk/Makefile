@@ -14,12 +14,12 @@ epydoc:
 	mkdir -p doc/epydoc
 	epydoc -n futil -o doc/epydoc/ --html src/futil/
 tests:
-	$(PYTHON) test/testfoaf.py
+	$(PYTHON) test/testMySQL.py
 	$(PYTHON) test/testPySQLite.py
-	$(PYTHON) test/testPTSW.py
 	$(PYTHON) test/testFutilTracker.py
 	$(PYTHON) test/testClientView.py
 	$(PYTHON) test/testShaManager.py
+	$(PYTHON) test/testPTSW.py
 
 test-foaf:
 	$(PYTHON) test/testFriendsFilter.py

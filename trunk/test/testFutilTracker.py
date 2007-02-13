@@ -7,7 +7,7 @@ sys.path.append('./src')
 from futil.tracker.futiltracker import FutilTracker
 import unittest
 
-TESTDB = 'testfoaf.db'
+TESTDB = "foafs-test"
 FOAFS = ['http://www.wikier.org/foaf.rdf#wikier',
          'http://frade.no-ip.info:2080/~ivan/foaf.rdf'
          ]
@@ -29,7 +29,7 @@ class TestFutilTracker(unittest.TestCase):
         self.ft = FutilTracker(TESTDB)        
         
     def tearDown(self):
-        os.remove(TESTDB)
+        pass
 
 if __name__ == "__main__":
     unittest.main()

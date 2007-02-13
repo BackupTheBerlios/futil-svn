@@ -7,7 +7,7 @@ class FutilTracker(Tracker):
     
     def __init__(self, app='futil'):
         self.added = 0
-        self.db = MySQLWrapper()
+        self.db = MySQLWrapper(app=app)
         self.log = FutilLogger(app)
     
     def moreUrisToExplore(self):
