@@ -4,25 +4,22 @@
          xmlns:doap="http://usefulinc.com/ns/doap#" 
          xmlns:foaf="http://xmlns.com/foaf/0.1/" 
          xmlns:admin="http://webns.net/mvcb/" 
-         xml:lang="en">
+         xml:lang="en"
+>
 
   <rdf:Description rdf:about="">
     <admin:generatorAgent rdf:resource="http://doapy.bonjourlesmouettes.org/doap-a-matic"/>
   </rdf:Description>
 
-  <doap:Project rdf:about="http://futil.berlios.de/resources/doap.rdf">
+  <doap:Project rdf:about="http://futil.berlios.de/resources/doap.rdf#vapour">
 
     <doap:name>FOAF Utils</doap:name>
     <doap:shortname>FUTIL</doap:shortname>
     <doap:homepage rdf:resource="http://futil.berlios.de/"/>
     <doap:created>2006-10-13</doap:created>
 
-    <doap:description xml:lang="en">
-      FOAF utils tools.
-    </doap:description>
-    <doap:description xml:lang="es">
-      Utilidades para FOAF.
-    </doap:description>
+    <doap:description xml:lang="en">FOAF utils tools</doap:description>
+    <doap:description xml:lang="es">Utilidades para FOAF</doap:description>
 
     <doap:programming-language>python</doap:programming-language>
     <doap:category rdf:resource="http://rdflib.net/projects#using_rdflib"/>
@@ -39,11 +36,11 @@
     </doap:maintainer>
 
     <doap:maintainer>
-      <foaf:Person>
-        <foaf:name>Sergio Fdez</foaf:name>
+      <foaf:Person rdf:about="http://www.wikier.org/foaf.rdf#wikier">
+        <foaf:name>Sergio Fernández</foaf:name>
         <foaf:nick>Wikier</foaf:nick>
         <foaf:mbox_sha1sum>d0fd987214f56f70b4c47fb96795f348691f93ab</foaf:mbox_sha1sum>
-        <rdfs:seeAlso rdf:resource="http://www.wikier.org/foaf.rdf#wikier"/>
+        <rdfs:seeAlso rdf:resource="http://www.wikier.org/foaf.rdf"/>
         <foaf:homepage rdf:resource="http://www.wikier.org/" />
       </foaf:Person>
     </doap:maintainer>
