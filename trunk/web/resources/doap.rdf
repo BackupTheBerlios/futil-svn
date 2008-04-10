@@ -11,7 +11,7 @@
     <admin:generatorAgent rdf:resource="http://doapy.bonjourlesmouettes.org/doap-a-matic"/>
   </rdf:Description>
 
-  <doap:Project rdf:about="http://futil.berlios.de/resources/doap.rdf#vapour">
+  <doap:Project rdf:about="http://futil.berlios.de/resources/doap.rdf#futil">
 
     <doap:name>FOAF Utils</doap:name>
     <doap:shortname>FUTIL</doap:shortname>
@@ -36,7 +36,7 @@
     </doap:maintainer>
 
     <doap:maintainer>
-      <foaf:Person rdf:about="http://www.wikier.org/foaf.rdf#wikier">
+      <foaf:Person rdf:about="http://www.wikier.org/foaf#wikier">
         <foaf:name>Sergio Fernández</foaf:name>
         <foaf:nick>Wikier</foaf:nick>
         <foaf:mbox_sha1sum>d0fd987214f56f70b4c47fb96795f348691f93ab</foaf:mbox_sha1sum>
@@ -55,3 +55,4 @@
   </doap:Project>
 
 </rdf:RDF>
+
